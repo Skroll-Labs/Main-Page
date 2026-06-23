@@ -9,12 +9,11 @@ Implementation rules and conventions for the entire project. The AI agent must f
 The AI agent on this project operates as a senior engineer. This means:
 
 - **Think before implementing** — understand what is being built and why before writing a single line
-- **Read context files first** — always verify against `architecture.md`, `project-overview.md`, and `progress-tracker.md` before starting any feature
+- **Read context files first** — always verify against `architecture.md`, `project-overview.md`,`content_copy.md`,`design.md` and `progress-tracker.md` before starting any feature
 - **Scope is sacred** — only build what the current feature requires. Never scaffold future sections or add unrequested animations
 - **Every feature must be verifiable** — if it cannot be checked immediately in the browser after implementation, it is incomplete
 - **Clean over clever** — simple, readable code that a junior developer can follow is always preferred over clever abstractions
 - **One section at a time** — complete one section component fully before touching the next
-- **Copy is the source of truth** — all text content must come from `content/copy.ts`, never hardcoded inside components
 
 ---
 
@@ -57,7 +56,6 @@ The AI agent on this project operates as a senior engineer. This means:
 - Section component files: PascalCase — `Hero.tsx`, `HowItWorks.tsx`, `WhoItsFor.tsx`
 - UI primitive files: PascalCase — `AudienceCard.tsx`, `FAQAccordion.tsx`
 - Utility and lib files: camelCase — `resend.ts`, `validations.ts`, `gsap.ts`
-- Content files: camelCase — `copy.ts`
 - Hook files: camelCase, prefixed with `use` — `useScrollAnimation.ts`
 - API route files: always `route.ts`
 - One component per file — never export multiple components from one file
@@ -78,7 +76,6 @@ import gsap from "gsap";
 
 // 2. Internal imports
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { copy } from "@/content/copy";
 
 // 3. Type definitions (only if props exist)
 type Props = {
@@ -98,7 +95,6 @@ export function Hero({ className }: Props) {
 - Never use default exports for components — always named exports
 - Props type defined directly above the component — never in a separate file unless shared across multiple components
 - No inline styles — all styling via Tailwind utility classes and CSS custom properties from `styles/globals.css`
-- All copy rendered in JSX must reference `content/copy.ts` — no hardcoded strings inside components
 
 ---
 
@@ -137,7 +133,7 @@ export async function POST(req: NextRequest) {
 
 - Every route handler has a try/catch
 - Every route handler validates the request body with Zod before processing — always use `safeParse`, never `parse`
-- Errors are logged with the route path as prefix: `[api/contact]`, `[api/newsletter]`
+- Errors are logged with the route path as prefix: `[api/contact]`
 - Always return `{ success: boolean, error?: string }` — never return raw data without the success wrapper
 - Never put Resend logic directly in the route handler — delegate to `lib/resend.ts`
 
@@ -235,39 +231,7 @@ async function onSubmit(data: ContactFormData) {
 - On success, show an inline success message — never redirect
 - On error, show a human-readable error message — never expose the raw API error
 
----
 
-## Content Layer
-
-```typescript
-// content/copy.ts
-
-export const copy = {
-  hero: {
-    headline: "Sell Tickets. Send QR Codes. Skip the Headaches.",
-    subheadline: "The all-in-one ticketing platform built for event organizers...",
-    cta: "Contact Us",
-    trustLine: "Trusted by event organizers, ops teams, and marketing leads across...",
-  },
-  problem: {
-    heading: "Still Managing Tickets the Hard Way?",
-    body: "Spreadsheets. Manual emails...",
-    painPoints: [
-      "Manually tracking ticket sales across spreadsheets",
-      // ...
-    ],
-    closingLine: "There's a faster, simpler way...",
-  },
-  // all other sections follow the same pattern
-} as const;
-```
-
-- All landing page copy is stored in `content/copy.ts` as a typed `const` object
-- Components import `copy` and reference the relevant key — zero hardcoded strings in JSX
-- If copy needs to change, it changes in one place only — `content/copy.ts`
-- The `as const` assertion ensures copy values are readonly and narrowly typed
-
----
 
 ## Error Handling
 
@@ -300,13 +264,11 @@ Always use the `@/` alias — never use relative imports that go up more than on
 
 ```typescript
 // Correct
-import { copy } from "@/content/copy";
 import { contactSchema } from "@/lib/validations";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 // Never
-import { copy } from "../../content/copy";
 import { contactSchema } from "../../../lib/validations";
 ```
 
@@ -314,8 +276,8 @@ import { contactSchema } from "../../../lib/validations";
 
 ## Comments
 
-- No comments explaining what the code does — code must be self-explanatory through naming
-- Comments only for why — explaining a non-obvious architectural decision
+- Comments should explain what the code does — code must be self-explanatory through naming
+- Comments for why — explaining a non-obvious architectural decision
 - GSAP animation components may have a brief comment explaining the scroll sequence strategy
 - Never leave TODO comments in committed code
 
@@ -335,7 +297,7 @@ Approved dependencies for this project:
 |---|---|
 | `gsap` | Scroll animations, page load sequences |
 | `@studio-freight/lenis` | Smooth scroll, required for GSAP ScrollTrigger |
-| `resend` | Contact form emails and newsletter signups |
+| `resend` | Contact form emails |
 | `react-hook-form` | Contact form state management |
 | `@hookform/resolvers` | Connects Zod schemas to React Hook Form |
 | `zod` | Schema validation — client and server |

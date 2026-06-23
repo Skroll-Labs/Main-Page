@@ -19,7 +19,7 @@ The landing page is a single long-scroll page structured across ten sections:
 - **Integrations** — payment gateways, SMS providers, email tools, CRM
 - **FAQ** — five questions covering setup, payments, branding, free trial, and failed delivery
 - **Contact** — a structured form with a dropdown for audience type, plus WhatsApp and direct call options
-- **Footer** — navigation, legal, newsletter signup, social links, and copyright
+- **Footer** — navigation, legal, social links, and copyright
 
 ---
 
@@ -104,7 +104,7 @@ The following checklist is for agents or reviewers to verify once the landing pa
 - [ ] "Who It's For" section (not Pricing) shows all four audience cards with correct copy
 - [ ] All five FAQ questions and answers are present
 - [ ] Contact section includes the form with all five fields and the correct dropdown options
-- [ ] Footer includes the TicketFlow tagline, updated navigation, newsletter signup, and copyright line
+- [ ] Footer includes the TicketFlow tagline, updated navigation, and copyright line
 
 ### CTAs & Conversion
 - [ ] "Contact Us" is the sole Hero CTA — no secondary CTA button in the Hero
@@ -119,7 +119,6 @@ The following checklist is for agents or reviewers to verify once the landing pa
 - [ ] Contact form validates required fields (Full Name, Work Email, Company / Event Name, Dropdown)
 - [ ] Message textarea is correctly marked as optional
 - [ ] Footer navigation links resolve correctly: Home | Features | How It Works | FAQ | Contact
-- [ ] Newsletter email input and submit button are present in the Footer
 - [ ] No broken images, missing icons, or unintentionally visible placeholder slots
 
 ### Trust & Credibility

@@ -10,7 +10,7 @@
 | Language | TypeScript | Type safety across the entire codebase |
 | Styling | Tailwind CSS | Utility-first styling, responsive layout |
 | Animation | GSAP + ScrollTrigger | Scroll-driven animations, section transitions |
-| Email | Resend | Contact form submission emails, newsletter signups |
+| Email | Resend | Contact form submission emails |
 | Form Handling | React Hook Form + Zod | Client-side form state and schema validation |
 | Deployment | Vercel | Hosting, edge functions, environment variables |
 
@@ -41,8 +41,6 @@ ticketflow-landing/
 │   └── api/
 │       ├── contact/
 │       │   └── route.ts         # POST handler — validates form, sends email via Resend
-│       └── newsletter/
-│           └── route.ts         # POST handler — captures footer newsletter signups via Resend
 │
 ├── components/
 │   ├── sections/
@@ -64,22 +62,18 @@ ticketflow-landing/
 │   │   ├── FeatureCard.tsx
 │   │   ├── TestimonialCard.tsx
 │   │   ├── StatCallout.tsx
-│   │   ├── FAQAccordion.tsx
-│   │   └── NewsletterInput.tsx
+│   │   └── FAQAccordion.tsx
 │   │
 │   └── layout/
 │       └── Navbar.tsx           # Sticky top nav (optional, if added)
 │
 ├── lib/
 │   ├── resend.ts                # Resend client initialisation
-│   ├── validations.ts           # Zod schemas — contact form, newsletter
+│   ├── validations.ts           # Zod schemas — contact form
 │   └── gsap.ts                  # GSAP + ScrollTrigger registration helper
 │
 ├── hooks/
 │   └── useScrollAnimation.ts    # Custom hook — wraps GSAP ScrollTrigger setup + cleanup
-│
-├── content/
-│   └── copy.ts                  # All landing page copy as typed constants (headlines, body, FAQs, etc.)
 │
 ├── public/
 │   ├── images/                  # Static images — logos, integration icons
@@ -127,16 +121,7 @@ Subject: We got your message — TicketFlow
 Body:    Thank you copy, WhatsApp link, expected response time
 ```
 
-### 4.2 Newsletter Signup (Footer)
 
-```
-User enters email → POST /api/newsletter
-  → Zod validates email format
-    → Resend adds contact to an Audience list
-    → 200 OK → "You're in!" confirmation shown inline
-```
-
-> **Note:** Resend's Audiences feature handles the mailing list. No third-party CRM needed for basic newsletter functionality.
 
 ---
 
@@ -189,7 +174,6 @@ NEXT_PUBLIC_PHONE_NUMBER=+94xxxxxxx     # Used for the Call Us Directly link
 - [ ] Resend domain verified and sending domain DNS records set up
 - [ ] `CONTACT_TO_EMAIL` points to a monitored inbox
 - [ ] Test contact form end-to-end in production before launch
-- [ ] Test newsletter signup flow end-to-end in production
 - [ ] Verify WhatsApp and Call links open correctly on mobile
 - [ ] Run Lighthouse audit — target 90+ on Performance, SEO, Accessibility
 - [ ] Confirm Open Graph image and meta tags render correctly (use opengraph.xyz to check)
@@ -202,7 +186,7 @@ NEXT_PUBLIC_PHONE_NUMBER=+94xxxxxxx     # Used for the Call Us Directly link
 - Use `next/font` to load fonts — eliminates FOUT and layout shift
 - Lazy-load GSAP and ScrollTrigger with dynamic imports if Lighthouse flags them on initial load
 - Keep all section components as **Server Components** by default — only add `"use client"` to components that use GSAP refs, form state, or browser APIs
-- The contact and newsletter API routes run on Vercel Edge Functions — keep them lightweight, no heavy imports
+- The contact API route runs on Vercel Edge Functions — keep it lightweight, no heavy imports
 - Turbopack is enabled by default in Next.js 16 — do not add a custom webpack config or it will conflict
 
 ---
@@ -285,10 +269,9 @@ npx create-next-app@latest ticketflow-landing
 | **Next.js 16 over 14/15** | Current stable (16.2.9); Turbopack default gives 2–5× faster builds; no legacy fetch caching surprises |
 | **App Router over Pages Router** | Server Components reduce JS sent to the browser; better for performance on a static marketing page |
 | **Turbopack (default, no config)** | No custom webpack plugins in this project — Turbopack just works and is dramatically faster |
-| **Resend over SendGrid / Mailgun** | Developer-friendly, generous free tier (3,000 emails/month), built-in React Email templates, and Audiences for newsletter |
+| **Resend over SendGrid / Mailgun** | Developer-friendly, generous free tier (3,000 emails/month), built-in React Email templates |
 | **GSAP over Framer Motion** | More control over scroll-linked sequences; ScrollTrigger is the industry standard for this type of landing page |
 | **Lenis over native scroll** | Smooth scroll feels more premium and pairs cleanly with GSAP ScrollTrigger |
 | **No database** | This is a marketing page — leads go to email. No persistence layer needed unless a CRM is added later |
 | **Zod on both client and server** | The API route must re-validate independently — client validation is UX, server validation is security |
-| **Single `content/copy.ts` file** | Keeps all copy in one place so future copy updates don't require digging through component files |
 | **`proxy.ts` instead of `middleware.ts`** | Required by Next.js 16 — the old `middleware.ts` export is no longer recognised |

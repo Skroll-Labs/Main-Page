@@ -191,10 +191,6 @@ TicketFlow — Built for community. Ticketing made simple, faster, and local.
 
 **Legal:** Privacy Policy | Terms of Service
 
-**Stay in the Loop:**
-Get tips on organizing better local events.
-*[Email input field + submit button]*
-
 **Social:** [Social Icons]
 
 **Copyright:**

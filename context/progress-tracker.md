@@ -17,40 +17,38 @@ Update this file after every completed feature. Any AI agent reading this should
 ### Phase 1 — Foundation
 - [ ] 01 Project Setup & Configuration
 - [ ] 02 Global Styles, Design Tokens & Fonts
-- [ ] 03 Content Layer (`content/copy.ts`)
-- [ ] 04 Layout & Navbar
 
 ### Phase 2 — Landing Page Sections
-- [ ] 05 Hero Section
-- [ ] 06 Problem Section
-- [ ] 07 How It Works Section
-- [ ] 08 Features Section
-- [ ] 09 Social Proof Section
-- [ ] 10 Who It's For Section
-- [ ] 11 Integrations Section
-- [ ] 12 FAQ Section
-- [ ] 13 Contact Section
-- [ ] 14 Footer
+- [ ] 03 Layout & Navbar
+- [ ] 04 Hero Section
+- [ ] 05 Problem Section
+- [ ] 06 How It Works Section
+- [ ] 07 Features Section
+- [ ] 08 Social Proof Section
+- [ ] 09 Who It's For Section
+- [ ] 10 Integrations Section
+- [ ] 11 FAQ Section
+- [ ] 12 Contact Section
+- [ ] 13 Footer
 
 ### Phase 3 — Animations
-- [ ] 15 GSAP + Lenis Setup
-- [ ] 16 Hero Animations
-- [ ] 17 Scroll-Triggered Section Animations
-- [ ] 18 FAQ Accordion Animation
-- [ ] 19 Stat Counter Animation
+- [ ] 14 GSAP + Lenis Setup
+- [ ] 15 Hero Animations
+- [ ] 16 Scroll-Triggered Section Animations
+- [ ] 17 FAQ Accordion Animation
+- [ ] 18 Stat Counter Animation
 
 ### Phase 4 — Forms & Email
-- [ ] 20 Contact Form — Validation (React Hook Form + Zod)
-- [ ] 21 Contact Form — API Route & Resend Integration
-- [ ] 22 Newsletter Signup — API Route & Resend Audiences
-- [ ] 23 Form Success & Error States
+- [ ] 19 Contact Form — Validation (React Hook Form + Zod)
+- [ ] 20 Contact Form — API Route & Resend Integration
+- [ ] 21 Form Success & Error States
 
 ### Phase 5 — Polish & Launch
-- [ ] 24 SEO & Metadata (Open Graph, Twitter Card)
-- [ ] 25 Responsive QA (Mobile, Tablet, Desktop)
-- [ ] 26 Lighthouse Audit & Performance Pass
-- [ ] 27 Vercel Deployment & Environment Variables
-- [ ] 28 End-to-End Form Testing in Production
+- [ ] 22 SEO & Metadata (Open Graph, Twitter Card)
+- [ ] 23 Responsive QA (Mobile, Tablet, Desktop)
+- [ ] 24 Lighthouse Audit & Performance Pass
+- [ ] 25 Vercel Deployment & Environment Variables
+- [ ] 26 End-to-End Form Testing in Production
 
 ---
 
