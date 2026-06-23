@@ -26,7 +26,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative pt-48 pb-40 px-margin-desktop w-full overflow-hidden flex items-center justify-center min-h-screen"
+      className="relative pt-48 pb-40 px-margin-mobile md:px-margin-desktop w-full overflow-hidden flex items-center justify-center min-h-screen"
     >
       <WebGLHeroBackground />
 
@@ -37,7 +37,7 @@ export function Hero() {
           Skip the Headaches.
         </h1>
         
-        <p className="hero-fade-up opacity-0 font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto">
+        <p className="hero-fade-up opacity-0 font-body-lg text-base md:text-body-lg text-text-secondary max-w-2xl mx-auto">
           The all-in-one ticketing platform built for event organizers — handle payments, ticket delivery, and check-ins without lifting a finger.
         </p>
 

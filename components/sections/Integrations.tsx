@@ -25,8 +25,8 @@ export function Integrations() {
 
   return (
     <section ref={ref} className="py-section-gap border-y border-glass-border overflow-hidden bg-surface-bright">
-      <div className="integration-header text-center mb-10 px-margin-desktop opacity-0">
-        <h3 className="font-headline-md text-headline-md text-on-background mb-4">Works With the Tools You Already Use</h3>
+      <div className="integration-header text-center mb-10 px-margin-mobile md:px-margin-desktop opacity-0">
+        <h3 className="font-headline-md text-2xl md:text-headline-md text-on-background mb-4">Works With the Tools You Already Use</h3>
         <p className="font-body-md text-body-md text-text-secondary max-w-2xl mx-auto">Connect your favorite payment gateways, SMS providers, and email tools — no complicated setup required.</p>
       </div>
 
@@ -34,12 +34,12 @@ export function Integrations() {
         <div className="marquee-content flex w-max flex-nowrap gap-16 items-center px-8 opacity-60">
           {[...Array(4)].map((_, i) => (
             <React.Fragment key={i}>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">Stripe</span>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">PayPal</span>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">Mailchimp</span>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">Salesforce</span>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">Twilio</span>
-              <span className="font-headline-md text-headline-md text-on-background font-bold flex-shrink-0">Zapier</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">Stripe</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">PayPal</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">Mailchimp</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">Salesforce</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">Twilio</span>
+              <span className="font-headline-md text-2xl md:text-headline-md text-on-background font-bold flex-shrink-0">Zapier</span>
             </React.Fragment>
           ))}
         </div>

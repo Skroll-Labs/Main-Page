@@ -5,7 +5,7 @@
 | Property         | Correct class |
 | ---------------- | ------------- |
 | Section padding  | `py-section-gap` |
-| Container max    | `max-w-container-max mx-auto px-margin-desktop` |
+| Container max    | `max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop` |
 | Card background  | `bg-surface` or `bg-background` depending on section background |
 | Card border      | `border border-glass-border` (if needed) |
 | Card radius      | `rounded-3xl` |

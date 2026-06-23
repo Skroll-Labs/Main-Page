@@ -42,7 +42,7 @@ export function SocialProof() {
 
   return (
     <section ref={ref} className="py-section-gap bg-surface-bright border-y border-glass-border">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <SectionHeading title="Event Organizers Trust Us to Get It Right" />
 
         <div className="social-proof-grid grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -81,15 +81,15 @@ export function SocialProof() {
 
         <div className="stats-grid grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="stat-item opacity-0">
-            <h4 className="font-display-lg text-display-lg-mobile text-brand-coral mb-2">10,000+</h4>
+            <h4 className="font-display-lg text-display-lg-mobile md:text-display-lg text-brand-coral mb-2">10,000+</h4>
             <p className="font-body-md text-body-md text-text-secondary uppercase tracking-wider">Events Powered</p>
           </div>
           <div className="stat-item opacity-0">
-            <h4 className="font-display-lg text-display-lg-mobile text-brand-coral mb-2">1M+</h4>
+            <h4 className="font-display-lg text-display-lg-mobile md:text-display-lg text-brand-coral mb-2">1M+</h4>
             <p className="font-body-md text-body-md text-text-secondary uppercase tracking-wider">Tickets Delivered</p>
           </div>
           <div className="stat-item opacity-0">
-            <h4 className="font-display-lg text-display-lg-mobile text-brand-coral mb-2">99.9%</h4>
+            <h4 className="font-display-lg text-display-lg-mobile md:text-display-lg text-brand-coral mb-2">99.9%</h4>
             <p className="font-body-md text-body-md text-text-secondary uppercase tracking-wider">Delivery Uptime</p>
           </div>
         </div>

@@ -25,7 +25,7 @@ export function HowItWorks() {
 
   return (
     <section id="how-it-works" ref={ref} className="w-full py-section-gap bg-surface">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       <SectionHeading title="From Setup to Sold Out — In Four Simple Steps" />
 
       <div className="steps-grid grid grid-cols-1 md:grid-cols-4 gap-8 relative">
@@ -57,7 +57,7 @@ export function HowItWorks() {
             <div className="w-24 h-24 bg-brand-coral text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold relative z-10 border-8 border-surface">
               {item.step}
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-3 text-xl">{item.title}</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-3">{item.title}</h3>
             <p className="font-body-md text-body-md text-text-secondary">{item.description}</p>
           </div>
         ))}

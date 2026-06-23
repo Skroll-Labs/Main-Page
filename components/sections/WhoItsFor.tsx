@@ -25,7 +25,7 @@ export function WhoItsFor() {
 
   return (
     <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-surface">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       <SectionHeading 
         title="Built for Teams That Move Fast"
       />
@@ -49,7 +49,7 @@ export function WhoItsFor() {
           },
         ].map((item, idx) => (
           <div key={idx} className={`audience-card opacity-0 p-8 rounded-3xl cursor-hover transition-all duration-300 hover:-translate-y-2 hover:shadow-hover-card bg-background border border-glass-border`}>
-            <h3 className={`font-headline-md text-headline-md mb-4  text-on-background`}>{item.title}</h3>
+            <h3 className={`font-headline-md text-xl md:text-headline-md mb-4  text-on-background`}>{item.title}</h3>
             <p className={`font-body-md text-body-md text-text-secondary`}>{item.description}</p>
           </div>
         ))}

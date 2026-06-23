@@ -5,8 +5,8 @@ import { Link as LinkIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-on-background dark:bg-black w-full py-section-gap border-t border-white/5 pb-8">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+    <footer className="bg-on-background dark:bg-black w-full py-section-gap border-t border-white/5 pb-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div>
           <Image
             alt="TicketFlow"
@@ -16,7 +16,7 @@ export function Footer() {
             height={32}
           />
           <p className="font-body-md text-body-md text-surface-variant/70 mb-8">Modern event ticketing designed for growth and simplicity.</p>
-          <p className="font-body-md text-body-md text-surface-variant/70 text-sm">© {new Date().getFullYear()} TicketFlow. All rights reserved.</p>
+          {/*<p className="font-body-md text-body-md text-surface-variant/70 text-sm">© {new Date().getFullYear()} TicketFlow. All rights reserved.</p>*/}
         </div>
 
         <div className="flex flex-col gap-4">
@@ -36,12 +36,14 @@ export function Footer() {
           <h4 className="font-button-text text-button-text text-white">Legal</h4>
           <Link href="#" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">Privacy Policy</Link>
           <Link href="#" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">Terms of Service</Link>
-          <div className="flex gap-4 mt-4">
-            <a href="#" className="text-surface-variant/70 hover:text-white cursor-hover"><LinkIcon className="w-5 h-5" /></a>
-            <a href="#" className="text-surface-variant/70 hover:text-white cursor-hover"><LinkIcon className="w-5 h-5" /></a>
-          </div>
+          {/*<div className="flex gap-4 mt-4">*/}
+          {/*  <a href="#" className="text-surface-variant/70 hover:text-white cursor-hover"><LinkIcon className="w-5 h-5" /></a>*/}
+          {/*  <a href="#" className="text-surface-variant/70 hover:text-white cursor-hover"><LinkIcon className="w-5 h-5" /></a>*/}
+          {/*</div>*/}
         </div>
       </div>
+          <p className="font-body-md text-center text-body-md text-surface-variant/70 text-sm">© {new Date().getFullYear()} TicketFlow. All rights reserved.</p>
+
     </footer>
   );
 }

@@ -32,7 +32,7 @@ export function Problem() {
       </div>
 
       <section ref={ref} className="w-full py-section-gap bg-surface-bright">
-        <div className="max-w-container-max mx-auto px-margin-desktop">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <SectionHeading
           title="Still Managing Tickets the Hard Way?"
           subtitle="Spreadsheets. Manual emails. Payment reconciliation nightmares. If you're spending more time managing logistics than your actual event, something's broken."
@@ -43,7 +43,7 @@ export function Problem() {
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <FileSpreadsheet className="w-5 h-5 text-error" />
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-2">Manually tracking</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Manually tracking</h3>
             <p className="font-body-md text-body-md text-text-secondary">Manually tracking ticket sales across spreadsheets.</p>
           </div>
 
@@ -51,7 +51,7 @@ export function Problem() {
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <Clock className="w-5 h-5 text-error" />
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-2">Delays in sending</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Delays in sending</h3>
             <p className="font-body-md text-body-md text-text-secondary">Delays in sending QR codes and ticket PDFs to buyers.</p>
           </div>
 
@@ -59,7 +59,7 @@ export function Problem() {
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <CreditCard className="w-5 h-5 text-error" />
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-2">Payment issues</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Payment issues</h3>
             <p className="font-body-md text-body-md text-text-secondary">Payment gateway issues slowing down checkout.</p>
           </div>
 
@@ -67,13 +67,13 @@ export function Problem() {
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <EyeOff className="w-5 h-5 text-error" />
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-2">No visibility</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">No visibility</h3>
             <p className="font-body-md text-body-md text-text-secondary">No real-time visibility into how your event is selling.</p>
           </div>
         </div>
 
         <div className="text-center">
-          <p className="problem-card opacity-0 font-headline-md text-headline-md text-on-background">
+          <p className="problem-card opacity-0 font-headline-md text-xl md:text-headline-md text-on-background">
             There's a faster, simpler way to run ticketing — and it's built for teams like yours.
           </p>
         </div>

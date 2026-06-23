@@ -26,7 +26,7 @@ export function Features() {
 
   return (
     <section id="features" ref={ref} className="w-full py-section-gap bg-background">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       <SectionHeading 
         title="Everything You Need to Run Ticketing Like a Pro" 
         subtitle="Tools designed for people, not programmers"
@@ -74,7 +74,7 @@ export function Features() {
               {feature.icon === "palette" && <Palette className="w-6 h-6 text-brand-coral" />}
               {feature.icon === "rocket_launch" && <Rocket className="w-6 h-6 text-brand-coral" />}
             </div>
-            <h3 className="font-headline-md text-headline-md text-on-background mb-3">{feature.title}</h3>
+            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-3">{feature.title}</h3>
             <p className="font-body-md text-body-md text-text-secondary">{feature.description}</p>
           </div>
         ))}

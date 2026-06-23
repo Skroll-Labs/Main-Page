@@ -46,7 +46,7 @@ export function Contact() {
         <WebGLShaderBackground />
       </div>
 
-      <div className="relative z-10 text-center px-margin-desktop max-w-container-max mx-auto fade-up visible">
+      <div className="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-up visible">
         <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Ready to Simplify Your Ticketing?</h2>
         <p className="font-body-lg text-body-lg text-white/70 max-w-2xl mx-auto mb-10">
           Join the event organizers who've ditched spreadsheets for a platform that just works.
@@ -58,7 +58,7 @@ export function Contact() {
               <div className="w-16 h-16 bg-brand-coral rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-headline-md text-headline-md text-white mb-4">Message Sent!</h3>
+              <h3 className="font-headline-md text-2xl md:text-headline-md text-white mb-4">Message Sent!</h3>
               <p className="font-body-md text-body-md text-white/70">
                 We've received your inquiry and will be in touch shortly.
               </p>
