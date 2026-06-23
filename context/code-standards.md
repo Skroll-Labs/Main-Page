@@ -47,6 +47,7 @@ The AI agent on this project operates as a senior engineer. This means:
 - Business logic (Resend calls, validation) lives in `lib/` — route handlers only orchestrate
 - `proxy.ts` is used instead of `middleware.ts` — this is a Next.js 16 requirement
 - Always await `headers()`, `cookies()`, and `params` — they are async-only in Next.js 16
+- Always use `<Image>` from `next/image` for rendering images. Never use raw HTML `<img>` tags. Use the `unoptimized` prop for arbitrary remote URLs unless explicitly whitelisted in `next.config.ts`.
 
 ---
 

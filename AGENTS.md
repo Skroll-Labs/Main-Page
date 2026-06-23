@@ -20,6 +20,7 @@ Read in this exact order before any implementation:
 
 - Never use hardcoded hex values or raw Tailwind color classes
 - Update `progress-tracker.md` and `ui-registry.md` after every feature
+- Use `lucide-react` for all icons. Do not create custom icon SVGs or use external icon fonts (like Google Material Symbols). Use relevant icons for buttons and card items.
 - If the same problem persists after one corrective prompt —
   stop immediately and run /recover
 
@@ -31,3 +32,5 @@ Read in this exact order before any implementation:
 - `/recover` — when something breaks after one failed correction.
 - `/remember save` — when a feature spans multiple sessions.
 - `/remember restore` — when returning after a multi-session feature.
+
+- Use other available skills when necessary 

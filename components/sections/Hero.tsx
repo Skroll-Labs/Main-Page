@@ -1,0 +1,59 @@
+"use client";
+
+import { WebGLHeroBackground } from "@/components/ui/WebGLHeroBackground";
+import { Button } from "@/components/ui/Button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { gsap } from "@/lib/gsap";
+
+export function Hero() {
+  const ref = useScrollAnimation(() => {
+    // Page load animations
+    gsap.fromTo(
+      ".hero-headline",
+      { clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" },
+      { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1, ease: "power3.out", delay: 0.1 }
+    );
+
+    gsap.fromTo(
+      ".hero-fade-up",
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power3.out", delay: 0.3 }
+    );
+  });
+
+  return (
+    <section
+      ref={ref}
+      className="relative pt-48 pb-40 px-margin-desktop w-full overflow-hidden flex items-center justify-center min-h-screen"
+    >
+      <WebGLHeroBackground />
+
+      <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10 flex flex-col items-center">
+        <h1 className="hero-headline font-display-lg text-display-lg-mobile md:text-display-lg text-on-background tracking-tighter [clip-path:polygon(0_100%,100%_100%,100%_100%,0_100%)]">
+          Sell Tickets.<br />
+          <span className="brand-coral">Send QR Codes.</span><br />
+          Skip the Headaches.
+        </h1>
+        
+        <p className="hero-fade-up opacity-0 font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto">
+          The all-in-one ticketing platform built for event organizers — handle payments, ticket delivery, and check-ins without lifting a finger.
+        </p>
+
+        <div className="hero-fade-up opacity-0 flex flex-wrap items-center justify-center gap-6">
+          <Link href="#contact">
+            <Button variant="primary">
+              Contact Us
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
+        </div>
+
+        <p className="hero-fade-up opacity-0 font-label-lg text-label-lg text-text-secondary uppercase tracking-widest mt-12">
+          Trusted by event organizers, ops teams, and marketing leads across Tech/Europe
+        </p>
+      </div>
+    </section>
+  );
+}
