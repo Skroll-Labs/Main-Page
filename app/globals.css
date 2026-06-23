@@ -52,6 +52,9 @@
   --color-on-error: #ffffff;
   --color-error-container: #ffdad6;
 
+  --shadow-hover-button: 0 10px 40px rgba(232,82,26,0.4);
+  --shadow-hover-card: 0 20px 40px rgba(0,0,0,0.04);
+
   --spacing-section-gap: clamp(120px, 12vw, 160px);
   --spacing-gutter: 32px;
   --spacing-margin-mobile: 24px;

@@ -11,8 +11,8 @@ export function Footer() {
           <Image
             alt="TicketFlow"
             className="h-8 w-auto mb-6"
-            src="/logo.png"
-            width={120}
+            src="/logo.svg"
+            width={160}
             height={32}
           />
           <p className="font-body-md text-body-md text-surface-variant/70 mb-8">Modern event ticketing designed for growth and simplicity.</p>

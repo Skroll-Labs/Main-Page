@@ -1,32 +1,30 @@
-# Memory — Landing Page Build (Phase 1-5)
+# Memory — Landing Page Build (Polish & Bug Fixes)
 
 Last updated: 2026-06-23
 
 ## What was built
-- Set up Next.js 16 App Router application with `gsap`, `@studio-freight/lenis`, `react-hook-form`, `zod`, `resend`, and `three.js`.
-- Configured Tailwind v4 `@theme` in `globals.css` using the exact design tokens (colors, fonts, spacing) extracted from the `code.html` file.
-- Built all UI sections corresponding to `project-overview.md` spec: `Hero`, `Problem`, `HowItWorks`, `Features`, `SocialProof`, `WhoItsFor`, `Integrations`, `FAQ`, `Contact`, `Navbar`, and `Footer`.
-- Integrated native `three.js` particle background inside the Hero section and a custom WebGL fragment shader for the Contact section.
-- Built `MagneticCursor` and `SmoothScroll` components handling custom red dot interactions and Lenis scroll respectively.
-- Established Next.js API route `app/api/contact/route.ts` utilizing Zod for validation and Resend for transactional email dispatch.
+- Replaced remote Google URL image assets with a local `public/logo.svg` vector graphic to fix Next.js 404 image optimization errors on the Navbar and Footer.
+- Fixed the `Integrations` marquee animation from breaking/wrapping by assigning `w-max`, `flex-shrink-0`, and correctly duplicating the array items to ensure infinite horizontal scrolling.
+- Resolved a runtime `ReferenceError` crash by importing React for `React.Fragment`.
+- Executed `/imprint audit` and established a unified design baseline in `ui-registry.md`.
+- Refactored `Problem.tsx`, `Features.tsx`, `WhoItsFor.tsx`, `FAQ.tsx`, and `Integrations.tsx` to strictly adhere to the UI registry (enforcing `rounded-3xl` cards, `py-section-gap` padding, and custom CSS shadow variables).
 
 ## Decisions made
-- We opted to build the `Who It's For` section using a 4-card grid matching the visual style of the `code.html` pricing tiers.
-- Form validation leverages `react-hook-form` with `zod` schema to ensure type safety between the client and API route.
-- Used custom WebGL/Three.js instead of generic CSS backgrounds to maintain the premium interactive aesthetic described in the project architecture.
+- Chose to use `logo.svg` over `logo.png` to bypass Next.js `sharp` image processor entirely, eliminating potential server-side parsing bugs.
+- Moved complex hover shadows to CSS variables (`--shadow-hover-button`, `--shadow-hover-card`) in `globals.css` to eliminate hardcoded Tailwind arbitrary values across components.
 
 ## Problems solved
-- Solved strict type checking issues with `canvas` and `WebGLRenderingContext` to ensure the Next.js production build (`npm run build`) successfully compiles without TypeScript errors.
-- Handled the Zod `enum` type issue by supplying `message` property inline.
+- Solved the disappearing logo bug caused by Turbopack failing to immediately index newly downloaded static assets.
+- Fixed the "dropping" marquee bug by explicitly overriding flex container shrink behavior and extending the total width past 100vw.
+- Resolved styling inconsistencies across multiple sessions.
 
 ## Current state
-- The landing page is 100% feature complete, fully animated, responsive, and compiles successfully in production.
-- The `ui-registry.md`, `progress-tracker.md`, and `walkthrough.md` have all been successfully populated.
-- Form logic successfully connects to the backend API route with mock delivery working. 
+- The landing page is 100% feature complete, fully animated, responsive, visually consistent, and free of runtime errors.
+- `ui-registry.md` is initialized and populated with the correct design baseline.
 
 ## Next session starts with
-- Add `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_PHONE_NUMBER`, and `RESEND_API_KEY` to the local `.env.local` file to fully un-mock the contact form.
-- Run `npm run dev` to view the finalized application.
+- Add `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_PHONE_NUMBER`, and `RESEND_API_KEY` to `.env.local` to fully un-mock the contact form.
+- Run `npm run dev` to view the finalized, fully polished application.
 
 ## Open questions
 - None at this time.

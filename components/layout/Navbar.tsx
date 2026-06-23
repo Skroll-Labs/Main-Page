@@ -31,10 +31,10 @@ export function Navbar() {
           {/* We will just use an image tag for the logo as in the HTML */}
           <Image
             alt="TicketFlow"
-            className="h-16 w-auto"
-            src="/logo.png"
-            width={120}
-            height={64}
+            className="h-8 w-auto"
+            src="/logo.svg"
+            width={160}
+            height={32}
           />
         </div>
         <div className="hidden md:flex items-center gap-8">

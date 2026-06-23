@@ -31,7 +31,7 @@ export function Problem() {
         <div id="divider1" className="absolute top-0 left-0 h-full bg-brand-coral w-full transform -translate-x-full transition-transform duration-1000"></div>
       </div>
 
-      <section ref={ref} className="w-full py-16 bg-surface-bright">
+      <section ref={ref} className="w-full py-section-gap bg-surface-bright">
         <div className="max-w-container-max mx-auto px-margin-desktop">
         <SectionHeading
           title="Still Managing Tickets the Hard Way?"
@@ -39,7 +39,7 @@ export function Problem() {
         />
 
         <div className="problem-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-[24px] shadow-sm cursor-hover">
+          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <FileSpreadsheet className="w-5 h-5 text-error" />
             </div>
@@ -47,7 +47,7 @@ export function Problem() {
             <p className="font-body-md text-body-md text-text-secondary">Manually tracking ticket sales across spreadsheets.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-[24px] shadow-sm cursor-hover">
+          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <Clock className="w-5 h-5 text-error" />
             </div>
@@ -55,7 +55,7 @@ export function Problem() {
             <p className="font-body-md text-body-md text-text-secondary">Delays in sending QR codes and ticket PDFs to buyers.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-[24px] shadow-sm cursor-hover">
+          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <CreditCard className="w-5 h-5 text-error" />
             </div>
@@ -63,7 +63,7 @@ export function Problem() {
             <p className="font-body-md text-body-md text-text-secondary">Payment gateway issues slowing down checkout.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-[24px] shadow-sm cursor-hover">
+          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
             <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
               <EyeOff className="w-5 h-5 text-error" />
             </div>

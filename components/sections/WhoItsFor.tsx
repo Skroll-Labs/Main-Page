@@ -48,7 +48,7 @@ export function WhoItsFor() {
             description: "Scale your ticketing operations with custom integrations and dedicated support.",
           },
         ].map((item, idx) => (
-          <div key={idx} className={`audience-card opacity-0 p-8 rounded-[24px] cursor-hover transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] bg-background border border-glass-border`}>
+          <div key={idx} className={`audience-card opacity-0 p-8 rounded-3xl cursor-hover transition-all duration-300 hover:-translate-y-2 hover:shadow-hover-card bg-background border border-glass-border`}>
             <h3 className={`font-headline-md text-headline-md mb-4  text-on-background`}>{item.title}</h3>
             <p className={`font-body-md text-body-md text-text-secondary`}>{item.description}</p>
           </div>

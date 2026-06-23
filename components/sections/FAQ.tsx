@@ -54,7 +54,7 @@ export function FAQ() {
 
       <div className="faq-list space-y-4">
         {faqs.map((faq, idx) => (
-          <details key={idx} className="faq-item opacity-0 group bg-surface rounded-2xl border border-glass-border [&_summary::-webkit-details-marker]:hidden">
+          <details key={idx} className="faq-item opacity-0 group bg-surface rounded-3xl border border-glass-border [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex items-center justify-between p-6 cursor-pointer font-button-text text-button-text text-on-background outline-none">
               <span>{faq.q}</span>
               <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />

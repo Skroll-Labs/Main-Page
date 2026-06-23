@@ -6,9 +6,9 @@ Update this file after every completed feature. Any AI agent reading this should
 
 ## Current Status
 
-**Phase:** Phase 1 — Foundation
-**Last completed:** —
-**Next:** 01 Project Setup & Configuration
+**Phase:** Phase 5 — Polish & Launch
+**Last completed:** 24 Lighthouse Audit & Performance Pass (UI Consistency Audit & Bug Fixes)
+**Next:** 25 Vercel Deployment & Environment Variables
 
 ---
 
@@ -54,10 +54,15 @@ Update this file after every completed feature. Any AI agent reading this should
 
 ## Decisions Made During Build
 
-*(Add architectural decisions here as they are made during the build.)*
+- Used `useScrollAnimation` hook across all sections for consistent GSAP timeline management.
+- WebGL/Three.js used for hero/contact backgrounds instead of generic CSS patterns.
+- Form validation uses `react-hook-form` + `zod` for type-safety across client and API route.
+- `/imprint audit` executed to establish `ui-registry.md`. Replaced hardcoded Tailwind arbitrary values with native CSS variables for shadows and unified card radii to `rounded-3xl`.
 
 ---
 
 ## Notes
 
-*(Add build-time notes, gotchas, and workarounds here as they are discovered.)*
+- Required `.env.local` variables for Contact form: `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_PHONE_NUMBER`, `RESEND_API_KEY`.
+- SVG logo used over PNG to avoid Next.js `sharp` image optimization caching bugs.
+- Infinite marquee in `Integrations` requires explicit `w-max` and `flex-shrink-0` to avoid flex container collapsing.

@@ -65,7 +65,7 @@ export function Features() {
             description: "From a 50-person meetup to a 50,000-person festival — one platform handles it all.",
           },
         ].map((feature, idx) => (
-          <div key={idx} className="feature-card opacity-0 bg-surface p-8 rounded-[24px] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300 cursor-hover">
+          <div key={idx} className="feature-card opacity-0 bg-surface p-8 rounded-3xl hover:-translate-y-2 hover:shadow-hover-card transition-all duration-300 cursor-hover">
             <div className="w-12 h-12 bg-brand-coral/10 rounded-full flex items-center justify-center mb-6">
               {feature.icon === "send" && <Send className="w-6 h-6 text-brand-coral" />}
               {feature.icon === "lock" && <Lock className="w-6 h-6 text-brand-coral" />}
