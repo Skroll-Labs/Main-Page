@@ -19,7 +19,18 @@ export function Problem() {
     gsap.fromTo(
       ".problem-card",
       { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", delay: 0.3 }
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 0.8, 
+        stagger: 0.15, 
+        ease: "power3.out", 
+        delay: 0.3,
+        scrollTrigger: {
+          trigger: ".problem-grid",
+          start: "top 80%"
+        }
+      }
     );
   });
 
