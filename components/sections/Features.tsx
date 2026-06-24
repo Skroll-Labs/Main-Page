@@ -65,17 +65,20 @@ export function Features() {
             description: "From a 50-person meetup to a 50,000-person festival — one platform handles it all.",
           },
         ].map((feature, idx) => (
-          <div key={idx} className="feature-card opacity-0 bg-surface p-8 rounded-3xl hover:-translate-y-2 hover:shadow-hover-card transition-all duration-300 cursor-hover">
-            <div className="w-12 h-12 bg-brand-coral/10 rounded-full flex items-center justify-center mb-6">
-              {feature.icon === "send" && <Send className="w-6 h-6 text-brand-coral" />}
-              {feature.icon === "lock" && <Lock className="w-6 h-6 text-brand-coral" />}
-              {feature.icon === "insights" && <LineChart className="w-6 h-6 text-brand-coral" />}
-              {feature.icon === "mark_email_read" && <MailCheck className="w-6 h-6 text-brand-coral" />}
-              {feature.icon === "palette" && <Palette className="w-6 h-6 text-brand-coral" />}
-              {feature.icon === "rocket_launch" && <Rocket className="w-6 h-6 text-brand-coral" />}
+          <div key={idx} className="feature-card relative opacity-0 bg-surface p-8 rounded-3xl hover:-translate-y-2 hover:shadow-hover-card transition-all duration-300 cursor-hover group overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <div className="w-12 h-12 bg-gradient-to-br from-brand-coral/10 to-brand-coral/20 border border-brand-coral/10 rounded-full flex items-center justify-center mb-6 shadow-sm">
+                {feature.icon === "send" && <Send className="w-6 h-6 text-brand-coral" />}
+                {feature.icon === "lock" && <Lock className="w-6 h-6 text-brand-coral" />}
+                {feature.icon === "insights" && <LineChart className="w-6 h-6 text-brand-coral" />}
+                {feature.icon === "mark_email_read" && <MailCheck className="w-6 h-6 text-brand-coral" />}
+                {feature.icon === "palette" && <Palette className="w-6 h-6 text-brand-coral" />}
+                {feature.icon === "rocket_launch" && <Rocket className="w-6 h-6 text-brand-coral" />}
+              </div>
+              <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-3">{feature.title}</h3>
+              <p className="font-body-md text-body-md text-text-secondary">{feature.description}</p>
             </div>
-            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-3">{feature.title}</h3>
-            <p className="font-body-md text-body-md text-text-secondary">{feature.description}</p>
           </div>
         ))}
       </div>

@@ -29,6 +29,9 @@ export function Hero() {
       className="relative pt-48 pb-40 px-margin-mobile md:px-margin-desktop w-full overflow-hidden flex items-center justify-center min-h-screen"
     >
       <WebGLHeroBackground />
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-ambient-glow rounded-full mix-blend-screen opacity-70"></div>
+      </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10 flex flex-col items-center">
         <h1 className="hero-headline font-display-lg text-display-lg-mobile md:text-display-lg text-on-background tracking-tighter [clip-path:polygon(0_100%,100%_100%,100%_100%,0_100%)]">

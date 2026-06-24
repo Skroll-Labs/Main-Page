@@ -53,8 +53,8 @@ export function HowItWorks() {
             description: "Monitor sales in real time and check attendees in seamlessly at the door.",
           },
         ].map((item) => (
-          <div key={item.step} className="step-card opacity-0 relative text-center cursor-hover">
-            <div className="w-24 h-24 bg-brand-coral text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold relative z-10 border-8 border-surface">
+          <div key={item.step} className="step-card opacity-0 relative text-center cursor-hover group">
+            <div className="w-24 h-24 bg-gradient-to-br from-brand-coral to-[#ff7e54] text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold relative z-10 border-8 border-surface shadow-sm group-hover:scale-105 group-hover:shadow-hover-button transition-all duration-300">
               {item.step}
             </div>
             <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-3">{item.title}</h3>

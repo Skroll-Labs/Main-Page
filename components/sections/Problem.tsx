@@ -39,36 +39,48 @@ export function Problem() {
         />
 
         <div className="problem-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
-            <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
-              <FileSpreadsheet className="w-5 h-5 text-error" />
+          <div className="problem-card relative opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <div className="w-10 h-10 bg-gradient-to-br from-error/10 to-error/20 border border-error/10 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                <FileSpreadsheet className="w-5 h-5 text-error" />
+              </div>
+              <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Manually tracking</h3>
+              <p className="font-body-md text-body-md text-text-secondary">Manually tracking ticket sales across spreadsheets.</p>
             </div>
-            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Manually tracking</h3>
-            <p className="font-body-md text-body-md text-text-secondary">Manually tracking ticket sales across spreadsheets.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
-            <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
-              <Clock className="w-5 h-5 text-error" />
+          <div className="problem-card relative opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <div className="w-10 h-10 bg-gradient-to-br from-error/10 to-error/20 border border-error/10 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                <Clock className="w-5 h-5 text-error" />
+              </div>
+              <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Delays in sending</h3>
+              <p className="font-body-md text-body-md text-text-secondary">Delays in sending QR codes and ticket PDFs to buyers.</p>
             </div>
-            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Delays in sending</h3>
-            <p className="font-body-md text-body-md text-text-secondary">Delays in sending QR codes and ticket PDFs to buyers.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
-            <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
-              <CreditCard className="w-5 h-5 text-error" />
+          <div className="problem-card relative opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <div className="w-10 h-10 bg-gradient-to-br from-error/10 to-error/20 border border-error/10 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                <CreditCard className="w-5 h-5 text-error" />
+              </div>
+              <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Payment issues</h3>
+              <p className="font-body-md text-body-md text-text-secondary">Payment gateway issues slowing down checkout.</p>
             </div>
-            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">Payment issues</h3>
-            <p className="font-body-md text-body-md text-text-secondary">Payment gateway issues slowing down checkout.</p>
           </div>
 
-          <div className="problem-card opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover">
-            <div className="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center mb-4">
-              <EyeOff className="w-5 h-5 text-error" />
+          <div className="problem-card relative opacity-0 bg-surface p-8 rounded-3xl shadow-sm cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <div className="w-10 h-10 bg-gradient-to-br from-error/10 to-error/20 border border-error/10 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                <EyeOff className="w-5 h-5 text-error" />
+              </div>
+              <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">No visibility</h3>
+              <p className="font-body-md text-body-md text-text-secondary">No real-time visibility into how your event is selling.</p>
             </div>
-            <h3 className="font-headline-md text-xl md:text-headline-md text-on-background mb-2">No visibility</h3>
-            <p className="font-body-md text-body-md text-text-secondary">No real-time visibility into how your event is selling.</p>
           </div>
         </div>
 
