@@ -14,10 +14,9 @@ export function FAQ() {
       { 
         opacity: 1, 
         y: 0, 
-        duration: 0.6, 
+        duration: 0.5, 
         stagger: 0.1, 
         ease: "power2.out", 
-        delay: 0.2,
         scrollTrigger: {
           trigger: ".faq-list",
           start: "top 85%"

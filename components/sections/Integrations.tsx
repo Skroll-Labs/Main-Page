@@ -13,11 +13,11 @@ export function Integrations() {
       { 
         opacity: 1, 
         y: 0, 
-        duration: 0.8, 
+        duration: 0.5, 
         ease: "power3.out",
         scrollTrigger: {
           trigger: ref.current,
-          start: "top 80%"
+          start: "top 90%"
         }
       }
     );
@@ -27,13 +27,12 @@ export function Integrations() {
       { 
         opacity: 1, 
         scale: 1, 
-        duration: 0.5, 
-        stagger: 0.1, 
+        duration: 0.4, 
+        stagger: 0.05, 
         ease: "back.out(1.5)", 
-        delay: 0.2,
         scrollTrigger: {
           trigger: ".integration-grid",
-          start: "top 85%"
+          start: "top 90%"
         }
       }
     );

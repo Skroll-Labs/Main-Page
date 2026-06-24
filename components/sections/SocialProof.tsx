@@ -14,12 +14,12 @@ export function SocialProof() {
       {
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.5,
         stagger: 0.1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".social-proof-grid",
-          start: "top 80%",
+          start: "top 90%",
         },
       }
     );
@@ -30,12 +30,12 @@ export function SocialProof() {
       {
         opacity: 1,
         scale: 1,
-        duration: 0.6,
-        stagger: 0.2,
+        duration: 0.5,
+        stagger: 0.1,
         ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: ".stats-grid",
-          start: "top 80%",
+          start: "top 90%",
         },
       }
     );

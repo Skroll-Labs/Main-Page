@@ -9,16 +9,16 @@ export function HowItWorks() {
   const ref = useScrollAnimation(() => {
     gsap.fromTo(
       ".step-card",
-      { opacity: 0, y: 30 },
+      { opacity: 0, x: -30 },
       {
         opacity: 1,
-        y: 0,
-        duration: 0.8,
+        x: 0,
+        duration: 0.5,
         stagger: 0.1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".steps-grid",
-          start: "top 80%",
+          start: "top 90%",
         },
       }
     );

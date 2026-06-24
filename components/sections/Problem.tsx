@@ -22,13 +22,12 @@ export function Problem() {
       { 
         opacity: 1, 
         y: 0, 
-        duration: 0.8, 
-        stagger: 0.15, 
+        duration: 0.5, 
+        stagger: 0.1, 
         ease: "power3.out", 
-        delay: 0.3,
         scrollTrigger: {
           trigger: ".problem-grid",
-          start: "top 80%"
+          start: "top 90%"
         }
       }
     );
