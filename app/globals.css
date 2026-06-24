@@ -2,6 +2,7 @@
 
 @theme {
   --color-brand-coral: #E8521A;
+  --color-section-dark: #0A0A0A;
   --color-inverse-primary: #ffb59e;
   --color-outline-variant: #e3bfb4;
   --color-primary-fixed-dim: #ffb59e;
@@ -161,6 +162,8 @@ body {
 .bg-brand-coral {
   background-color: var(--color-brand-coral);
 }
+
+
 
 .marquee-container {
   overflow: hidden;

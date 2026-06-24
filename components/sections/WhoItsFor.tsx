@@ -26,15 +26,17 @@ export function WhoItsFor() {
   });
 
   return (
-    <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-surface relative">
+    <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-section-dark relative">
       {/* Soft ambient radial background */}
       <AmbientCanvasBackground />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-brand-coral opacity-[0.03] blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-brand-coral opacity-[0.05] blur-[120px] rounded-full pointer-events-none"></div>
       
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-      <SectionHeading 
-        title="Engineered for Operations Teams"
-      />
+        <div className="text-center mb-16">
+          <h2 className="font-headline-xl text-4xl md:text-5xl tracking-tight text-white">
+            Engineered for Operations Teams
+          </h2>
+        </div>
       <div className="audience-grid grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
@@ -58,7 +60,7 @@ export function WhoItsFor() {
             image: "/images/ops-enterprise.png"
           },
         ].map((item, idx) => (
-          <div key={idx} className="audience-card relative opacity-0 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden cursor-hover transition-all duration-500 hover:-translate-y-1 hover:shadow-hover-card border border-glass-border flex flex-col justify-end min-h-[360px] group">
+          <div key={idx} className="audience-card relative opacity-0 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden cursor-hover transition-all duration-500 hover:-translate-y-1 hover:shadow-hover-card border border-white/10 flex flex-col justify-end min-h-[360px] group">
             
             {/* Background Image */}
             <Image 
