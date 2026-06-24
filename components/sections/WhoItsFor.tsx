@@ -1,6 +1,7 @@
 "use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
 
@@ -24,37 +25,55 @@ export function WhoItsFor() {
   });
 
   return (
-    <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-surface">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-surface relative">
+      {/* Soft ambient radial background */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-brand-coral opacity-[0.03] blur-[120px] rounded-full pointer-events-none"></div>
+      
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
       <SectionHeading 
         title="Engineered for Operations Teams"
       />
-      <div className="audience-grid grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="audience-grid grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
             title: "Event Organizers",
             description: "Stop juggling spreadsheets and focus on creating memorable experiences.",
-            spanClass: "md:col-span-8",
+            image: "/images/ops-organizer.png"
           },
           {
             title: "Marketing Teams",
             description: "Capture leads and track campaign conversions with real-time analytics.",
-            spanClass: "md:col-span-4",
+            image: "/images/ops-marketing.png"
           },
           {
             title: "Ops Teams",
             description: "Ensure instant check-ins and eliminate queues at the door.",
-            spanClass: "md:col-span-5",
+            image: "/images/ops-checkin.png"
           },
           {
             title: "Enterprise",
             description: "Scale your ticketing operations with custom integrations and dedicated support.",
-            spanClass: "md:col-span-7",
+            image: "/images/ops-enterprise.png"
           },
         ].map((item, idx) => (
-          <div key={idx} className={`audience-card ${item.spanClass} opacity-0 p-10 rounded-[2.5rem] cursor-hover transition-all duration-300 hover:-translate-y-2 hover:shadow-hover-card bg-background border border-glass-border flex flex-col justify-end min-h-[240px]`}>
-            <h3 className={`font-headline-md text-xl md:text-2xl tracking-tight mb-3 text-on-background`}>{item.title}</h3>
-            <p className={`font-body-md text-body-md text-text-secondary`}>{item.description}</p>
+          <div key={idx} className="audience-card relative opacity-0 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden cursor-hover transition-all duration-500 hover:-translate-y-1 hover:shadow-hover-card border border-glass-border flex flex-col justify-end min-h-[360px] group">
+            
+            {/* Background Image */}
+            <Image 
+              src={item.image}
+              alt={item.title}
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+
+            {/* Gradient Overlay for text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/60 to-transparent opacity-90 transition-opacity duration-300"></div>
+
+            {/* Content */}
+            <div className="relative z-10 p-8 md:p-10">
+              <h3 className="font-headline-md text-xl md:text-2xl tracking-tight mb-3 text-white">{item.title}</h3>
+              <p className="font-body-md text-body-md text-white/80 max-w-sm">{item.description}</p>
+            </div>
           </div>
         ))}
       </div>

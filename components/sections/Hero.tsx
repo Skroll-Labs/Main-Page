@@ -3,6 +3,7 @@
 import { WebGLHeroBackground } from "@/components/ui/WebGLHeroBackground";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
@@ -59,9 +60,14 @@ export function Hero() {
           </p>
         </div>
         
-        <div className="hidden lg:block lg:col-span-5 relative h-full min-h-[400px]">
-          {/* Asymmetric visual counterweight container */}
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/10 to-transparent rounded-3xl border border-glass-border backdrop-blur-sm"></div>
+        <div className="hidden lg:block lg:col-span-5 relative h-[500px] w-full rounded-2xl overflow-hidden border border-glass-border shadow-sm transform transition-transform hover:scale-[1.02] duration-700">
+          <Image 
+            src="/images/hero-dashboard.png" 
+            alt="TicketFlow Dashboard Interface" 
+            fill
+            className="object-cover object-left"
+            priority
+          />
         </div>
       </div>
     </section>
