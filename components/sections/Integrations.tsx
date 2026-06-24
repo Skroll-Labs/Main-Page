@@ -24,7 +24,7 @@ export function Integrations() {
   });
 
   return (
-    <section ref={ref} className="py-section-gap border-y border-glass-border overflow-hidden bg-surface-bright">
+    <section ref={ref} className="py-section-gap border-y border-glass-border overflow-hidden bg-section-gradient">
       <div className="integration-header text-center mb-10 px-margin-mobile md:px-margin-desktop opacity-0">
         <h3 className="font-headline-md text-2xl md:text-headline-md text-on-background mb-4">Works With the Tools You Already Use</h3>
         <p className="font-body-md text-body-md text-text-secondary max-w-2xl mx-auto">Connect your favorite payment gateways, SMS providers, and email tools — no complicated setup required.</p>

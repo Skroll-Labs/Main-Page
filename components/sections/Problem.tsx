@@ -31,7 +31,7 @@ export function Problem() {
         <div id="divider1" className="absolute top-0 left-0 h-full bg-brand-coral w-full transform -translate-x-full transition-transform duration-1000"></div>
       </div>
 
-      <section ref={ref} className="w-full py-section-gap bg-surface-bright">
+      <section ref={ref} className="w-full py-section-gap bg-section-gradient">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <SectionHeading
           title="Still Managing Tickets the Hard Way?"

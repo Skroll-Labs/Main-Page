@@ -48,7 +48,7 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" ref={ref} className="w-full py-section-gap bg-background">
+    <section id="faq" ref={ref} className="w-full py-section-gap bg-section-gradient">
       <div className="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
       <SectionHeading title="Got Questions? We've Got Answers." />
 
