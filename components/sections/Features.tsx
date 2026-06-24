@@ -25,7 +25,7 @@ export function Features() {
   });
 
   return (
-    <section id="features" ref={ref} className="w-full py-section-gap bg-section-gradient relative overflow-hidden z-10">
+    <section id="features" ref={ref} className="w-full py-section-gap bg-section-gradient border-t border-glass-border relative overflow-hidden z-10">
       <AmbientCanvasBackground />
       {/* Soft ambient radial background */}
       <div className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 w-[60vw] h-[60vw] bg-brand-coral opacity-[0.02] blur-[120px] rounded-full pointer-events-none"></div>

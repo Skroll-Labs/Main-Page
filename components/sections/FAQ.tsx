@@ -49,7 +49,7 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" ref={ref} className="w-full py-section-gap bg-section-gradient relative">
+    <section id="faq" ref={ref} className="w-full py-section-gap bg-section-gradient border-t border-glass-border relative">
       <AmbientCanvasBackground />
       <div className="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
       <SectionHeading title="Got Questions? We've Got Answers." />
