@@ -1,38 +1,37 @@
 "use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { XCircle, FileSpreadsheet, Clock, CreditCard, EyeOff } from "lucide-react";
+import { AlertTriangle, Clock, XOctagon, TrendingDown, FileSpreadsheet, XCircle, CreditCard, EyeOff } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
+import { AmbientCanvasBackground } from "@/components/ui/AmbientCanvasBackground";
 
 export function Problem() {
   const ref = useScrollAnimation(() => {
+    // Divider line animation
+    gsap.fromTo(
+      "#divider1",
+      { x: "-100%" },
+      { x: "100%", duration: 1.5, ease: "power2.inOut", delay: 0.1 }
+    );
+
+    // Fade up staggered items
     gsap.fromTo(
       ".problem-card",
       { opacity: 0, y: 30 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".problem-grid",
-          start: "top 80%",
-        },
-      }
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", delay: 0.3 }
     );
   });
 
   return (
-    <>
-      {/* Divider */}
+    <div className="relative z-10">
       <div className="w-full h-px bg-glass-border relative overflow-hidden">
         <div id="divider1" className="absolute top-0 left-0 h-full bg-brand-coral w-full transform -translate-x-full transition-transform duration-1000"></div>
       </div>
 
-      <section ref={ref} className="w-full py-section-gap bg-section-gradient">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <section ref={ref} className="w-full py-section-gap bg-section-gradient relative">
+        <AmbientCanvasBackground />
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <SectionHeading
           title="Still Managing Tickets the Hard Way?"
           subtitle="Spreadsheets. Manual emails. Payment reconciliation nightmares. If you're spending more time managing logistics than your actual event, something's broken."
@@ -91,6 +90,6 @@ export function Problem() {
         </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

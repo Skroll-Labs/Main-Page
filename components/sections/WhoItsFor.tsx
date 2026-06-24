@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
+import { AmbientCanvasBackground } from "@/components/ui/AmbientCanvasBackground";
 
 export function WhoItsFor() {
   const ref = useScrollAnimation(() => {
@@ -27,6 +28,7 @@ export function WhoItsFor() {
   return (
     <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-surface relative">
       {/* Soft ambient radial background */}
+      <AmbientCanvasBackground />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-brand-coral opacity-[0.03] blur-[120px] rounded-full pointer-events-none"></div>
       
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">

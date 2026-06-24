@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Star } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
+import { AmbientCanvasBackground } from "@/components/ui/AmbientCanvasBackground";
 
 export function SocialProof() {
   const ref = useScrollAnimation(() => {
@@ -41,8 +42,9 @@ export function SocialProof() {
   });
 
   return (
-    <section ref={ref} className="py-section-gap bg-surface-bright border-y border-glass-border">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <section ref={ref} className="py-section-gap bg-background border-y border-glass-border relative">
+      <AmbientCanvasBackground />
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <SectionHeading title="Event Organizers Trust Us to Get It Right" />
 
         <div className="social-proof-grid grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">

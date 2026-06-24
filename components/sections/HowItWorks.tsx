@@ -3,6 +3,7 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
+import { AmbientCanvasBackground } from "@/components/ui/AmbientCanvasBackground";
 
 export function HowItWorks() {
   const ref = useScrollAnimation(() => {
@@ -24,8 +25,9 @@ export function HowItWorks() {
   });
 
   return (
-    <section id="how-it-works" ref={ref} className="w-full py-section-gap bg-surface">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <section id="how-it-works" ref={ref} className="w-full py-section-gap bg-background relative">
+      <AmbientCanvasBackground />
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
       <SectionHeading title="From Setup to Sold Out — In Four Simple Steps" />
 
       <div className="steps-grid grid grid-cols-1 md:grid-cols-4 gap-8 relative">
