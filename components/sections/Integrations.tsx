@@ -39,7 +39,7 @@ export function Integrations() {
   });
 
   return (
-    <section ref={ref} className="py-section-gap border-y border-glass-border overflow-hidden bg-section-gradient relative">
+    <section ref={ref} className="py-12 md:py-20 border-y border-glass-border overflow-hidden bg-section-gradient relative">
       <AmbientCanvasBackground />
       <div className="integration-header text-center mb-10 px-margin-mobile md:px-margin-desktop opacity-0 relative z-10">
         <h3 className="font-headline-md text-2xl md:text-headline-md text-on-background mb-4">Works With the Tools You Already Use</h3>
