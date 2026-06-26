@@ -1,30 +1,32 @@
-# Memory — Landing Page Build (Polish & Bug Fixes)
+# Memory — Blog System Implementation
 
-Last updated: 2026-06-23
+Last updated: 2026-06-26
 
 ## What was built
-- Replaced remote Google URL image assets with a local `public/logo.svg` vector graphic to fix Next.js 404 image optimization errors on the Navbar and Footer.
-- Fixed the `Integrations` marquee animation from breaking/wrapping by assigning `w-max`, `flex-shrink-0`, and correctly duplicating the array items to ensure infinite horizontal scrolling.
-- Resolved a runtime `ReferenceError` crash by importing React for `React.Fragment`.
-- Executed `/imprint audit` and established a unified design baseline in `ui-registry.md`.
-- Refactored `Problem.tsx`, `Features.tsx`, `WhoItsFor.tsx`, `FAQ.tsx`, and `Integrations.tsx` to strictly adhere to the UI registry (enforcing `rounded-3xl` cards, `py-section-gap` padding, and custom CSS shadow variables).
+- Built a static Next.js App Router blog system using file-based JSON data (`lib/blog.ts`, `types/blog.ts`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`).
+- Generated 20 JSON posts (5 complete pillar articles, 15 scaffolded placeholders) and 7 unique AI-generated hero images.
+- Created all corresponding blog UI components (`ArticleCard`, `ArticleSidebar`, `BlogHero`, `BlogTracker`, `CalloutBox`, `CTABlock`, `FilteredGrid`, `PrevNextNav`, `SocialShare`, `TableOfContents`, `TagChip`).
+- Implemented global SEO features: dynamic `sitemap.ts`, `robots.ts`, a JSON Feed 1.1 route (`feed.json`), and comprehensive JSON-LD schemas (Organization, SoftwareApplication, FAQPage, Article).
+- Added Google Analytics 4 event tracking for scroll depth and time-on-page via `BlogTracker`.
+- Expanded the homepage with a `RecentBlogs` section and added `/blog` to the global `Navbar` and `Footer`.
+- Installed the `wshobson/agents@nextjs-app-router-patterns` ecosystem skill.
 
 ## Decisions made
-- Chose to use `logo.svg` over `logo.png` to bypass Next.js `sharp` image processor entirely, eliminating potential server-side parsing bugs.
-- Moved complex hover shadows to CSS variables (`--shadow-hover-button`, `--shadow-hover-card`) in `globals.css` to eliminate hardcoded Tailwind arbitrary values across components.
+- Chose a fully static, file-based JSON architecture over a CMS to maximize performance and simplify the architecture.
+- Used `generateStaticParams` to build all routes at compile time.
+- Implemented a programmatic filter in `getAllPosts()` to exclude any post with a `"scaffold"` tag. This seamlessly hides the 15 placeholder articles from the production build without deleting their data files.
 
 ## Problems solved
-- Solved the disappearing logo bug caused by Turbopack failing to immediately index newly downloaded static assets.
-- Fixed the "dropping" marquee bug by explicitly overriding flex container shrink behavior and extending the total width past 100vw.
-- Resolved styling inconsistencies across multiple sessions.
+- Fixed Tailwind v4 arbitrary variable parsing issues (e.g. `bg-[--color-brand-coral]`) by switching to standard utility classes (`bg-brand-coral`) across all blog components, preventing transparent backgrounds.
+- Addressed missing social icons in `lucide-react` by utilizing raw SVGs in the `SocialShare` component.
 
 ## Current state
-- The landing page is 100% feature complete, fully animated, responsive, visually consistent, and free of runtime errors.
-- `ui-registry.md` is initialized and populated with the correct design baseline.
+- The blog system is fully functional, visually polished, and heavily optimized for SEO.
+- A `npm run build` cleanly compiles the 5 full articles while successfully bypassing the 15 scaffolds.
 
 ## Next session starts with
-- Add `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_PHONE_NUMBER`, and `RESEND_API_KEY` to `.env.local` to fully un-mock the contact form.
-- Run `npm run dev` to view the finalized, fully polished application.
+- Adding real tracking IDs (if required) to test the GA4 events.
+- Writing full content to replace the remaining 15 scaffold posts stored in `data/posts/`.
 
 ## Open questions
 - None at this time.

@@ -1,0 +1,45 @@
+{
+  "slug": "charity-fundraiser-event-ticketing-sri-lanka",
+  "title": "Scaffold Article for Charity Fundraiser Event Ticketing Sri Lanka",
+  "metaTitle": "Scaffold Title | TicketFlow",
+  "metaDescription": "This is a scaffold article for charity-fundraiser-event-ticketing-sri-lanka.",
+  "cluster": 5,
+  "category": "Industry Guide",
+  "publishDate": "2026-09-12T08:00:00.000Z",
+  "readTimeMinutes": 5,
+  "heroImage": "/blog/article-default-hero.png",
+  "tags": [
+    "scaffold",
+    "events",
+    "Sri Lanka"
+  ],
+  "excerpt": "This is a scaffold excerpt that will be replaced later with the full content.",
+  "primaryKeywords": [
+    "charity fundraiser event ticketing sri lanka"
+  ],
+  "secondaryKeywords": [],
+  "sections": [
+    {
+      "type": "intro",
+      "content": "This is a scaffold article. It contains the structure needed for the blog but not the full text."
+    },
+    {
+      "type": "h2",
+      "heading": "First Section Heading",
+      "content": "Content for the first section."
+    },
+    {
+      "type": "conclusion",
+      "content": "Conclusion of the scaffold article."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/blog/best-event-ticketing-platform-sri-lanka",
+      "label": "Best Event Ticketing Platforms in Sri Lanka"
+    }
+  ],
+  "relatedSlugs": [
+    "best-event-ticketing-platform-sri-lanka"
+  ]
+}

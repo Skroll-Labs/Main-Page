@@ -1,0 +1,49 @@
+{
+  "slug": "qr-code-tickets-events-sri-lanka",
+  "title": "QR Code Tickets for Events: How They Work and Why Every Organizer Needs Them",
+  "metaTitle": "QR Code Tickets for Events Sri Lanka | How It Works",
+  "metaDescription": "How QR code ticket delivery works, why it eliminates check-in queues, and how to set it up for your next Sri Lankan event.",
+  "cluster": 1,
+  "category": "Platform & Product",
+  "publishDate": "2026-07-22T08:00:00Z",
+  "readTimeMinutes": 7,
+  "heroImage": "/blog/article-04-hero.png",
+  "tags": [
+    "QR code tickets",
+    "event check-in"
+  ],
+  "excerpt": "The check-in queue at a large Colombo event can stretch 50 meters into the car park. Staff are running down a printed list. Buyers are waiting. QR code ticketing eliminates every part of that problem.",
+  "primaryKeywords": [
+    "QR code tickets events Sri Lanka"
+  ],
+  "secondaryKeywords": [],
+  "sections": [
+    {
+      "type": "intro",
+      "content": "Picture a popular Colombo event on a Friday night. Four hundred people arrive over 45 minutes. The gate staff have a printed list of names, a highlighter, and a lot of patience. Someone's name is listed under a different spelling. Someone else left their confirmation email open but the WiFi is weak and the attachment will not load. The queue grows. People are frustrated before the event even starts. This is the version of event management that QR code ticketing replaces."
+    },
+    {
+      "type": "h2",
+      "heading": "How QR Code Ticketing Works End-to-End",
+      "content": "The process has four stages, and each one is automatic once your system is set up correctly. Stage one: purchase. A buyer visits your ticket page, selects their ticket type, and completes payment through your connected payment gateway. Stage two: generation. The moment payment is confirmed, the system generates a unique QR code linked exclusively to that purchase. Stage three: delivery. The PDF ticket is sent automatically via email and SMS. Stage four: scanning. On event day, your gate staff use a smartphone or scanner running your check-in app."
+    },
+    {
+      "type": "h2",
+      "heading": "How QR Code Security Prevents Duplicate Entry",
+      "content": "The most common concern from first-time QR organizers: \"What if someone screenshots my ticket and sends it to a friend?\" The answer is simple — each QR code is unique per purchase and can only be scanned once. When a QR code is validated at the gate, the system marks it as used in real time. If the same QR code is presented a second time, the scanner shows a red alert: already scanned."
+    },
+    {
+      "type": "conclusion",
+      "content": "QR code ticketing is not a \"nice to have\" for modern events in Sri Lanka. It is the baseline for professional event operations. It eliminates name-list chaos, speeds up gate entry, prevents duplicate entry, and gives your team live attendance data throughout the event."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/blog/how-to-sell-tickets-online-sri-lanka",
+      "label": "How to Sell Tickets Online in Sri Lanka"
+    }
+  ],
+  "relatedSlugs": [
+    "how-to-sell-tickets-online-sri-lanka"
+  ]
+}

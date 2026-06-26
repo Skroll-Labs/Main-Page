@@ -55,6 +55,12 @@ export function Navbar() {
             How It Works
           </Link>
           <Link
+            href="/blog"
+            className="font-button-text text-button-text uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors cursor-hover"
+          >
+            Blog
+          </Link>
+          <Link
             href="#faq"
             className="font-button-text text-button-text uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors cursor-hover"
           >
@@ -102,6 +108,13 @@ export function Navbar() {
             className="py-4 font-button-text text-button-text uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors border-b border-glass-border/50"
           >
             How It Works
+          </Link>
+          <Link
+            href="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+            className="py-4 font-button-text text-button-text uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors border-b border-glass-border/50"
+          >
+            Blog
           </Link>
           <Link
             href="#faq"

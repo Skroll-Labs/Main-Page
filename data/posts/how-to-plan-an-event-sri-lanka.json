@@ -1,0 +1,88 @@
+{
+  "slug": "how-to-plan-an-event-sri-lanka",
+  "title": "The Complete Guide to Planning an Event in Sri Lanka (2026 Edition)",
+  "metaTitle": "How to Plan an Event in Sri Lanka — Complete 2026 Guide",
+  "metaDescription": "Everything Sri Lankan event organizers need to know — venue selection, budgeting, ticketing, promotion, and day-of operations in one guide.",
+  "cluster": 3,
+  "category": "How-To Education",
+  "publishDate": "2026-08-05T08:00:00Z",
+  "readTimeMinutes": 10,
+  "heroImage": "/blog/article-11-hero.png",
+  "tags": [
+    "event planning guide",
+    "Sri Lanka",
+    "event organizer"
+  ],
+  "excerpt": "Planning an event in Sri Lanka involves more moving parts than most organizers expect — venues, permits, ticketing, promotion, payment gateways, gate operations, and post-event analytics. This is the complete guide that covers all of it, from first concept to final report.",
+  "primaryKeywords": [
+    "how to plan an event in Sri Lanka",
+    "event planning guide Sri Lanka"
+  ],
+  "secondaryKeywords": [
+    "event organizer Sri Lanka",
+    "event management tips Sri Lanka"
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "content": "Planning an event in Sri Lanka is not as simple as booking a venue and selling tickets. The best events are built on decisions made weeks or months before the first attendee walks through the door. This guide covers the full journey — from defining your concept and budget, through venue selection and ticketing setup, to promotion, day-of operations, and the post-event review that makes your next event better. Whether you are running a 50-person corporate workshop in Colombo or a 5,000-person concert in an open-air venue, the fundamentals are the same. Get the early decisions right, and everything else gets easier."
+    },
+    {
+      "type": "h2",
+      "heading": "Phase 1: Pre-Event Planning — Concept, Budget, and Venue",
+      "content": "Every event starts with a clear answer to three questions: What is the event? Who is it for? What does success look like? Without clear answers, every downstream decision becomes harder. Once you have your concept, build a realistic budget. In Sri Lanka, typical event cost categories include venue hire, AV and technical production, catering (if applicable), entertainment or speakers, marketing and advertising, ticketing platform fees, print and collateral, security and staffing, and contingency (minimum 10% of total budget). Work backwards from your revenue target. If you are expecting 500 people at LKR 3,000 per ticket, your gross revenue is LKR 1.5 million. After payment processing fees (approximately 2.99–3.30% through PayHere), your net ticket revenue is around LKR 1.45 million."
+    },
+    {
+      "type": "h3",
+      "heading": "Venue Selection",
+      "content": "Venue selection in Colombo depends heavily on your event type and scale. Key options include BMICH (Bandaranaike Memorial International Conference Hall) — Sri Lanka's landmark event complex on 40 acres, with a main hall capacity of up to 1,600 and 2,500 parking spaces — ideal for large-scale conferences, exhibitions, and public events. The Shangri-La Colombo Grand Ballroom seats up to 1,440 for banquet-style events and up to 2,000 for ceremonies — ideal for luxury corporate functions and awards nights. The Hilton Colombo and Cinnamon Grand offer multiple configurable rooms from 50 to 800 people. Book your venue as early as possible — major Colombo venues, especially BMICH, fill up months in advance for weekends."
+    },
+    {
+      "type": "callout",
+      "content": "For public events in Colombo, you may need permits from the Colombo Municipal Council (CMC) and/or a police permit depending on scale. Start this process at least 4 weeks before your event date. Requirements vary by venue."
+    },
+    {
+      "type": "h2",
+      "heading": "Phase 2: Ticketing Setup — The Step Most Organizers Do Too Late",
+      "content": "Ticketing should be set up and live as early as possible — ideally 4–8 weeks before the event for medium and large events, and at least 2 weeks for smaller ones. The earlier you launch ticket sales, the more time you have to build momentum, identify low-sale signals, and adjust your promotion plan. Choose a ticketing platform that works with Sri Lanka's payment infrastructure. Your platform needs native PayHere integration (the dominant CBSL-approved gateway), LKR pricing, SMS ticket delivery, and real-time sales tracking. Stripe is not available to Sri Lankan businesses, so any platform relying exclusively on Stripe as its payment gateway will not work without workarounds."
+    },
+    {
+      "type": "h3",
+      "heading": "Ticket Tiers and Pricing",
+      "content": "Set up your ticket tiers deliberately. An early-bird tier at a 10–20% discount creates urgency and generates cash flow before you have spent heavily on production. A standard tier captures the bulk of buyers. A VIP or premium tier at a higher price with exclusive benefits (priority entry, reserved seating, hospitality access) adds margin and caters to your high-value audience. Test your payment gateway with a live transaction before going public. PayHere verification can take 2–5 business days — do not leave this until the week of your event."
+    },
+    {
+      "type": "h2",
+      "heading": "Phase 3: Promotion Channels That Work in Sri Lanka",
+      "content": "Event promotion in Sri Lanka is heavily reliant on social media, but the right channel depends on your audience. For corporate and B2B events, LinkedIn is highly effective for targeted outreach, combined with direct email marketing to your existing database. For consumer events — concerts, food festivals, lifestyle shows — Instagram and TikTok drive the most engagement, while Facebook Events remain useful for calendar planning."
+    },
+    {
+      "type": "h2",
+      "heading": "Phase 4: Event Day Operations",
+      "content": "The most critical part of event day operations is the gate. A chaotic check-in queue frustrates attendees before they even enter the venue. Use a platform with a QR code scanner app to check attendees in rapidly. Train your gate staff on how to use the scanner and what to do if a ticket fails to scan. Ensure you have a clear plan for walk-in sales and a dedicated help desk for attendees who cannot find their tickets."
+    },
+    {
+      "type": "h2",
+      "heading": "Phase 5: Post-Event Review",
+      "content": "The event is not over until the post-event review is complete. Within 48 hours, gather your core team to review what went well and what failed. Review your attendance data from your ticketing platform — how many tickets were sold versus how many people actually checked in? Look at your sales velocity data to understand when people bought tickets, which will inform your promotional timeline for the next event."
+    },
+    {
+      "type": "conclusion",
+      "content": "Planning an event in Sri Lanka requires careful orchestration of venues, permits, and platforms. But the core principles remain the same: plan early, communicate clearly, and use the right tools for the local market. By choosing platforms like TicketFlow that integrate seamlessly with local payment gateways and offer SMS delivery, you remove friction from the attendee experience and give your team the data they need to run a successful event."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/blog/corporate-event-ticketing-sri-lanka",
+      "label": "Guide to Corporate Event Ticketing"
+    },
+    {
+      "href": "/blog/how-to-sell-tickets-online-sri-lanka",
+      "label": "How to Sell Tickets Online"
+    }
+  ],
+  "relatedSlugs": [
+    "corporate-event-ticketing-sri-lanka",
+    "how-to-sell-tickets-online-sri-lanka"
+  ]
+}

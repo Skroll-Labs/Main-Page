@@ -24,6 +24,7 @@ export function Footer() {
           <Link href="#" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">Home</Link>
           <Link href="#features" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">Features</Link>
           <Link href="#how-it-works" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">How It Works</Link>
+          <Link href="/blog" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">Blog</Link>
           <Link href="#faq" className="font-body-md text-body-md text-surface-variant/70 hover:text-white transition-colors cursor-hover">FAQ</Link>
         </div>
 

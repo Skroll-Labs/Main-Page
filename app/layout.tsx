@@ -10,21 +10,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "TicketFlow — Ticketing Made Simple, Faster, and Local",
+  title: "TicketFlow — Event Ticketing Software for Sri Lanka",
   description:
-    "The all-in-one ticketing platform for event organizers. Sell tickets, send QR codes, and check in attendees — without the spreadsheets.",
+    "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform built for event organizers.",
   openGraph: {
-    title: "TicketFlow",
-    description: "Sell Tickets. Send QR Codes. Skip the Headaches.",
-    url: "https://ticketflow.com",
+    title: "TicketFlow — Event Ticketing Software for Sri Lanka",
+    description: "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform.",
+    url: "https://ticketflow.lk",
     siteName: "TicketFlow",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TicketFlow",
-    description: "Ticketing made simple, faster, and local.",
+    title: "TicketFlow — Event Ticketing Software for Sri Lanka",
+    description: "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform.",
     images: ["/og-image.png"],
   },
 };

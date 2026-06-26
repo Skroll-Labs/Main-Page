@@ -1,0 +1,78 @@
+{
+  "slug": "eventbrite-alternative-sri-lanka",
+  "title": "Why Sri Lankan Event Organizers Are Looking for an Eventbrite Alternative",
+  "metaTitle": "Eventbrite Alternative for Sri Lanka | Local Ticketing Options",
+  "metaDescription": "Eventbrite works globally but has key limitations for Sri Lanka organizers. Here is what to look for in a local alternative.",
+  "cluster": 1,
+  "category": "Platform & Product",
+  "publishDate": "2026-07-15T08:00:00Z",
+  "readTimeMinutes": 7,
+  "heroImage": "/blog/article-03-hero.png",
+  "tags": [
+    "Eventbrite alternative",
+    "Sri Lanka"
+  ],
+  "excerpt": "Eventbrite is a well-known platform but it was not built with Sri Lanka in mind. Payment processing is restricted, fees stack up, and support is overseas.",
+  "primaryKeywords": [
+    "Eventbrite alternative Sri Lanka"
+  ],
+  "secondaryKeywords": [],
+  "sections": [
+    {
+      "type": "intro",
+      "content": "Eventbrite is one of the most recognized names in event ticketing. If you have tried to set it up for a Sri Lankan event, though, you have probably hit the wall: payment processing is not fully supported, features are restricted, and fees become difficult to calculate when your event currency is LKR and your gateway situation is limited. This is not a criticism of Eventbrite — it is an excellent platform for markets it was designed for. But Sri Lanka is not one of those markets. This article explains exactly what the limitations are, what a local alternative needs to offer, and how the options compare honestly."
+    },
+    {
+      "type": "h2",
+      "heading": "What Eventbrite Actually Offers Sri Lankan Organizers",
+      "content": "Eventbrite is available in Sri Lanka in the sense that you can create an account and publish an event. The friction begins at checkout. Eventbrite Payment Processing — the platform's primary, fully integrated payment system — is not available in Sri Lanka. The only supported online payment option is connecting a PayPal account, which becomes your merchant of record for ticket sales. This has downstream consequences: advanced features like reserved seating and registration transfers are unavailable when using PayPal. Eventbrite invoices you separately for its service fees rather than deducting them automatically. And attendees are redirected to PayPal at checkout, which creates a less seamless experience than a native checkout flow."
+    },
+    {
+      "type": "comparison_table",
+      "heading": "Eventbrite vs TicketFlow: Feature by Feature",
+      "content": "A direct comparison on the factors that matter most for Sri Lanka-based events.",
+      "tableData": {
+        "headers": [
+          "Feature",
+          "Eventbrite",
+          "TicketFlow"
+        ],
+        "rows": [
+          [
+            "LKR Native Pricing",
+            "⚠️ Possible but complex",
+            "✅ Full LKR support"
+          ],
+          [
+            "PayHere Integration",
+            "❌ Not supported",
+            "✅ Native integration"
+          ],
+          [
+            "SMS Ticket Delivery",
+            "❌ Email only",
+            "✅ Email + SMS both"
+          ],
+          [
+            "Local Support",
+            "❌ Overseas helpdesk",
+            "✅ Sri Lanka-based team"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "conclusion",
+      "content": "Eventbrite is a great platform for the markets it was designed to serve. Sri Lanka is not one of those markets — at least not yet. If you are running events in Sri Lanka for Sri Lankan attendees, you need a platform built around local payment infrastructure, SMS delivery, and support that understands your context. TicketFlow was built precisely for this."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/blog/best-event-ticketing-platform-sri-lanka",
+      "label": "Best Event Ticketing Platforms in Sri Lanka"
+    }
+  ],
+  "relatedSlugs": [
+    "best-event-ticketing-platform-sri-lanka"
+  ]
+}
