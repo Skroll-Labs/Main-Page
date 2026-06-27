@@ -9,9 +9,9 @@ export function RecentBlogs() {
   if (recentPosts.length === 0) return null;
 
   return (
-    <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+    <section className="py-16 md:py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
       <div className="max-w-container-max mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-on-background mb-4">
               Latest Insights
@@ -30,7 +30,7 @@ export function RecentBlogs() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {recentPosts.map((post) => (
-            <ArticleCard key={post.slug} post={post} />
+            <ArticleCard key={post.slug} post={post} compact={true} />
           ))}
         </div>
       </div>

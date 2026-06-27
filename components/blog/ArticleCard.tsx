@@ -8,9 +8,10 @@ import { TagChip, CLUSTER_LABELS } from "./TagChip";
 
 interface ArticleCardProps {
   post: BlogPost;
+  compact?: boolean;
 }
 
-export function ArticleCard({ post }: ArticleCardProps) {
+export function ArticleCard({ post, compact = false }: ArticleCardProps) {
   const formattedDate = new Date(post.publishDate).toLocaleDateString("en-LK", {
     year: "numeric",
     month: "short",
@@ -20,10 +21,10 @@ export function ArticleCard({ post }: ArticleCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col rounded-3xl bg-surface border border-glass-border overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[var(--shadow-hover-card)] h-full"
+      className="group flex flex-col rounded-3xl bg-surface border border-glass-border overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[var(--shadow-hover-card)] active:scale-[0.98] h-full"
     >
       {/* Hero Image */}
-      <div className="relative w-full aspect-[16/9] overflow-hidden flex-shrink-0">
+      <div className={`relative w-full ${compact ? "aspect-[16/9] md:aspect-[21/9]" : "aspect-[16/9]"} overflow-hidden flex-shrink-0`}>
         <Image
           src={post.heroImage}
           alt={post.title}
@@ -40,7 +41,7 @@ export function ArticleCard({ post }: ArticleCardProps) {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-6">
+      <div className={`flex flex-col flex-1 ${compact ? "p-5" : "p-6"}`}>
         {/* Title */}
         <h3 className="text-base font-bold text-on-background leading-snug mb-2 group-hover:text-brand-coral transition-colors duration-200 line-clamp-2">
           {post.title}
