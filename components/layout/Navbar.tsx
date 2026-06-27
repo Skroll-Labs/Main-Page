@@ -79,7 +79,7 @@ export function Navbar() {
           
           <div className="hidden md:flex items-center gap-4">
             <Link href="#contact">
-              <Button variant="primary" className="px-4 py-2 text-sm uppercase tracking-widest rounded-full border border-brand-coral hover:bg-brand-coral/90">
+              <Button variant="primary" className="px-3 py-1.5 text-xs uppercase tracking-widest rounded-full border border-brand-coral hover:bg-brand-coral/90">
                 Contact Us
               </Button>
             </Link>
@@ -135,7 +135,7 @@ export function Navbar() {
             </Link>
             <div className="p-6">
               <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="primary" className="w-full justify-center px-6 py-3 uppercase tracking-widest rounded-full border border-brand-coral">
+                <Button variant="primary" className="w-full justify-center px-4 py-2 text-sm uppercase tracking-widest rounded-full border border-brand-coral">
                   Contact Us
                 </Button>
               </Link>
