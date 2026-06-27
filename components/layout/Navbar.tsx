@@ -32,8 +32,14 @@ export function Navbar() {
         e.preventDefault();
         const element = document.getElementById(targetId);
         if (element) {
-          const y = element.getBoundingClientRect().top + window.scrollY - 100;
-          window.scrollTo({ top: y, behavior: "smooth" });
+          // @ts-ignore
+          if (window.lenis) {
+            // @ts-ignore
+            window.lenis.scrollTo(element, { offset: -100 });
+          } else {
+            const y = element.getBoundingClientRect().top + window.scrollY - 100;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
         }
         setMobileMenuOpen(false);
       } else {

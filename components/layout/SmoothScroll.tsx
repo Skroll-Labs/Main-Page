@@ -11,6 +11,9 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       smoothWheel: true,
     });
 
+    // @ts-ignore
+    window.lenis = lenis;
+
     lenis.on("scroll", ScrollTrigger.update);
 
     gsap.ticker.add((time) => {
@@ -22,6 +25,8 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     return () => {
       lenis.destroy();
       gsap.ticker.remove(lenis.raf);
+      // @ts-ignore
+      delete window.lenis;
     };
   }, []);
 

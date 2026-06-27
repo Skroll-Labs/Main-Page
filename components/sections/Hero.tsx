@@ -14,13 +14,13 @@ export function Hero() {
     gsap.fromTo(
       ".hero-headline",
       { clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" },
-      { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1, ease: "power3.out", delay: 0.1 }
+      { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 0.5, ease: "power3.out", delay: 0 }
     );
 
     gsap.fromTo(
       ".hero-fade-up",
       { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power3.out", delay: 0.3 }
+      { opacity: 1, y: 0, duration: 0.4, stagger: 0.05, ease: "power3.out", delay: 0.1 }
     );
   });
 
@@ -60,7 +60,7 @@ export function Hero() {
           </p>
         </div>
         
-        <div className="hidden lg:block lg:col-span-5 relative h-[500px] w-full rounded-2xl overflow-hidden border border-glass-border shadow-sm transform transition-transform hover:scale-[1.02] duration-700">
+        <div className="hero-fade-up opacity-0 lg:col-span-5 relative h-[300px] md:h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden border border-glass-border shadow-sm transform transition-transform hover:scale-[1.02] duration-700">
           <Image 
             src="/images/hero-dashboard.png" 
             alt="TicketFlow Dashboard Interface" 

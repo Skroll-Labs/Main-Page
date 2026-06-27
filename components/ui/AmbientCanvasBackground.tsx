@@ -19,7 +19,8 @@ export function AmbientCanvasBackground() {
 
     // Define particles
     const particles: { x: number; y: number; vx: number; vy: number; radius: number }[] = [];
-    const particleCount = 100; // Increased for visibility
+    let particleCount = 100;
+    let particleOpacity = 0.4;
 
     const init = () => {
       if (!canvas.parentElement) return;
@@ -29,14 +30,26 @@ export function AmbientCanvasBackground() {
       canvas.height = height;
       console.log("Canvas initialized with size:", width, height);
 
+      // Dynamically calculate bubble density based on viewport size for impeccable UI
+      if (window.innerWidth < 768) {
+        particleCount = 30;
+        particleOpacity = 0.25;
+      } else if (window.innerWidth < 1024) {
+        particleCount = 60;
+        particleOpacity = 0.3;
+      } else {
+        particleCount = 100;
+        particleOpacity = 0.4;
+      }
+
       particles.length = 0;
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.5, // Increased speed
+          vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
-          radius: Math.random() * 3 + 1, // Increased radius
+          radius: Math.random() * 3 + 1,
         });
       }
     };
@@ -46,9 +59,9 @@ export function AmbientCanvasBackground() {
       
       ctx.clearRect(0, 0, width, height);
 
-      // Brand coral color for particles (increased opacity for visibility)
-      ctx.fillStyle = "rgba(232, 82, 26, 0.4)";
-      ctx.strokeStyle = "rgba(232, 82, 26, 0.2)";
+      // Brand coral color for particles with dynamic opacity
+      ctx.fillStyle = `rgba(232, 82, 26, ${particleOpacity})`;
+      ctx.strokeStyle = `rgba(232, 82, 26, ${particleOpacity * 0.5})`;
       ctx.lineWidth = 1.0;
 
       for (let i = 0; i < particleCount; i++) {

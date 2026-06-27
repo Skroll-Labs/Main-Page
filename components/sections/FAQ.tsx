@@ -14,8 +14,8 @@ export function FAQ() {
       { 
         opacity: 1, 
         y: 0, 
-        duration: 0.5, 
-        stagger: 0.1, 
+        duration: 0.3, 
+        stagger: 0.05, 
         ease: "power2.out", 
         scrollTrigger: {
           trigger: ".faq-list",

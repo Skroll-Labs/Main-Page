@@ -7,7 +7,7 @@ interface BlogHeroProps {
 
 export function BlogHero({ postCount }: BlogHeroProps) {
   return (
-    <section className="relative py-24 px-margin-mobile md:px-margin-desktop overflow-hidden bg-background">
+    <section className="relative pt-32 md:pt-40 px-margin-mobile md:px-margin-desktop overflow-hidden bg-background">
       {/* Background decoration */}
       <div
         aria-hidden="true"
