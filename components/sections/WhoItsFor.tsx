@@ -3,6 +3,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
+import { Users, Megaphone, Settings, Building2 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const audiences = [
@@ -42,113 +43,66 @@ const audiences = [
 
 export function WhoItsFor() {
   const ref = useScrollAnimation(() => {
-    gsap.fromTo(".bento-card", 
+    gsap.fromTo(".audience-card", 
+      { opacity: 0, y: 30 },
       {
-        clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-        opacity: 0,
-      },
-      {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
         opacity: 1,
-        duration: 1.2,
-        stagger: 0.15,
-        ease: "power4.inOut",
-        scrollTrigger: {
-          trigger: ".bento-grid",
-          start: "top 80%",
-        },
-      }
-    );
-
-    gsap.fromTo(".bento-label", 
-      { opacity: 0, y: 10 },
-      { 
-        opacity: 1, 
-        y: 0, 
-        duration: 0.8, 
-        stagger: 0.1, 
+        y: 0,
+        duration: 0.8,
+        stagger: 0.1,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: ".bento-grid",
-          start: "top 70%",
-        }
+          trigger: ".audience-grid",
+          start: "top 80%",
+        },
       }
     );
   });
 
   return (
     <section id="who-its-for" ref={ref} className="w-full py-section-gap bg-section-dark relative border-t border-surface-dim/20">
-      {/* Industrial mechanical background accents */}
+      {/* Industrial mechanical background accents remain */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(var(--color-surface-dim) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
-      <div className="absolute top-0 left-4 md:left-10 w-[1px] h-full bg-surface-dim/10 pointer-events-none" />
-      <div className="absolute top-0 right-4 md:right-10 w-[1px] h-full bg-surface-dim/10 pointer-events-none" />
       
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-          <div className="flex-1">
-            <div className="font-semibold text-xs text-deep-teal tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
-              <span className="w-2 h-2 bg-warm-amber inline-block" />
-              Deployment Vectors
-            </div>
-            <SectionHeading
-              title={<>Engineered For<br/>Operations</>}
-              align="left"
-              className="!mb-0"
-              titleClassName="!text-white"
-            />
+        <div className="text-center mb-16">
+          <div className="font-semibold text-xs text-deep-teal tracking-[0.2em] mb-4 uppercase inline-flex items-center gap-2">
+            Deployment Vectors
           </div>
-          <div className="font-semibold text-xs text-surface-dim/40 tracking-widest text-left md:text-right max-w-xs">
-            MODULAR IMPLEMENTATION<br/>SCALABLE ARCHITECTURE
-          </div>
+          <SectionHeading
+            title="Engineered For Operations"
+            align="center"
+            className="!mb-0"
+            titleClassName="!text-white"
+          />
         </div>
 
-        <div className="bento-grid grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-min">
-          {audiences.map((item) => (
-            <div 
-              key={item.id} 
-              className={`bento-card relative group overflow-hidden bg-white/5 border border-surface-dim/10 ${item.className}`}
-            >
-              {/* Background Image with industrial overlay */}
-              <div className="absolute inset-0">
-                <Image 
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:opacity-60 opacity-40 grayscale group-hover:grayscale-0"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-section-dark via-section-dark/80 to-transparent"></div>
-                {/* Mechanical scanline effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px] pointer-events-none" />
-              </div>
+        <div className="audience-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+          {audiences.map((item, idx) => {
+            // Assign icons based on ID
+            let Icon = Users;
+            let iconColor = "text-brand-coral";
+            if(item.id.includes("MKT")) { Icon = Megaphone; iconColor = "text-fuchsia-400"; }
+            if(item.id.includes("OPS")) { Icon = Settings; iconColor = "text-green-400"; }
+            if(item.id.includes("ENT")) { Icon = Building2; iconColor = "text-warm-amber"; }
 
-              {/* Decorative corners */}
-              <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-surface-dim/30" />
-              <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-surface-dim/30" />
-              <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-surface-dim/30" />
-              <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-surface-dim/30" />
-
-              {/* Content */}
-              <div className="relative z-10 h-full p-6 md:p-8 flex flex-col justify-between">
-                <div className="flex justify-between items-start bento-label">
-                  <div className="font-semibold text-[10px] text-surface-dim/50 tracking-widest px-2 py-1 border border-surface-dim/10 bg-black/50 backdrop-blur-sm">
-                    {item.id}
-                  </div>
-                  <div className="font-semibold text-[10px] text-warm-amber tracking-widest">
-                    {item.stats}
-                  </div>
-                </div>
-
-                <div className="mt-auto">
-                  <h3 className="font-bold text-xl md:text-2xl tracking-tight mb-4 text-white uppercase bento-label group-hover:text-warm-amber transition-colors duration-300">
+            return (
+              <div 
+                key={item.id} 
+                className="audience-card bg-white/5 border border-surface-dim/10 rounded-[2rem] p-8 md:p-10 hover:-translate-y-1 hover:border-surface-dim/30 transition-all duration-300 cursor-hover"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <Icon className={`w-6 h-6 md:w-8 md:h-8 ${iconColor}`} strokeWidth={2} />
+                  <h3 className="font-headline-md text-2xl md:text-3xl text-white tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="font-medium text-sm md:text-base text-surface-dim/60 max-w-md bento-label group-hover:text-surface-dim/90 transition-colors duration-300">
-                    {item.description}
-                  </p>
                 </div>
+                <p className="font-body-lg text-lg text-surface-dim/70 leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
