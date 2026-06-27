@@ -3,6 +3,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const audiences = [
   {
@@ -84,14 +85,17 @@ export function WhoItsFor() {
       
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-          <div>
+          <div className="flex-1">
             <div className="font-semibold text-xs text-deep-teal tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
               <span className="w-2 h-2 bg-warm-amber inline-block" />
               Deployment Vectors
             </div>
-            <h2 className="font-extrabold text-4xl md:text-5xl tracking-tight text-white uppercase">
-              Engineered For<br/>Operations
-            </h2>
+            <SectionHeading
+              title={<>Engineered For<br/>Operations</>}
+              align="left"
+              className="!mb-0"
+              titleClassName="!text-white"
+            />
           </div>
           <div className="font-semibold text-xs text-surface-dim/40 tracking-widest text-left md:text-right max-w-xs">
             MODULAR IMPLEMENTATION<br/>SCALABLE ARCHITECTURE

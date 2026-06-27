@@ -43,14 +43,11 @@ export function Problem() {
         <AmbientCanvasBackground />
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
-          <h2 className="font-headline-xl text-4xl md:text-6xl tracking-tight text-white mb-6">
-            Still Managing Tickets the Hard Way?
-          </h2>
-          <p className="font-body-lg text-lg md:text-xl text-white/80 leading-relaxed">
-            Spreadsheets. Manual emails. Payment reconciliation nightmares. If you're spending more time managing logistics than your actual event, something's broken.
-          </p>
-        </div>
+        <SectionHeading
+          title="Still Managing Tickets the Hard Way?"
+          subtitle="Spreadsheets. Manual emails. Payment reconciliation nightmares. If you're spending more time managing logistics than your actual event, something's broken."
+          titleClassName="!text-white"
+        />
 
         <div className="problem-grid grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 mb-16">
           <div className="problem-card relative opacity-0 pt-8 border-t border-white/10 group cursor-hover">

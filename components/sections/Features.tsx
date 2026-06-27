@@ -4,6 +4,7 @@ import { Navigation, Fingerprint, Activity, Smartphone, Brush, Zap } from "lucid
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
 import { AmbientCanvasBackground } from "@/components/ui/AmbientCanvasBackground";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Features() {
   const ref = useScrollAnimation(() => {
@@ -31,10 +32,11 @@ export function Features() {
       <div className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 w-[60vw] h-[60vw] bg-brand-coral opacity-[0.02] blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-      <div className="mb-16 max-w-2xl">
-        <h2 className="font-headline-lg text-3xl md:text-5xl tracking-tight text-on-background mb-4">The Complete Toolset</h2>
-        <p className="font-body-lg text-text-secondary">Designed for speed and reliability, so you can focus on the event, not the software.</p>
-      </div>
+      <SectionHeading 
+        title="The Complete Toolset"
+        subtitle="Designed for speed and reliability, so you can focus on the event, not the software."
+        align="center"
+      />
 
       <div className="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[

@@ -7,6 +7,7 @@ import { contactSchema, type ContactFormData } from "@/lib/validations";
 import { WebGLShaderBackground } from "@/components/ui/WebGLShaderBackground";
 import { Button } from "@/components/ui/Button";
 import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Contact() {
   const [success, setSuccess] = useState(false);
@@ -47,10 +48,12 @@ export function Contact() {
       </div>
 
       <div className="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-up visible">
-        <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Ready to Simplify Your Ticketing?</h2>
-        <p className="font-body-lg text-body-lg text-white/70 max-w-2xl mx-auto mb-10">
-          Join the event organizers who've ditched spreadsheets for a platform that just works.
-        </p>
+        <SectionHeading 
+          title="Ready to Simplify Your Ticketing?"
+          subtitle="Join the event organizers who've ditched spreadsheets for a platform that just works."
+          className="!mb-10"
+          titleClassName="!text-white"
+        />
 
         <div className="bg-surface/10 backdrop-blur-md p-8 rounded-3xl max-w-2xl mx-auto text-left border border-white/10">
           {success ? (

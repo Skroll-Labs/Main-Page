@@ -2,6 +2,7 @@ import { getAllPosts } from "@/lib/blog";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function RecentBlogs() {
   const recentPosts = getAllPosts().slice(0, 2);
@@ -12,13 +13,13 @@ export function RecentBlogs() {
     <section className="py-16 md:py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
       <div className="max-w-container-max mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-on-background mb-4">
-              Latest Insights
-            </h2>
-            <p className="text-text-secondary max-w-xl text-lg">
-              Event ticketing guides, industry updates, and expert tips for Sri Lankan organizers.
-            </p>
+          <div className="flex-1">
+            <SectionHeading
+              title="Latest Insights"
+              subtitle="Event ticketing guides, industry updates, and expert tips for Sri Lankan organizers."
+              align="left"
+              className="!mb-0"
+            />
           </div>
           <Link
             href="/blog"
