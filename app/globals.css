@@ -173,7 +173,7 @@ body {
 }
 .marquee-content {
   display: inline-flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 @keyframes marquee {
   0% { transform: translateX(0); }
