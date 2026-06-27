@@ -52,49 +52,37 @@ export function Problem() {
           </p>
         </div>
 
-        <div className="problem-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="problem-card relative opacity-0 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-none cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative z-10">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-coral/10 to-brand-coral/20 border border-brand-coral/20 rounded-full flex items-center justify-center mb-4">
-                <FileSpreadsheet className="w-5 h-5 text-brand-coral" />
-              </div>
-              <h3 className="font-headline-md text-xl md:text-headline-md text-white mb-2">Manually tracking</h3>
-              <p className="font-body-md text-body-md text-white/70">Manually tracking ticket sales across spreadsheets.</p>
+        <div className="problem-grid grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 mb-16">
+          <div className="problem-card relative opacity-0 pt-8 border-t border-white/10 group cursor-hover">
+            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-coral/10 group-hover:border-brand-coral/30 group-hover:-translate-y-1 transition-all duration-300">
+              <FileSpreadsheet className="w-5 h-5 text-white/70 group-hover:text-brand-coral transition-colors duration-300" />
             </div>
+            <h3 className="font-headline-md text-2xl text-white mb-3">Manual Tracking</h3>
+            <p className="font-body-lg text-lg text-white/60 leading-relaxed">Manually tracking ticket sales and reconciling payments across disjointed spreadsheets.</p>
           </div>
 
-          <div className="problem-card relative opacity-0 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-none cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative z-10">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-coral/10 to-brand-coral/20 border border-brand-coral/20 rounded-full flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-brand-coral" />
-              </div>
-              <h3 className="font-headline-md text-xl md:text-headline-md text-white mb-2">Delays in sending</h3>
-              <p className="font-body-md text-body-md text-white/70">Delays in sending QR codes and ticket PDFs to buyers.</p>
+          <div className="problem-card relative opacity-0 pt-8 border-t border-white/10 group cursor-hover">
+            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-coral/10 group-hover:border-brand-coral/30 group-hover:-translate-y-1 transition-all duration-300">
+              <Clock className="w-5 h-5 text-white/70 group-hover:text-brand-coral transition-colors duration-300" />
             </div>
+            <h3 className="font-headline-md text-2xl text-white mb-3">Delivery Delays</h3>
+            <p className="font-body-lg text-lg text-white/60 leading-relaxed">Painful delays in generating and sending QR codes and ticket PDFs to eager buyers.</p>
           </div>
 
-          <div className="problem-card relative opacity-0 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-none cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative z-10">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-coral/10 to-brand-coral/20 border border-brand-coral/20 rounded-full flex items-center justify-center mb-4">
-                <CreditCard className="w-5 h-5 text-brand-coral" />
-              </div>
-              <h3 className="font-headline-md text-xl md:text-headline-md text-white mb-2">Payment issues</h3>
-              <p className="font-body-md text-body-md text-white/70">Payment gateway issues slowing down checkout.</p>
+          <div className="problem-card relative opacity-0 pt-8 border-t border-white/10 group cursor-hover">
+            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-coral/10 group-hover:border-brand-coral/30 group-hover:-translate-y-1 transition-all duration-300">
+              <CreditCard className="w-5 h-5 text-white/70 group-hover:text-brand-coral transition-colors duration-300" />
             </div>
+            <h3 className="font-headline-md text-2xl text-white mb-3">Payment Friction</h3>
+            <p className="font-body-lg text-lg text-white/60 leading-relaxed">Clunky payment gateway issues that slow down checkout and increase cart abandonment.</p>
           </div>
 
-          <div className="problem-card relative opacity-0 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-none cursor-hover group overflow-hidden hover:-translate-y-1 transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-coral/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative z-10">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-coral/10 to-brand-coral/20 border border-brand-coral/20 rounded-full flex items-center justify-center mb-4">
-                <EyeOff className="w-5 h-5 text-brand-coral" />
-              </div>
-              <h3 className="font-headline-md text-xl md:text-headline-md text-white mb-2">No visibility</h3>
-              <p className="font-body-md text-body-md text-white/70">No real-time visibility into how your event is selling.</p>
+          <div className="problem-card relative opacity-0 pt-8 border-t border-white/10 group cursor-hover">
+            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-coral/10 group-hover:border-brand-coral/30 group-hover:-translate-y-1 transition-all duration-300">
+              <EyeOff className="w-5 h-5 text-white/70 group-hover:text-brand-coral transition-colors duration-300" />
             </div>
+            <h3 className="font-headline-md text-2xl text-white mb-3">Zero Visibility</h3>
+            <p className="font-body-lg text-lg text-white/60 leading-relaxed">No real-time visibility into how your event is selling, leaving you guessing on marketing.</p>
           </div>
         </div>
 

@@ -79,7 +79,7 @@ export function Navbar() {
           
           <div className="hidden md:flex items-center gap-4">
             <Link href="#contact">
-              <Button variant="primary" className="px-6 py-2.5 text-sm uppercase tracking-widest rounded-full border border-brand-coral hover:bg-brand-coral/90">
+              <Button variant="primary" className="px-4 py-2 text-sm uppercase tracking-widest rounded-full border border-brand-coral hover:bg-brand-coral/90">
                 Contact Us
               </Button>
             </Link>
