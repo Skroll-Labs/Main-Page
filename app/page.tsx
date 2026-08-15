@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { TwoPathSplit } from "@/components/sections/TwoPathSplit";
+import { Integrations } from "@/components/sections/Integrations";
 import { Problem } from "@/components/sections/Problem";
 import { EventsShowcase } from "@/components/sections/EventsShowcase";
 import { SolutionsShowcase } from "@/components/sections/SolutionsShowcase";
@@ -133,6 +134,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col">
         <Hero />
         <TwoPathSplit />
+        <Integrations />
         <Problem />
         <EventsShowcase />
         <SolutionsShowcase />
