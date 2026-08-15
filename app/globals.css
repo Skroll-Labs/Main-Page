@@ -4,7 +4,7 @@
   --color-brand-coral: #E8521A;
   --color-deep-teal: #1A6B6B;
   --color-warm-amber: #F5A623;
-  --color-section-dark: #0A0A0A;
+  --color-section-dark: #121212;
   --color-inverse-primary: #ffb59e;
   --color-outline-variant: #e3bfb4;
   --color-primary-fixed-dim: #ffb59e;
@@ -44,7 +44,7 @@
   --color-on-tertiary-container: #fdfcff;
   --color-primary-fixed: #ffdbd0;
   --color-on-primary-fixed: #390b00;
-  --color-background: #FFFFFF;
+  --color-background: #F5F3F0;
   --color-on-background: #1c1b1b;
   --color-surface-variant: #e5e2e1;
   --color-surface-container-highest: #e5e2e1;
@@ -65,19 +65,26 @@
   --spacing-margin-desktop: 80px;
   --spacing-element-gap: 24px;
 
-  --font-headline-lg: var(--font-outfit), sans-serif;
-  --font-headline-xl: var(--font-outfit), sans-serif;
-  --font-body-md: var(--font-outfit), sans-serif;
-  --font-button-text: var(--font-outfit), sans-serif;
-  --font-display-lg-mobile: var(--font-outfit), sans-serif;
-  --font-display-lg: var(--font-outfit), sans-serif;
-  --font-label-lg: var(--font-outfit), sans-serif;
-  --font-headline-md: var(--font-outfit), sans-serif;
-  --font-body-lg: var(--font-outfit), sans-serif;
+  --font-plus-jakarta: var(--font-plus-jakarta), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+  --font-display: var(--font-plus-jakarta), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-outfit: var(--font-plus-jakarta), sans-serif;
+
+  --font-headline-lg: var(--font-plus-jakarta), sans-serif;
+  --font-headline-xl: var(--font-plus-jakarta), sans-serif;
+  --font-body-md: var(--font-inter), sans-serif;
+  --font-button-text: var(--font-plus-jakarta), sans-serif;
+  --font-display-lg-mobile: var(--font-plus-jakarta), sans-serif;
+  --font-display-lg: var(--font-plus-jakarta), sans-serif;
+  --font-label-lg: var(--font-plus-jakarta), sans-serif;
+  --font-headline-md: var(--font-plus-jakarta), sans-serif;
+  --font-body-lg: var(--font-inter), sans-serif;
 
   --text-headline-lg: 40px;
   --text-headline-lg--line-height: 1.3;
   --text-headline-lg--font-weight: 700;
+  --text-headline-lg--letter-spacing: -0.02em;
 
   --text-headline-xl: 64px;
   --text-headline-xl--line-height: 1.2;
@@ -110,6 +117,7 @@
   --text-headline-md: 32px;
   --text-headline-md--line-height: 1.4;
   --text-headline-md--font-weight: 700;
+  --text-headline-md--letter-spacing: -0.015em;
 
   --text-body-lg: 20px;
   --text-body-lg--line-height: 1.6;

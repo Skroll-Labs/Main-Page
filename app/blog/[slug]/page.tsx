@@ -164,7 +164,7 @@ function renderSection(section: BlogSection, index: number) {
 
     case "h3":
       return (
-        <div key={index} className="mb-6 pl-4 border-l-2 border-[--color-glass-border]">
+        <div key={index} className="mb-6">
           <h3
             id={headingId}
             className="text-xl font-bold text-[--color-on-background] mb-3 scroll-mt-24"
@@ -190,7 +190,7 @@ function renderSection(section: BlogSection, index: number) {
       return (
         <div
           key={index}
-          className="mb-8 pl-6 border-l-4 border-[--color-brand-coral] bg-[--color-surface-bright] rounded-r-2xl py-4 pr-4"
+          className="mb-8 p-6 border border-brand-coral/20 bg-surface-bright rounded-3xl"
         >
           <p className="text-base text-[--color-on-background] leading-relaxed font-medium">
             {section.content}
@@ -288,11 +288,11 @@ export default async function ArticlePage({ params }: Props) {
       <BlogTracker slug={slug} />
       <Navbar />
 
-      <main className="flex-1 py-section-gap px-margin-mobile md:px-margin-desktop">
+      <main className="flex-1 pt-28 md:pt-36 pb-16 md:pb-24 px-margin-mobile md:px-margin-desktop">
         <div className="max-w-container-max mx-auto">
 
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-[--color-text-secondary] mb-8">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-[--color-text-secondary] mb-6 md:mb-8">
             <Link href="/" className="hover:text-[--color-brand-coral] transition-colors">Home</Link>
             <ChevronRight className="w-3 h-3" />
             <Link href="/blog" className="hover:text-[--color-brand-coral] transition-colors">Blog</Link>
@@ -300,11 +300,11 @@ export default async function ArticlePage({ params }: Props) {
             <span className="text-[--color-on-background] font-medium line-clamp-1">{post.title}</span>
           </nav>
 
-          {/* Two-column layout: 70% article / 30% sidebar */}
-          <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
+          {/* Two-column layout: 68% article / 32% sidebar */}
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
-            {/* ── Main Article Column (70%) ──────────────────────────────── */}
-            <article className="md:w-[70%] min-w-0">
+            {/* ── Main Article Column ──────────────────────────────── */}
+            <article className="w-full lg:w-[68%] min-w-0">
 
               {/* Article Header */}
               <header className="mb-8">
@@ -316,7 +316,7 @@ export default async function ArticlePage({ params }: Props) {
                 </div>
 
                 {/* H1 */}
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[--color-on-background] leading-tight tracking-tight mb-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[--color-on-background] leading-tight tracking-tight mb-4 text-balance">
                   {post.title}
                 </h1>
 
@@ -392,8 +392,8 @@ export default async function ArticlePage({ params }: Props) {
               <PrevNextNav prev={prev} next={next} />
             </article>
 
-            {/* ── Sidebar Column (30%) — sticky on desktop ─────────────── */}
-            <aside className="w-full md:w-[30%] md:sticky md:top-28 md:self-start">
+            {/* ── Sidebar Column — sticky on desktop (>1024px) ─────────────── */}
+            <aside className="w-full lg:w-[32%] lg:sticky lg:top-28 lg:self-start">
               <ArticleSidebar headings={headings} relatedPosts={relatedPosts} />
             </aside>
 

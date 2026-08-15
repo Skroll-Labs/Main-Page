@@ -21,7 +21,7 @@ export function CalloutBox({ children, variant = "tip" }: CalloutBoxProps) {
   }
 
   return (
-    <div className="my-8 rounded-3xl bg-surface-bright border-l-4 border-brand-coral pl-6 pr-6 py-5 flex gap-4 items-start">
+    <div className="my-8 rounded-3xl bg-brand-coral/5 border border-brand-coral/20 p-6 flex gap-4 items-start">
       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-coral-wash flex items-center justify-center mt-0.5">
         <Lightbulb className="w-4 h-4 text-brand-coral" />
       </div>

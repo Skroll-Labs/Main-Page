@@ -3,15 +3,13 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +17,27 @@ export function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check initial scroll position
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href === "/") {
+      if (pathname === "/") {
+        e.preventDefault();
+        // @ts-ignore
+        if (window.lenis) {
+          // @ts-ignore
+          window.lenis.scrollTo(0, { offset: 0 });
+        } else {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+      setMobileMenuOpen(false);
+      return;
+    }
+
     if (href.startsWith("/#")) {
       const targetId = href.replace("/#", "");
       
@@ -50,69 +63,52 @@ export function Navbar() {
     }
   };
 
+  const navLinks = [
+    { label: "Events", href: "/#events" },
+    { label: "Solutions", href: "/#solutions" },
+    { label: "Blog", href: "/blog" },
+    { label: "FAQ", href: "/#faq" },
+  ];
+
   return (
     <div className="fixed top-4 md:top-6 left-0 w-full z-50 px-4 md:px-6 flex justify-center pointer-events-none transition-transform duration-500">
       <nav
         id="mainNav"
-        className={`pointer-events-auto relative w-full max-w-5xl rounded-full bg-surface/90 dark:bg-[#0A0A0A]/80 backdrop-blur-md border border-glass-border shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_10px_40px_rgba(0,0,0,0.2)] transition-all duration-300 ${
-          scrolled ? "py-3 md:py-3" : "py-4 md:py-5"
+        className={`pointer-events-auto relative w-full max-w-5xl rounded-full bg-surface/90 dark:bg-section-dark/80 backdrop-blur-md border border-glass-border shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 ${
+          scrolled ? "py-3 md:py-3.5" : "py-4 md:py-5"
         }`}
       >
-        <div className="flex justify-between items-center px-4 md:px-8">
+        <div className="flex justify-between items-center px-6 md:px-8">
+          {/* Brand Logo */}
           <div className="flex items-center gap-4 cursor-hover">
-            <Link href="/" onClick={(e) => handleNavClick(e, "/")}>
-              <Image
-                alt="TicketFlow"
-                className="h-7 md:h-8 w-auto"
-                src="/logo.svg"
-                width={160}
-                height={32}
-              />
+            <Link href="/" onClick={(e) => handleNavClick(e, "/")} className="flex items-center group">
+              <span className="font-display-lg font-black text-2xl md:text-[26px] tracking-tighter text-on-background dark:text-white transition-colors duration-300">
+                Skroll
+              </span>
+              <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-brand-coral ml-0.5 transform group-hover:scale-125 transition-transform duration-300" />
             </Link>
           </div>
           
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <Link
-              href="/#features"
-              onClick={(e) => handleNavClick(e, "/#features")}
-              className="font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber transition-colors cursor-hover relative group flex items-center justify-center"
-            >
-              <span className="opacity-0 group-hover:opacity-100 absolute -left-3 transition-opacity text-warm-amber font-mono font-bold">[</span>
-              Features
-              <span className="opacity-0 group-hover:opacity-100 absolute -right-3 transition-opacity text-warm-amber font-mono font-bold">]</span>
-            </Link>
-            <Link
-              href="/#how-it-works"
-              onClick={(e) => handleNavClick(e, "/#how-it-works")}
-              className="font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber transition-colors cursor-hover relative group flex items-center justify-center"
-            >
-              <span className="opacity-0 group-hover:opacity-100 absolute -left-3 transition-opacity text-warm-amber font-mono font-bold">[</span>
-              How It Works
-              <span className="opacity-0 group-hover:opacity-100 absolute -right-3 transition-opacity text-warm-amber font-mono font-bold">]</span>
-            </Link>
-            <Link
-              href="/blog"
-              onClick={(e) => handleNavClick(e, "/blog")}
-              className="font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber transition-colors cursor-hover relative group flex items-center justify-center"
-            >
-              <span className="opacity-0 group-hover:opacity-100 absolute -left-3 transition-opacity text-warm-amber font-mono font-bold">[</span>
-              Blog
-              <span className="opacity-0 group-hover:opacity-100 absolute -right-3 transition-opacity text-warm-amber font-mono font-bold">]</span>
-            </Link>
-            <Link
-              href="/#faq"
-              onClick={(e) => handleNavClick(e, "/#faq")}
-              className="font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber transition-colors cursor-hover relative group flex items-center justify-center"
-            >
-              <span className="opacity-0 group-hover:opacity-100 absolute -left-3 transition-opacity text-warm-amber font-mono font-bold">[</span>
-              FAQ
-              <span className="opacity-0 group-hover:opacity-100 absolute -right-3 transition-opacity text-warm-amber font-mono font-bold">]</span>
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="font-button-text text-xs uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-brand-coral transition-colors cursor-hover relative group flex items-center justify-center py-1"
+              >
+                <span className="opacity-0 group-hover:opacity-100 absolute -left-2.5 transition-opacity text-brand-coral font-mono font-bold text-xs">[</span>
+                {link.label}
+                <span className="opacity-0 group-hover:opacity-100 absolute -right-2.5 transition-opacity text-brand-coral font-mono font-bold text-xs">]</span>
+              </Link>
+            ))}
           </div>
           
+          {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="/#contact" onClick={(e) => handleNavClick(e, "/#contact")}>
-              <Button variant="primary" className="px-3 py-1.5 text-xs uppercase tracking-widest rounded-full border border-brand-coral hover:bg-brand-coral/90">
+              <Button variant="primary" className="px-5 py-2 text-xs uppercase tracking-widest rounded-full hover:shadow-hover-button">
                 Contact Us
               </Button>
             </Link>
@@ -120,7 +116,7 @@ export function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-on-background dark:text-white focus:outline-none cursor-hover"
+            className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-full text-on-background dark:text-white focus:outline-none cursor-hover"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -128,47 +124,23 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu Overlay */}
+        {/* Mobile Menu Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-[calc(100%+8px)] left-0 w-full rounded-2xl overflow-hidden bg-surface/95 dark:bg-[#0A0A0A]/95 backdrop-blur-md border border-glass-border shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.3)] flex flex-col py-2 z-50">
-            <Link
-              href="/#features"
-              onClick={(e) => handleNavClick(e, "/#features")}
-              className="px-6 py-4 font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber hover:bg-white/5 transition-colors border-b border-glass-border/50"
-            >
-              Features
-            </Link>
-            <Link
-              href="/#how-it-works"
-              onClick={(e) => handleNavClick(e, "/#how-it-works")}
-              className="px-6 py-4 font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber hover:bg-white/5 transition-colors border-b border-glass-border/50"
-            >
-              How It Works
-            </Link>
-            <Link
-              href="/blog"
-              onClick={(e) => handleNavClick(e, "/blog")}
-              className="px-6 py-4 font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber hover:bg-white/5 transition-colors border-b border-glass-border/50"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/#faq"
-              onClick={(e) => handleNavClick(e, "/#faq")}
-              className="px-6 py-4 font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber hover:bg-white/5 transition-colors border-b border-glass-border/50"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/#contact"
-              onClick={(e) => handleNavClick(e, "/#contact")}
-              className="px-6 py-4 font-button-text text-sm uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-warm-amber hover:bg-white/5 transition-colors border-b border-glass-border/50"
-            >
-              Contact
-            </Link>
-            <div className="p-6">
+          <div className="md:hidden absolute top-[calc(100%+8px)] left-0 w-full rounded-3xl overflow-hidden bg-surface/95 dark:bg-section-dark/95 backdrop-blur-xl border border-glass-border shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_20px_40px_rgba(0,0,0,0.15)] flex flex-col py-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="min-h-[48px] px-6 py-3 font-button-text text-xs uppercase tracking-widest text-secondary dark:text-surface-dim hover:text-brand-coral hover:bg-black/5 dark:hover:bg-white/5 transition-colors border-b border-glass-border/50 flex items-center justify-between"
+              >
+                <span>{link.label}</span>
+                <span className="text-brand-coral font-mono text-xs">→</span>
+              </Link>
+            ))}
+            <div className="p-4 pt-4">
               <Link href="/#contact" onClick={(e) => handleNavClick(e, "/#contact")}>
-                <Button variant="primary" className="w-full justify-center px-4 py-2 text-sm uppercase tracking-widest rounded-full border border-brand-coral">
+                <Button variant="primary" className="w-full justify-center min-h-[44px] px-4 py-3 text-xs uppercase tracking-widest rounded-full">
                   Contact Us
                 </Button>
               </Link>

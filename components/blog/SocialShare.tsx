@@ -30,7 +30,7 @@ export function SocialShare({ url, title }: SocialShareProps) {
   const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encoded}`;
 
   const btnBase =
-    "inline-flex items-center gap-2 rounded-full border border-glass-border text-text-secondary text-xs font-semibold px-4 py-2 transition-all duration-200 hover:border-brand-coral hover:text-brand-coral";
+    "inline-flex items-center gap-2 rounded-full border border-glass-border text-text-secondary text-xs font-semibold px-4 py-2.5 min-h-[40px] sm:min-h-[44px] transition-all duration-200 hover:border-brand-coral hover:text-brand-coral active:scale-95";
 
   return (
     <div className="mt-10 pt-8 border-t border-glass-border">

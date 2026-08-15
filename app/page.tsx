@@ -1,33 +1,32 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { Integrations } from "@/components/sections/Integrations";
+import { TwoPathSplit } from "@/components/sections/TwoPathSplit";
 import { Problem } from "@/components/sections/Problem";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { Features } from "@/components/sections/Features";
-import { SocialProof } from "@/components/sections/SocialProof";
-import { WhoItsFor } from "@/components/sections/WhoItsFor";
+import { EventsShowcase } from "@/components/sections/EventsShowcase";
+import { SolutionsShowcase } from "@/components/sections/SolutionsShowcase";
 import { FAQ } from "@/components/sections/FAQ";
+import { RecentBlogs } from "@/components/sections/RecentBlogs";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
-import { RecentBlogs } from "@/components/sections/RecentBlogs";
 
-const SITE_URL = "https://ticketflow.lk";
+const SITE_URL = "https://skroll.lk";
 
 function HomePageJsonLd() {
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
-    name: "TicketFlow",
+    name: "Skroll",
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
-    description: "Event ticketing platform for Sri Lankan organizers.",
+    logo: `${SITE_URL}/logo.svg`,
+    description:
+      "Sri Lanka's premier event ticketing platform and custom software solutions studio.",
   };
 
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "TicketFlow",
+    name: "Skroll Events",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {
@@ -38,56 +37,67 @@ function HomePageJsonLd() {
     publisher: { "@id": `${SITE_URL}/#organization` },
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Skroll Business Solutions",
+    serviceType: "Custom Software Engineering & Workflow Automation",
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: "Sri Lanka",
+    description:
+      "Bespoke digital systems and automated operational pipelines designed to eliminate friction for modern businesses.",
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
       {
         "@type": "Question",
-        name: "How long does setup take?",
+        name: "How fast can we get started with event ticketing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Most teams in Sri Lanka are up and running within a single day — no developer or technical expertise required.",
+          text: "Most event organizers in Sri Lanka are up and running within a single day with zero technical setup required.",
         },
       },
       {
         "@type": "Question",
-        name: "What payment gateways do you support?",
+        name: "What payment gateways are supported?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "TicketFlow integrates with leading Sri Lankan and international payment providers to keep checkout fast, secure, and familiar to your buyers.",
+          text: "We integrate with leading Sri Lankan (PayHere, etc.) and international card processors for smooth, secure checkout in LKR and USD.",
         },
       },
       {
         "@type": "Question",
-        name: "Can we white-label our tickets and checkout pages?",
+        name: "Do attendees receive both Email and SMS tickets?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — fully customise ticket designs, confirmation emails, and checkout pages with your own branding. Your attendees never see TicketFlow's name unless you want them to.",
+          text: "Yes. Every ticket purchase automatically triggers instant delivery via both Email and SMS with unique QR codes.",
         },
       },
       {
         "@type": "Question",
-        name: "Do you support both email and SMS delivery?",
+        name: "How does the Business Solutions arm work?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Absolutely. Every ticket is delivered via both email and SMS by default, so no attendee misses their QR code or PDF ticket.",
+          text: "We conduct a deep discovery session into your operational bottleneck, design a bespoke software solution, and build it from the ground up — no generic templates.",
         },
       },
       {
         "@type": "Question",
-        name: "What happens if an attendee doesn't receive their ticket?",
+        name: "Can we white-label tickets and interfaces with our own brand?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our automated delivery system retries failed sends and provides your team with full visibility into every delivery status in real time.",
+          text: "Absolutely. Your tickets, confirmation messages, and customer-facing interfaces are fully customized with your brand identity.",
         },
       },
       {
         "@type": "Question",
-        name: "Is TicketFlow suitable for large events?",
+        name: "Is Skroll built for high-volume scale?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — the platform is built to scale from intimate corporate workshops to major concerts and festivals with thousands of attendees.",
+          text: "Yes. Engineered on modern cloud infrastructure, our systems effortlessly handle high-traffic ticket drops and enterprise-grade data loads.",
         },
       },
     ],
@@ -95,9 +105,22 @@ function HomePageJsonLd() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </>
   );
 }
@@ -109,12 +132,10 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 flex flex-col">
         <Hero />
-        <Integrations />
+        <TwoPathSplit />
         <Problem />
-        <HowItWorks />
-        <Features />
-        {/*<SocialProof />*/}
-        <WhoItsFor />
+        <EventsShowcase />
+        <SolutionsShowcase />
         <FAQ />
         <RecentBlogs />
         <Contact />

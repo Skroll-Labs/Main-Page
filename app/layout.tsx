@@ -1,30 +1,41 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
-import { MagneticCursor } from "@/components/ui/MagneticCursor";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "TicketFlow — Event Ticketing Software for Sri Lanka",
+  metadataBase: new URL("https://skroll.lk"),
+  title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
   description:
-    "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform built for event organizers.",
+    "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
   openGraph: {
-    title: "TicketFlow — Event Ticketing Software for Sri Lanka",
-    description: "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform.",
-    url: "https://ticketflow.lk",
-    siteName: "TicketFlow",
+    title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
+    description:
+      "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
+    url: "https://skroll.lk",
+    siteName: "Skroll",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TicketFlow — Event Ticketing Software for Sri Lanka",
-    description: "Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform.",
+    title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
+    description:
+      "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
     images: ["/og-image.png"],
   },
 };
@@ -37,12 +48,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} h-full antialiased`}
+      className={`${plusJakarta.variable} ${inter.variable} antialiased`}
     >
-      <body className="font-body-md text-body-md relative min-h-full flex flex-col">
-        <MagneticCursor />
+      <body className="font-body-md text-body-md bg-background text-on-background relative flex flex-col min-h-screen">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
 }
+

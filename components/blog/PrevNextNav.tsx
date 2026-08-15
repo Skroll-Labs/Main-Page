@@ -12,7 +12,7 @@ export function PrevNextNav({ prev, next }: PrevNextNavProps) {
   return (
     <nav
       aria-label="Article navigation"
-      className="mt-12 pt-8 border-t border-glass-border grid grid-cols-2 gap-4"
+      className="mt-12 pt-8 border-t border-glass-border grid grid-cols-1 sm:grid-cols-2 gap-4"
     >
       {/* Previous (older) */}
       <div>

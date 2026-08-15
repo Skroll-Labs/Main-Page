@@ -10,14 +10,14 @@ interface TagChipProps {
 
 export function TagChip({ label, active = false, onClick }: TagChipProps) {
   const base =
-    "inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer select-none";
+    "inline-flex items-center rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer select-none";
   const variant = active
-    ? "bg-brand-coral text-white"
+    ? "bg-brand-coral text-white shadow-sm"
     : "bg-surface border border-glass-border text-text-secondary hover:border-brand-coral hover:text-brand-coral";
 
   if (onClick) {
     return (
-      <button onClick={onClick} className={`${base} ${variant}`}>
+      <button onClick={onClick} className={`${base} ${variant} min-h-[38px] active:scale-95`}>
         {label}
       </button>
     );

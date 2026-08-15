@@ -10,7 +10,7 @@ export function RecentBlogs() {
   if (recentPosts.length === 0) return null;
 
   return (
-    <section className="py-16 md:py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+    <section className="py-12 md:py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
       <div className="max-w-container-max mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
           <div className="flex-1">
@@ -23,9 +23,10 @@ export function RecentBlogs() {
           </div>
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 font-semibold text-brand-coral hover:text-brand-coral/80 transition-colors"
+            className="inline-flex items-center gap-2 font-semibold text-brand-coral hover:text-brand-coral/80 transition-colors min-h-[44px] self-start md:self-auto"
           >
-            View all articles <ArrowRight className="w-4 h-4" />
+            <span>View all articles</span>
+            <ArrowRight className="w-4 h-4 ml-0.5" />
           </Link>
         </div>
 
