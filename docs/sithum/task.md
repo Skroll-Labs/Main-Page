@@ -1,0 +1,7 @@
+- `[x]` Update SEO files (`app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`, `app/feed.json/route.ts`)
+- `[x]` Update blog pages (`app/blog/page.tsx`, `app/blog/[slug]/page.tsx`)
+- `[x]` Update blog components (`components/blog/ArticleSidebar.tsx`, `components/blog/CTABlock.tsx`)
+- `[x]` Update blog JSON data (`best-event-ticketing-platform-sri-lanka.json`, `eventbrite-alternative-sri-lanka.json`, `how-to-sell-tickets-online-sri-lanka.json`, `how-to-plan-an-event-sri-lanka.json`, `qr-code-tickets-events-sri-lanka.json`)
+- `[x]` Update `scripts/generate_posts.js`
+- `[x]` Create `/public/og-image.png`
+- `[x]` Verify changes (build and type check)
