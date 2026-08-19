@@ -29,7 +29,7 @@ export function ArticleSidebar({ headings, relatedPosts }: ArticleSidebarProps) 
         </div>
       )}
 
-      {/* TicketFlow Contact Card */}
+      {/* Skroll Contact Card */}
       <CTABlock variant="sidebar" />
 
       {/* Related Articles */}

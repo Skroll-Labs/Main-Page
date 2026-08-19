@@ -7,6 +7,8 @@ interface CTABlockProps {
 }
 
 export function CTABlock({ variant = "inline" }: CTABlockProps) {
+  const waNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+94770000000").replace("+", "");
+
   if (variant === "sidebar") {
     return (
       <div className="rounded-3xl bg-surface border border-glass-border p-6 shadow-[var(--shadow-card)]">
@@ -24,7 +26,7 @@ export function CTABlock({ variant = "inline" }: CTABlockProps) {
             Contact Us <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace("+", "")}`}
+            href={`https://wa.me/${waNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 rounded-full border border-glass-border text-on-background text-xs font-semibold min-h-[44px] px-4 py-2.5 transition-all duration-300 hover:border-brand-coral hover:text-brand-coral"
@@ -55,7 +57,7 @@ export function CTABlock({ variant = "inline" }: CTABlockProps) {
           Contact Us <ArrowRight className="w-4 h-4 ml-0.5" />
         </Link>
         <a
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace("+", "")}`}
+          href={`https://wa.me/${waNumber}`}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-glass-border text-on-background text-sm font-semibold min-h-[44px] px-6 py-3 transition-all duration-300 hover:border-brand-coral hover:text-brand-coral"

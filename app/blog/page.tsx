@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog — Event Ticketing Guides for Sri Lanka | TicketFlow",
+    title: "Blog — Event Ticketing Guides for Sri Lanka | Skroll",
     description:
       "Practical guides, how-tos, and expert advice for event organizers in Sri Lanka. Ticketing, check-in, payment gateways, and more.",
     url: "/blog",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog — Event Ticketing Guides | TicketFlow",
+    title: "Blog — Event Ticketing Guides | Skroll",
     description:
       "Practical guides for Sri Lankan event organizers on ticketing, check-in, and event management.",
     images: ["/blog/blog-listing-hero.png"],

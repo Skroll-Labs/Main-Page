@@ -21,7 +21,7 @@ import { Clock, Calendar, ChevronRight } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
-const SITE_URL = "https://ticketflow.lk";
+const SITE_URL = "https://skroll.lk";
 
 // ─── Static generation ────────────────────────────────────────────────────────
 export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
@@ -256,7 +256,7 @@ function renderSection(section: BlogSection, index: number) {
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) notFound();
+  if (!post || post.tags.includes("scaffold")) notFound();
 
   const allPosts = getAllPosts();
   const currentIndex = allPosts.findIndex((p) => p.slug === slug);
