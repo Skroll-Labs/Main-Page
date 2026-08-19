@@ -28,10 +28,10 @@ const scaffolds = [
       },
       {
         type: 'comparison_table',
-        heading: 'Eventbrite vs TicketFlow: Feature by Feature',
+        heading: 'Eventbrite vs Skroll: Feature by Feature',
         content: 'A direct comparison on the factors that matter most for Sri Lanka-based events.',
         tableData: {
-          headers: ['Feature', 'Eventbrite', 'TicketFlow'],
+          headers: ['Feature', 'Eventbrite', 'Skroll'],
           rows: [
             ['LKR Native Pricing', '⚠️ Possible but complex', '✅ Full LKR support'],
             ['PayHere Integration', '❌ Not supported', '✅ Native integration'],
@@ -42,7 +42,7 @@ const scaffolds = [
       },
       {
         type: 'conclusion',
-        content: 'Eventbrite is a great platform for the markets it was designed to serve. Sri Lanka is not one of those markets — at least not yet. If you are running events in Sri Lanka for Sri Lankan attendees, you need a platform built around local payment infrastructure, SMS delivery, and support that understands your context. TicketFlow was built precisely for this.'
+        content: 'Eventbrite is a great platform for the markets it was designed to serve. Sri Lanka is not one of those markets — at least not yet. If you are running events in Sri Lanka for Sri Lankan attendees, you need a platform built around local payment infrastructure, SMS delivery, and support that understands your context. Skroll was built precisely for this.'
       }
     ],
     internalLinks: [
@@ -159,7 +159,7 @@ scaffoldSlugs.forEach((slug, i) => {
   scaffolds.push({
     slug,
     title: `Scaffold Article for ${slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`,
-    metaTitle: `Scaffold Title | TicketFlow`,
+    metaTitle: `Scaffold Title | Skroll`,
     metaDescription: `This is a scaffold article for ${slug}.`,
     cluster: (i % 5) + 1,
     category: 'Industry Guide',
