@@ -1,7 +1,7 @@
 // app/feed.json/route.ts — JSON Feed 1.1 served at /feed.json
 import { getAllPosts } from "@/lib/blog";
 
-const SITE_URL = "https://ticketflow.lk";
+const SITE_URL = "https://skroll.lk";
 
 export const dynamic = "force-static"; // Cache at build time
 
@@ -10,7 +10,7 @@ export async function GET(): Promise<Response> {
 
   const feed = {
     version: "https://jsonfeed.org/version/1.1",
-    title: "TicketFlow Blog — Event Ticketing Guides for Sri Lanka",
+    title: "Skroll Blog — Event Ticketing Guides for Sri Lanka",
     home_page_url: `${SITE_URL}/blog`,
     feed_url: `${SITE_URL}/feed.json`,
     description:

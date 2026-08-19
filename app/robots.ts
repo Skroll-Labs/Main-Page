@@ -16,6 +16,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://ticketflow.lk/sitemap.xml",
+    sitemap: "https://skroll.lk/sitemap.xml",
   };
 }
