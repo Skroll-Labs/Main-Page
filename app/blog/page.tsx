@@ -31,11 +31,58 @@ export const metadata: Metadata = {
   },
 };
 
+const SITE_URL = "https://skroll.lk";
+
+function BlogJsonLd({ posts }: { posts: ReturnType<typeof getAllPosts> }) {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${SITE_URL}/blog`,
+    name: "Skroll Blog — Event Ticketing Guides for Sri Lanka",
+    description:
+      "Practical guides, how-tos, and expert advice for event organizers in Sri Lanka. Ticketing, check-in, payment gateways, and more.",
+    url: `${SITE_URL}/blog`,
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      "@id": `${SITE_URL}/blog/${post.slug}`,
+      headline: post.title,
+      description: post.metaDescription,
+      datePublished: post.publishDate,
+      url: `${SITE_URL}/blog/${post.slug}`,
+      image: `${SITE_URL}${post.heroImage}`,
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  );
+}
+
 export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
     <>
+      <BlogJsonLd posts={posts} />
       <Navbar />
       <main className="flex-1 flex flex-col">
         <BlogHero postCount={posts.length} />

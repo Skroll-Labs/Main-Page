@@ -17,7 +17,7 @@ import { SocialShare } from "@/components/blog/SocialShare";
 import { CTABlock } from "@/components/blog/CTABlock";
 import { CalloutBox } from "@/components/blog/CalloutBox";
 import { TagChip, CLUSTER_LABELS } from "@/components/blog/TagChip";
-import { Clock, Calendar, ChevronRight } from "lucide-react";
+import { Clock, Calendar, ChevronRight, User } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
@@ -83,7 +83,12 @@ function ArticleJsonLd({ post }: { post: BlogPost }) {
     description: post.metaDescription,
     image: `${SITE_URL}${post.heroImage}`,
     datePublished: post.publishDate,
-    url: `${SITE_URL}/blog/${post.slug}`,
+    dateModified: post.publishDate,
+    author: {
+      "@type": "Organization",
+      name: "Skroll Editorial Team",
+      url: SITE_URL,
+    },
     publisher: { "@id": `${SITE_URL}/#organization` },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -321,10 +326,15 @@ export default async function ArticlePage({ params }: Props) {
                 </h1>
 
                 {/* Meta row */}
-                <div className="flex flex-wrap items-center gap-4 text-sm text-[--color-text-secondary] mb-6">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:text-sm text-[--color-text-secondary] mb-6">
+                  <span className="flex items-center gap-1.5 font-medium text-[--color-on-background]">
+                    <User className="w-4 h-4 text-[--color-brand-coral]" />
+                    By Skroll Editorial Team
+                  </span>
+                  <span className="w-1 h-1 rounded-full bg-[--color-glass-border]" />
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4" />
-                    {formattedDate}
+                    Published {formattedDate}
                   </span>
                   <span className="w-1 h-1 rounded-full bg-[--color-glass-border]" />
                   <span className="flex items-center gap-1.5">
@@ -384,6 +394,26 @@ export default async function ArticlePage({ params }: Props) {
                   ))}
                 </div>
               )}
+
+              {/* Author Attribution Card */}
+              <div className="mt-10 p-6 rounded-3xl bg-surface border border-glass-border flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-brand-coral/10 border border-brand-coral/20 flex items-center justify-center text-brand-coral shrink-0 font-bold font-display-lg text-lg">
+                  S
+                </div>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <h4 className="font-headline-md text-base font-bold text-on-background">
+                      Written by Skroll Editorial Team
+                    </h4>
+                    <span className="text-[10px] font-mono font-semibold text-brand-coral bg-brand-coral/10 border border-brand-coral/20 px-2 py-0.5 rounded-full">
+                      Verified
+                    </span>
+                  </div>
+                  <p className="font-body-md text-xs sm:text-sm text-text-secondary leading-relaxed">
+                    Engineering, event operations, and digital ticketing insights curated by the Skroll team in Colombo, Sri Lanka.
+                  </p>
+                </div>
+              </div>
 
               {/* Social Share */}
               <SocialShare url={articleUrl} title={post.title} />

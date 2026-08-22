@@ -1,0 +1,29 @@
+﻿# Skroll
+
+> Event Ticketing Platform & Business Technology Solutions — Sri Lanka
+
+## Overview
+Skroll is a Sri Lankan technology company providing two core product lines:
+1. **Skroll Events**: An end-to-end B2B event ticketing platform built for organizers in Sri Lanka.
+2. **Skroll Business Solutions**: A bespoke software engineering studio designing automated operational pipelines for enterprise clients.
+
+## Skroll Events (Ticketing Platform)
+- **Local & International Payments**: Seamless checkout in LKR and USD with leading Sri Lankan gateways (PayHere, commercial banks) and global card networks.
+- **Automated Multi-Channel Ticket Delivery**: Sub-second dispatch of unique, fraud-resistant QR codes and branded PDF tickets via both Email and SMS.
+- **High-Speed Gate Check-In**: Sub-second QR verification app that operates reliably even in low-connectivity venue environments.
+- **Live Sales & Attendance Analytics**: Real-time dashboard tracking revenue velocity, gate check-in speed, and ticket tier breakdown.
+- **White-Label Customization**: Custom event branding on ticket PDFs, checkout styling, and confirmation messages.
+
+## Skroll Business Solutions (Software Engineering)
+- **Custom Workflow Automation**: Eliminates manual spreadsheets, WhatsApp follow-ups, and reconciliation bottlenecks.
+- **Engineering Rigor**: Built with Next.js, TypeScript, and resilient API architectures by engineers grounded in University of Moratuwa CSE standards.
+- **Purpose-Built Systems**: Tailored specifically to team workflows and local operating realities with zero generic SaaS templates.
+
+## Key Links & Endpoints
+- Homepage: https://skroll.lk
+- Events Showcase: https://skroll.lk/#events
+- Solutions Showcase: https://skroll.lk/#solutions
+- Knowledge Hub & Guides: https://skroll.lk/blog
+- Contact & Inquiries: https://skroll.lk/#contact
+- Sitemap: https://skroll.lk/sitemap.xml
+- RSS / JSON Feed: https://skroll.lk/feed.json

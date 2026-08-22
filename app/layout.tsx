@@ -17,21 +17,38 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://skroll.lk"),
-  title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
+  title: {
+    default: "Skroll — Event Ticketing & Business Tech Solutions",
+    template: "%s | Skroll",
+  },
   description:
     "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
+    title: "Skroll — Event Ticketing & Business Tech Solutions",
     description:
       "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
     url: "https://skroll.lk",
     siteName: "Skroll",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Skroll — Event Ticketing & Business Tech Solutions" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Skroll — Event Ticketing Platform & Business Technology Solutions",
+    title: "Skroll — Event Ticketing & Business Tech Solutions",
     description:
       "Sri Lanka's premier event ticketing platform and custom software solutions studio. Instant QR tickets, local payments, and bespoke business automation.",
     images: ["/og-image.png"],

@@ -13,6 +13,17 @@ import { Footer } from "@/components/sections/Footer";
 const SITE_URL = "https://skroll.lk";
 
 function HomePageJsonLd() {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: "Skroll",
+    description:
+      "Sri Lanka's premier event ticketing platform and custom software solutions studio.",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -106,6 +117,10 @@ function HomePageJsonLd() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
