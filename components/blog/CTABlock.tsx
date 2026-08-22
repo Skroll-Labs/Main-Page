@@ -1,6 +1,7 @@
 // components/blog/CTABlock.tsx
 import Link from "next/link";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 interface CTABlockProps {
   variant?: "inline" | "sidebar";
@@ -31,7 +32,7 @@ export function CTABlock({ variant = "inline" }: CTABlockProps) {
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 rounded-full border border-glass-border text-on-background text-xs font-semibold min-h-[44px] px-4 py-2.5 transition-all duration-300 hover:border-brand-coral hover:text-brand-coral"
           >
-            <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
+            <WhatsAppIcon className="w-3.5 h-3.5" /> WhatsApp
           </a>
         </div>
       </div>
@@ -62,7 +63,7 @@ export function CTABlock({ variant = "inline" }: CTABlockProps) {
           rel="noopener noreferrer"
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-glass-border text-on-background text-sm font-semibold min-h-[44px] px-6 py-3 transition-all duration-300 hover:border-brand-coral hover:text-brand-coral"
         >
-          <MessageCircle className="w-4 h-4" /> Chat on WhatsApp
+          <WhatsAppIcon className="w-4 h-4" /> Chat on WhatsApp
         </a>
       </div>
     </div>

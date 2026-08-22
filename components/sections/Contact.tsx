@@ -6,7 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, type ContactFormData } from "@/lib/validations";
 import { WebGLShaderBackground } from "@/components/ui/WebGLShaderBackground";
 import { Button } from "@/components/ui/Button";
-import { CheckCircle2, MessageCircle, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle2, Phone, ArrowRight } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Contact() {
@@ -197,7 +198,7 @@ export function Contact() {
                     rel="noopener noreferrer"
                     className="font-button-text text-xs uppercase tracking-wider text-white/70 hover:text-brand-coral transition-colors cursor-hover flex items-center gap-2 min-h-[44px] px-3 py-2 rounded-xl hover:bg-white/5"
                   >
-                    <MessageCircle className="w-4 h-4 text-brand-coral" />
+                    <WhatsAppIcon className="w-4 h-4 text-brand-coral" />
                     <span>WhatsApp</span>
                   </a>
                   <a
