@@ -334,14 +334,14 @@ export default async function ArticlePage({ params }: Props) {
                 </div>
 
                 {/* Hero Image */}
-                <div className="rounded-3xl overflow-hidden mb-8">
+                <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden mb-8 border border-glass-border shadow-xs">
                   <Image
                     src={post.heroImage}
                     alt={post.title}
-                    width={1200}
-                    height={630}
-                    className="w-full object-cover"
+                    fill
+                    className="object-cover object-center"
                     priority
+                    sizes="(max-width: 1024px) 100vw, 68vw"
                   />
                 </div>
               </header>
