@@ -28,7 +28,7 @@
 ## Components
 - **Navbar**: Pill-shaped glassmorphism floating navbar (`components/layout/Navbar.tsx`).
 - **Hero**: Skroll brand headline with WebGL particle background, dual CTAs, and dashboard preview (`components/sections/Hero.tsx`).
-- **TwoPathSplit**: Dual interactive gateway cards directly below the hero for Events and Business solutions (`components/sections/TwoPathSplit.tsx`).
+- **AboutSkroll**: Company overview and dual services section featuring an asymmetric mission statement, three core principles, a 50/50 services diptych, and Sri Lankan origin commitment card (`components/sections/AboutSkroll.tsx`).
 - **EventsShowcase**: Dedicated Ticketing Arm showcase featuring a 3-beat visual story, quiet details grid, and CTA bar (`components/sections/EventsShowcase.tsx`).
 - **SolutionsShowcase**: Dedicated Business Solutions Arm section with Before/After visual transformation cards, 3 core engineering pillars, and direct CTA block (`components/sections/SolutionsShowcase.tsx`).
 - **Problem**: Operations friction section contrasting manual chaos with automated flow (`components/sections/Problem.tsx`).
@@ -62,17 +62,6 @@ File: `components/ui/Button.tsx`
 | Spacing          | `px-8 py-4` (primary/secondary) |
 | Hover state      | `hover:shadow-hover-button` (primary) |
 | Cursor           | `cursor-hover`  |
-
-### TwoPathSplit Gateway Cards
-File: `components/sections/TwoPathSplit.tsx`
-
-| Property         | Class           |
-| ---------------- | --------------- |
-| Background       | `bg-surface`    |
-| Border radius    | `rounded-3xl`   |
-| Padding          | `p-8 md:p-12`   |
-| Border           | `border border-glass-border` |
-| Hover state      | `hover:-translate-y-2 hover:shadow-hover-card` |
 
 ### EventsShowcase 3-Beat & Details Cards
 File: `components/sections/EventsShowcase.tsx`

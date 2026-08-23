@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { TwoPathSplit } from "@/components/sections/TwoPathSplit";
 import { AboutSkroll } from "@/components/sections/AboutSkroll";
 import { Integrations } from "@/components/sections/Integrations";
 import { Problem } from "@/components/sections/Problem";
@@ -149,7 +148,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 flex flex-col">
         <Hero />
-        <TwoPathSplit />
         <AboutSkroll />
         <Integrations />
         <Problem />
