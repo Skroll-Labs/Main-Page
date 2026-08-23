@@ -20,9 +20,10 @@ Update this file after every completed feature. Any AI agent reading this should
 - [x] 03 Skroll Brand Identity & Typography
 
 ### Phase 2 — Landing Page Sections
-- [x] 04 Navbar Rebrand (Skroll brand, updated links: Events, Solutions, Blog, FAQ, Contact Us)
+- [x] 04 Navbar Rebrand (Skroll brand, updated links: About, Events, Solutions, Blog, FAQ, Contact Us)
 - [x] 05 Hero Section (Skroll tagline: "Skroll. Makes everything better", dual CTAs, WebGL background)
 - [x] 06 TwoPathSplit Gateway Section (Dual interactive cards for Events and Business)
+- [x] 06b AboutSkroll Section (Company overview, 3 core operational principles, dual service diptych, Sri Lanka commitment)
 - [x] 07 EventsShowcase Section (3-beat visual story, quiet details grid, CTA bar)
 - [x] 08 SolutionsShowcase Section (Business arm showcase, before/after transformation, 3 pillars, CTA)
 - [x] 09 Problem Section (Manual chaos vs. automated flow contrast, 4 pain points)
@@ -34,7 +35,7 @@ Update this file after every completed feature. Any AI agent reading this should
 ### Phase 3 — Animations
 - [x] 14 GSAP + Lenis Setup
 - [x] 15 Hero Animations & Clip-Reveal
-- [x] 16 Scroll-Triggered Section Animations (TwoPathSplit, EventsShowcase, SolutionsShowcase staggered reveals)
+- [x] 16 Scroll-Triggered Section Animations (TwoPathSplit, AboutSkroll, EventsShowcase, SolutionsShowcase staggered reveals)
 - [x] 17 FAQ Accordion Animation & Problem Grid Reveal
 
 ### Phase 4 — Forms & Email
@@ -44,7 +45,7 @@ Update this file after every completed feature. Any AI agent reading this should
 ### Phase 5 — Polish & Launch
 - [x] 20 SEO & Metadata (Schema.org JSON-LD for Organization, SoftwareApplication, Service, and FAQPage)
 - [x] 21 Responsive QA (Mobile, Tablet, Desktop)
-- [x] 22 Build Verification (`next build` with zero errors across all 14 routes)
+- [x] 22 Build Verification (`next build` with zero errors across all 15 routes)
 
 ---
 
@@ -53,6 +54,7 @@ Update this file after every completed feature. Any AI agent reading this should
 - Used `useScrollAnimation` hook across all sections for consistent GSAP timeline management with `gsap.context()`.
 - Implemented sleek typography logo with Plus Jakarta Sans and Brand Coral dot.
 - Built TwoPathSplit interactive gateway with dual responsive cards for self-selection into Events and Business paths.
+- Built AboutSkroll section with mission-first asymmetric layout, 3 core principles (zero-friction, local-first, bespoke), and 50/50 services diptych.
 - Built EventsShowcase with a 3-beat visual story and a 4-card "Quiet Details" grid.
 - Built SolutionsShowcase with Before vs After visual transformation card, 3 core engineering pillars, and direct CTA.
 - Configured JSON-LD structured data in `app/page.tsx` for Organization, SoftwareApplication (Ticketing), Service (Business Solutions), and FAQPage.

@@ -64,6 +64,7 @@ export function Navbar() {
   };
 
   const navLinks = [
+    { label: "About", href: "/#about" },
     { label: "Events", href: "/#events" },
     { label: "Solutions", href: "/#solutions" },
     { label: "Blog", href: "/blog" },

@@ -36,6 +36,12 @@ export function Footer() {
                 Home
               </Link>
               <Link
+                href="/#about"
+                className="font-body-md text-sm text-white/70 hover:text-brand-coral transition-colors cursor-hover min-h-[36px] flex items-center"
+              >
+                About
+              </Link>
+              <Link
                 href="/#events"
                 className="font-body-md text-sm text-white/70 hover:text-brand-coral transition-colors cursor-hover min-h-[36px] flex items-center"
               >
