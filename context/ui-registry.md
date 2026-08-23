@@ -72,17 +72,25 @@ File: `components/sections/EventsShowcase.tsx`
 | Icon Wrapper     | `w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-brand-coral/10 text-brand-coral` |
 | Hover state      | `hover:-translate-y-1 hover:shadow-hover-card transition-all` |
 
-### SolutionsShowcase Architectural Split & Pillars
+### SolutionsShowcase Scroll-Pinned Feature Sequence & Pillars
 File: `components/sections/SolutionsShowcase.tsx`
 
 | Property         | Class           |
 | ---------------- | --------------- |
-| Section Wrapper  | `w-full bg-background text-on-background relative overflow-hidden border-t border-glass-border` |
-| Split Row Container | `border border-glass-border rounded-2xl md:rounded-[2rem] overflow-hidden group hover:border-brand-coral/30 shadow-sm` |
-| Left Half (Friction) | `w-full md:w-1/2 p-8 md:p-12 lg:p-16 bg-surface/40 md:border-r border-b md:border-b-0 border-glass-border` |
-| Right Half (Skroll) | `w-full md:w-1/2 p-8 md:p-12 lg:p-16 bg-surface relative overflow-hidden` |
-| Nexus Connector  | `absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-surface border border-glass-border rounded-full` |
+| Section Wrapper  | `w-full bg-background text-on-background relative border-t border-glass-border` |
+| Pinned Track     | `w-full relative` with `ScrollTrigger.create({ pin: stageRef, scrub: 0.4 })` |
+| Pinned Stage     | `w-full min-h-screen flex flex-col justify-between max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-14` |
+| Desktop Tab Rail | `hidden lg:flex lg:col-span-4 flex-col gap-2 justify-center` |
+| Mobile Tab Chips | `flex lg:hidden overflow-x-auto gap-2 pb-2 mb-3 scrollbar-none snap-x` |
+| Active Tab Button | `bg-surface border-brand-coral/60 shadow-sm ring-1 ring-brand-coral/20` |
+| Split Card Panel | `lg:col-span-8 relative flex flex-col md:flex-row border border-glass-border rounded-2xl md:rounded-[2rem] overflow-hidden shadow-sm bg-surface select-none` |
+| Left Half (Friction) | `w-full md:w-1/2 p-5 sm:p-7 md:p-8 lg:p-10 bg-surface/50 md:border-r border-b md:border-b-0 border-glass-border` |
+| Right Half (Skroll) | `w-full md:w-1/2 p-5 sm:p-7 md:p-8 lg:p-10 bg-surface relative overflow-hidden` |
+| Nexus Connector  | `absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-surface border border-glass-border rounded-full` |
+| Stage Controls   | `flex items-center justify-between pt-3 text-xs text-text-secondary` with step counter (`01/05`) and directional chevron buttons |
 | Pillar Item      | `flex flex-col group with font-display tabular numerals (01, 02, 03)` |
 | CTA Band         | `w-full border-t border-b border-brand-coral/20 bg-brand-coral/[0.06]` |
+
+
 
 

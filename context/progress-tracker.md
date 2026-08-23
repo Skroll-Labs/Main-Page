@@ -24,7 +24,7 @@ Update this file after every completed feature. Any AI agent reading this should
 - [x] 05 Hero Section (Skroll tagline: "Skroll. Makes everything better", dual CTAs, WebGL background)
 - [x] 06 AboutSkroll Section (Streamlined company overview, 50/50 dual service diptych, Sri Lanka commitment)
 - [x] 07 EventsShowcase Section (3-beat visual story, quiet details grid, CTA bar)
-- [x] 08 SolutionsShowcase Section (Business Technology Solutions showcase with 5 service transformation rows: Custom Web Apps, Workflow Automation, E-Commerce & Inventory, API & Integrations, Ticketing & Access, 3 engineering pillars, and CTA band)
+- [x] 08 SolutionsShowcase Section (Business Technology Solutions with GSAP ScrollTrigger pinned tab sequence: desktop & mobile viewport pinning, scroll scrubbing across 5 services, touch swipe gestures, direct click navigation, 3 engineering pillars, and CTA band)
 - [x] 09 Problem Section (Manual chaos vs. automated flow contrast, 4 pain points)
 - [x] 10 FAQ Section (Expanded 6-question FAQ covering Events & Business Solutions)
 - [x] 11 RecentBlogs Section (Dynamic feed and article preview cards)
