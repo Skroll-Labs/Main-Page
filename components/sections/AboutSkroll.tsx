@@ -4,35 +4,11 @@ import Link from "next/link";
 import {
   Ticket,
   Cpu,
-  Zap,
-  ShieldCheck,
-  Sparkles,
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { gsap } from "@/lib/gsap";
-
-const corePillars = [
-  {
-    icon: Zap,
-    title: "Zero-Friction Operations",
-    description:
-      "Engineered from the ground up to replace manual spreadsheets and bottlenecks with sub-second automated workflows.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Local-First Engineering",
-    description:
-      "Native integrations with Sri Lankan payment processors, local SMS channels, and regional business banking rails.",
-  },
-  {
-    icon: Sparkles,
-    title: "Bespoke Craftsmanship",
-    description:
-      "We do not sell rigid templates. Every deployment is tailored precisely to your operational needs and brand identity.",
-  },
-];
 
 const eventCapabilities = [
   "Instant QR Gate Validation",
@@ -109,26 +85,6 @@ export function AboutSkroll() {
               Whether you are organizing a high-capacity festival or automating critical business workflows, we provide the reliable software foundation so you can focus on building what matters.
             </p>
           </div>
-        </div>
-
-        {/* Core Principles Grid (Structural divider, no boxed cards) */}
-        <div className="border-t border-glass-border pt-8 md:pt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {corePillars.map((pillar, idx) => {
-            const Icon = pillar.icon;
-            return (
-              <div key={idx} className="about-reveal flex flex-col gap-3">
-                <div className="w-10 h-10 rounded-xl bg-brand-coral/10 text-brand-coral flex items-center justify-center mb-1">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <h3 className="font-headline-md text-lg md:text-xl font-bold text-on-background">
-                  {pillar.title}
-                </h3>
-                <p className="font-body-md text-sm text-text-secondary leading-relaxed">
-                  {pillar.description}
-                </p>
-              </div>
-            );
-          })}
         </div>
 
         {/* Services Diptych (50/50 Structural Split) */}

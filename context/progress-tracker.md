@@ -22,7 +22,7 @@ Update this file after every completed feature. Any AI agent reading this should
 ### Phase 2 — Landing Page Sections
 - [x] 04 Navbar Rebrand (Skroll brand, updated links: About, Events, Solutions, Blog, FAQ, Contact Us)
 - [x] 05 Hero Section (Skroll tagline: "Skroll. Makes everything better", dual CTAs, WebGL background)
-- [x] 06 AboutSkroll Section (Company overview, 3 core operational principles, dual service diptych, Sri Lanka commitment)
+- [x] 06 AboutSkroll Section (Streamlined company overview, 50/50 dual service diptych, Sri Lanka commitment)
 - [x] 07 EventsShowcase Section (3-beat visual story, quiet details grid, CTA bar)
 - [x] 08 SolutionsShowcase Section (Business arm showcase, before/after transformation, 3 pillars, CTA)
 - [x] 09 Problem Section (Manual chaos vs. automated flow contrast, 4 pain points)
@@ -52,7 +52,7 @@ Update this file after every completed feature. Any AI agent reading this should
 
 - Used `useScrollAnimation` hook across all sections for consistent GSAP timeline management with `gsap.context()`.
 - Implemented sleek typography logo with Plus Jakarta Sans and Brand Coral dot.
-- Replaced the initial TwoPathSplit gateway cards with a comprehensive, mission-driven AboutSkroll section featuring 3 core principles (zero-friction, local-first, bespoke) and a 50/50 services diptych.
+- Streamlined AboutSkroll section to focus cleanly on the mission statement and the dual 50/50 services diptych for Skroll Events and Business Solutions.
 - Built EventsShowcase with a 3-beat visual story and a 4-card "Quiet Details" grid.
 - Built SolutionsShowcase with Before vs After visual transformation card, 3 core engineering pillars, and direct CTA.
 - Configured JSON-LD structured data in `app/page.tsx` for Organization, SoftwareApplication (Ticketing), Service (Business Solutions), and FAQPage.

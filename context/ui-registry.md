@@ -34,7 +34,7 @@
 - **Problem**: Operations friction section contrasting manual chaos with automated flow (`components/sections/Problem.tsx`).
 - **FAQ**: 6-question accordion covering Events and Business Solutions (`components/sections/FAQ.tsx`).
 - **Contact**: Minimalist contact form with project selector, WhatsApp/Phone quick links, and tagline anchor (`components/sections/Contact.tsx`).
-- **AboutSkroll**: Company overview and dual services section featuring an asymmetric mission statement, three core principles, a 50/50 services diptych, and Sri Lankan origin commitment card (`components/sections/AboutSkroll.tsx`).
+- **Footer**: Rebranded Skroll footer with semantic crawlable copy and structured navigation (`components/sections/Footer.tsx`).
 - **Button**: Oval pill shape, completely rounded. Primary uses Brand Coral with drop shadow on hover (`components/ui/Button.tsx`).
 - **Section Heading**: Reusable component for titles and subtitles across the page (`components/ui/SectionHeading.tsx`).
 - **WebGL Backgrounds**: Three.js / WebGL implementations for ambient visual depth.
@@ -46,7 +46,6 @@ File: `components/sections/AboutSkroll.tsx`
 | ---------------- | --------------- |
 | Section Wrapper  | `w-full py-12 md:py-20 bg-background text-on-background px-margin-mobile md:px-margin-desktop` |
 | Identity Grid    | `grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start` |
-| Core Principles  | `border-t border-glass-border pt-8 md:pt-12 grid grid-cols-1 md:grid-cols-3 gap-8` |
 | Services Diptych | `border-t border-b border-glass-border py-10 md:py-14 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-glass-border` |
 | Origin Card      | `bg-surface p-6 sm:p-8 rounded-3xl border border-glass-border` |
 
