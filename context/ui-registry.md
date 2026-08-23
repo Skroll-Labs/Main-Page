@@ -72,14 +72,17 @@ File: `components/sections/EventsShowcase.tsx`
 | Icon Wrapper     | `w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-brand-coral/10 text-brand-coral` |
 | Hover state      | `hover:-translate-y-1 hover:shadow-hover-card transition-all` |
 
-### SolutionsShowcase Transformation & Pillar Cards
+### SolutionsShowcase Architectural Split & Pillars
 File: `components/sections/SolutionsShowcase.tsx`
 
 | Property         | Class           |
 | ---------------- | --------------- |
-| Section Wrapper  | `w-full py-section-gap bg-section-dark text-white relative overflow-hidden` |
-| Before Card      | `rounded-3xl p-8 md:p-10 bg-white/[0.02] border border-red-500/20 backdrop-blur-md` |
-| After Card       | `rounded-3xl p-8 md:p-10 bg-gradient-to-br from-white/[0.06] to-brand-coral/[0.04] border border-brand-coral/40 backdrop-blur-md` |
-| Pillar Card      | `rounded-3xl p-8 bg-white/[0.03] border border-white/10 hover:border-brand-coral/40` |
-| CTA Box          | `rounded-3xl p-8 md:p-12 bg-gradient-to-r from-white/[0.04] via-brand-coral/[0.08] to-white/[0.04] border border-white/15` |
+| Section Wrapper  | `w-full bg-background text-on-background relative overflow-hidden border-t border-glass-border` |
+| Split Row Container | `border border-glass-border rounded-2xl md:rounded-[2rem] overflow-hidden group hover:border-brand-coral/30 shadow-sm` |
+| Left Half (Friction) | `w-full md:w-1/2 p-8 md:p-12 lg:p-16 bg-surface/40 md:border-r border-b md:border-b-0 border-glass-border` |
+| Right Half (Skroll) | `w-full md:w-1/2 p-8 md:p-12 lg:p-16 bg-surface relative overflow-hidden` |
+| Nexus Connector  | `absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-surface border border-glass-border rounded-full` |
+| Pillar Item      | `flex flex-col group with font-display tabular numerals (01, 02, 03)` |
+| CTA Band         | `w-full border-t border-b border-brand-coral/20 bg-brand-coral/[0.06]` |
+
 

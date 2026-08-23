@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -17,39 +17,63 @@ import {
 
 const transformations = [
   {
-    area: "Data & Sync",
+    area: "Custom Web Apps",
     oldWay: {
-      title: "Disconnected Spreadsheets & Slips",
-      desc: "Conflicting file versions, missed WhatsApp receipts, and lost transactions.",
+      title: "Rigid Off-the-Shelf SaaS & Workarounds",
+      desc: "Paying high recurring seat fees for bloated tools you don't use, constrained by someone else's rigid workflow.",
     },
     skrollWay: {
-      title: "Single Live Source of Truth",
-      desc: "Centralized database with automated real-time sync across all touchpoints.",
-      badge: "Real-Time Sync",
+      title: "Purpose-Built Web Apps & Portals",
+      desc: "High-performance internal portals, bespoke dashboards, and operational tools mapped 100% to your team's workflow.",
+      badge: "Fully Custom",
     },
   },
   {
-    area: "Operations",
+    area: "Workflow Automation",
     oldWay: {
-      title: "Manual WhatsApp Follow-ups",
-      desc: "Hours spent typing confirmations, sending manual PDFs, and chasing unverified slips.",
+      title: "Hours Lost to Manual Status Updates & Handoffs",
+      desc: "Copy-pasting data across disconnected tabs, chasing WhatsApp confirmations, and running manual email chains.",
     },
     skrollWay: {
-      title: "Zero-Touch Automated Dispatch",
-      desc: "Sub-second webhook triggers dispatching instant QR/PDF tickets via Email & SMS.",
+      title: "Autonomous Zero-Touch Event Pipelines",
+      desc: "Event-driven background workers that validate, route, notify, and process multi-step workflows without human friction.",
+      badge: "Zero-Touch",
+    },
+  },
+  {
+    area: "E-Commerce & Inventory",
+    oldWay: {
+      title: "Stock in Spreadsheets, Orders in Chat Inboxes",
+      desc: "Overselling risks, zero live stock visibility across channels, and manual midnight order reconciliations.",
+    },
+    skrollWay: {
+      title: "Unified Live Inventory & Automated Checkout",
+      desc: "Real-time multi-channel inventory engines with instant payment gateway processing, automated receipts, and live tracking.",
+      badge: "Live Sync",
+    },
+  },
+  {
+    area: "API & Integrations",
+    oldWay: {
+      title: "Siloed Tools & Fragile Manual CSV Exports",
+      desc: "Disjointed databases requiring daily manual data dumps, broken third-party webhooks, and duplicated records.",
+    },
+    skrollWay: {
+      title: "Resilient Real-Time API Ecosystems",
+      desc: "Custom API bridges, resilient webhook listeners, and bi-directional synchronization connecting your entire software stack.",
+      badge: "Unified Stack",
+    },
+  },
+  {
+    area: "Ticketing & Access",
+    oldWay: {
+      title: "Crashed Gateways & Fraud-Prone Gate Queues",
+      desc: "Traffic spikes crashing checkouts, delayed PDF delivery, unverified bank slips, and bottlenecked manual entrance verification.",
+    },
+    skrollWay: {
+      title: "High-Scale Ticketing & Sub-Second QR Access",
+      desc: "Fault-tolerant ticketing architecture handling flash-sale surges, automated payment verification, and instant offline-ready gate validation.",
       badge: "Sub-Second",
-    },
-  },
-  {
-    area: "Finance",
-    oldWay: {
-      title: "Midnight Reconciliation & Lag",
-      desc: "Manual bank slip verification, missing reference numbers, and human accounting errors.",
-    },
-    skrollWay: {
-      title: "Real-Time Reconciled Ledgers",
-      desc: "Direct payment gateway callbacks with automated ledger accounting and instant verification.",
-      badge: "100% Verified",
     },
   },
 ];
@@ -143,7 +167,7 @@ export function SolutionsShowcase() {
           </div>
           <SectionHeading
             title="Your problem. Our build"
-            subtitle="No templates. No generic fixes. We start with what's actually broken, and build only what solves it."
+            subtitle="From custom web apps and workflow automation to e-commerce, third-party integrations, and ticketing engines — we build software that eliminates operational friction."
           />
         </div>
 
