@@ -13,15 +13,15 @@ import { gsap } from "@/lib/gsap";
 const eventCapabilities = [
   "Instant QR Gate Validation",
   "Automated SMS & Email Delivery",
-  "PayHere & Local Gateway Rails",
-  "Real-Time Revenue Analytics",
+  "Local Payment Gateway",
+  "Real Time Revenue Analytics",
 ];
 
 const solutionCapabilities = [
   "Bespoke Internal Tools & Web Apps",
   "Workflow & Data Pipeline Automation",
   "Custom API Integrations & Sync",
-  "High-Availability Cloud Architecture",
+  "High Availability Cloud Architecture",
 ];
 
 export function AboutSkroll() {
@@ -79,10 +79,10 @@ export function AboutSkroll() {
 
           <div className="lg:col-span-5 flex flex-col gap-6 lg:pt-8">
             <p className="about-reveal font-body-lg text-base md:text-lg text-text-secondary leading-relaxed">
-              Skroll is a software engineering company built in Sri Lanka. We exist to eliminate operational friction—transforming chaotic manual processes into seamless, automated digital platforms.
+              Skroll is a software engineering company built in Sri Lanka. We exist to eliminate operational friction transforming chaotic manual processes into seamless, automated digital platforms.
             </p>
             <p className="about-reveal font-body-md text-sm md:text-base text-text-secondary leading-relaxed">
-              Whether you are organizing a high-capacity festival or automating critical business workflows, we provide the reliable software foundation so you can focus on building what matters.
+              Whether you are organizing a high capacity festival or automating critical business workflows, we provide the reliable software foundation so you can focus on building what matters.
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export function AboutSkroll() {
                 </div>
 
                 <p className="font-body-md text-sm md:text-base text-text-secondary leading-relaxed mb-6">
-                  Custom software engineering and operational automation. We analyze your team’s bottlenecks, design tailored software architectures, and deploy custom tools that eliminate repetitive work.
+                  Custom software engineering and operational automation. We analyze your team’s bottlenecks, design tailored software architectures and deploy custom tools that eliminate repetitive work.
                 </p>
 
                 <div className="space-y-2.5 mb-8">
@@ -179,7 +179,7 @@ export function AboutSkroll() {
               Engineered with pride in Sri Lanka.
             </h4>
             <p className="font-body-md text-sm text-text-secondary leading-relaxed">
-              We combine world-class engineering standards with deep local context to give organizers and businesses a decisive operational edge.
+              We combine world class engineering standards with deep local context to give organizers and businesses a decisive operational edge.
             </p>
           </div>
 
