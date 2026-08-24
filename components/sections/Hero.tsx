@@ -43,7 +43,7 @@ export function Hero() {
           </h1>
           
           <p className="hero-fade-up opacity-0 font-body-lg text-base md:text-body-lg text-text-secondary max-w-xl leading-relaxed text-balance">
-            We build the systems that make events run themselves, and businesses run better.
+            We build the systems that make events run themselves and businesses run better.
           </p>
 
           <div className="hero-fade-up opacity-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 md:gap-6 w-full sm:w-auto">
