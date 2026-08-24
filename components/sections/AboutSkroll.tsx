@@ -102,7 +102,7 @@ export function AboutSkroll() {
                       Arm 01
                     </span>
                     <h3 className="font-headline-lg text-2xl md:text-3xl font-bold text-on-background">
-                      Skroll Events
+                      Skroll Ticketing
                     </h3>
                   </div>
                 </div>
@@ -122,10 +122,10 @@ export function AboutSkroll() {
               </div>
 
               <Link
-                href="#events"
+                href="#ticketing"
                 className="inline-flex items-center gap-2 font-button-text text-sm font-semibold text-brand-coral hover:gap-3 transition-all cursor-hover"
               >
-                <span>Explore Events Platform</span>
+                <span>Explore Ticketing Platform</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

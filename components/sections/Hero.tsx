@@ -47,9 +47,9 @@ export function Hero() {
           </p>
 
           <div className="hero-fade-up opacity-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 md:gap-6 w-full sm:w-auto">
-            <Link href="#events" className="w-full sm:w-auto">
+            <Link href="#ticketing" className="w-full sm:w-auto">
               <Button variant="primary" className="w-full sm:w-auto min-h-[44px]">
-                Explore Events
+                Explore Ticketing
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>

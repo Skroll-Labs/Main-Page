@@ -42,10 +42,10 @@ export function Footer() {
                 About
               </Link>
               <Link
-                href="/#events"
+                href="/#ticketing"
                 className="font-body-md text-sm text-white/70 hover:text-brand-coral transition-colors cursor-hover min-h-[36px] flex items-center"
               >
-                Events
+                Ticketing
               </Link>
               <Link
                 href="/#solutions"

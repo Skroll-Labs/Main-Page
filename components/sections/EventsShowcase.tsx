@@ -54,7 +54,7 @@ export function EventsShowcase() {
 
     // CTA bar animation
     gsap.fromTo(
-      ".events-cta-bar",
+      ".ticketing-cta-bar",
       { opacity: 0, y: 20 },
       {
         opacity: 1,
@@ -62,7 +62,7 @@ export function EventsShowcase() {
         duration: 0.5,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: ".events-cta-bar",
+          trigger: ".ticketing-cta-bar",
           start: "top 90%",
         },
       }
@@ -115,7 +115,7 @@ export function EventsShowcase() {
 
   return (
     <section 
-      id="events" 
+      id="ticketing" 
       ref={ref} 
       className="w-full py-16 md:py-section-gap bg-background border-t border-glass-border relative overflow-hidden"
     >
@@ -205,7 +205,7 @@ export function EventsShowcase() {
         </div>
 
         {/* CTA Bar */}
-        <div className="events-cta-bar max-w-3xl mx-auto rounded-3xl bg-surface border border-glass-border p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div className="ticketing-cta-bar max-w-3xl mx-auto rounded-3xl bg-surface border border-glass-border p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <div>
             <h4 className="font-headline-md text-lg md:text-xl font-bold text-on-background mb-1 text-balance">
               Ready to streamline your next event?

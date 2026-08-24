@@ -38,7 +38,7 @@ function HomePageJsonLd() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Skroll Events",
+    name: "Skroll Ticketing",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {
