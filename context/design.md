@@ -1,5 +1,5 @@
 ---
-name: TicketFlow Design System
+name: Skroll Design System
 colors:
   background: "#F5F3F0"
   surface: "#FFFFFF"
@@ -10,10 +10,10 @@ colors:
   glass-border: "rgba(26, 26, 26, 0.08)"
 ---
 
-# Design System: TicketFlow
+# Design System: Skroll
 
 ## 1. Visual Theme & Atmosphere
-The TicketFlow landing page employs a premium, modern, and highly interactive B2B SaaS aesthetic. It balances a clean, airy foundation—using a warm off-white background (`#F5F3F0`)—with highly energetic, tech-forward accents. The design is deliberately anti-generic, relying heavily on a striking "Vibrant Coral" (`#E8521A`) as the primary brand color to draw attention and guide the user journey.
+The Skroll landing page employs a premium, modern, and highly interactive B2B SaaS aesthetic. It balances a clean, airy foundation—using a warm off-white background (`#F5F3F0`)—with highly energetic, tech-forward accents. The design is deliberately anti-generic, relying heavily on a striking "Vibrant Coral" (`#E8521A`) as the primary brand color to draw attention and guide the user journey.
 
 Interactive micro-animations (like the magnetic custom cursor, staggered fade-ups, and WebGL particle/shader backgrounds in the Hero and Footer) elevate the site from a standard marketing page to an immersive, high-end digital experience. The generous whitespace (160px section gaps) and massive, tightly-tracked typography create a confident, editorial feel that implies reliability and scale without feeling overly corporate.
 

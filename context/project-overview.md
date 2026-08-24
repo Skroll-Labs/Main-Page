@@ -1,10 +1,10 @@
-# Project Overview — TicketFlow B2B Ticketing SaaS Platform
+# Project Overview — Skroll B2B Ticketing SaaS Platform
 
 ---
 
 ## 1. Site Overview
 
-This is a marketing landing page for **TicketFlow**, a B2B SaaS ticketing platform targeting event organizers, marketing teams, ops teams, and enterprise operations. The platform automates the full ticketing lifecycle — from event setup and secure payment collection to QR code delivery and real-time attendee check-in.
+This is a marketing landing page for **Skroll**, a B2B SaaS ticketing platform targeting event organizers, marketing teams, ops teams, and enterprise operations. The platform automates the full ticketing lifecycle — from event setup and secure payment collection to QR code delivery and real-time attendee check-in.
 
 The product is positioned as community-first and non-technical: *"Built for people, not programmers."* The tone is warm, direct, and benefit-led — written for busy operators who want a tool that just works.
 
@@ -33,11 +33,11 @@ The landing page is a single long-scroll page structured across ten sections:
 **Secondary Goals**
 - Build credibility through concrete social proof: 10,000+ events powered, 1M+ tickets delivered, 99.9% uptime
 - Eliminate friction by clearly communicating that setup requires no technical expertise
-- Differentiate TicketFlow from generic tools by anchoring to community, simplicity, and local events
+- Differentiate Skroll from generic tools by anchoring to community, simplicity, and local events
 - Replace pricing anxiety entirely — the "Who It's For" section positions the platform by role, not tier
 
 **Brand Goals**
-- Establish TicketFlow as a community-native platform ("Built for community. Ticketing made simple, faster, and local.")
+- Establish Skroll as a community-native platform ("Built for community. Ticketing made simple, faster, and local.")
 - Make non-technical buyers (event organizers, ops leads, marketing managers) feel immediately at home
 - Signal scale without intimidating smaller organizers — from 50-person meetups to 50,000-person festivals
 
@@ -75,7 +75,7 @@ The intended path a visitor takes from landing to conversion:
    → Enterprise card signals custom support is available without gating it behind a paywall
 
 7. CHECK Integrations
-   → Confirms TicketFlow works within their existing stack
+   → Confirms Skroll works within their existing stack
    → Reduces "will this fit our tools?" objection
 
 8. RESOLVE DOUBTS via FAQ
@@ -95,7 +95,7 @@ The following checklist is for agents or reviewers to verify once the landing pa
 
 ### Content & Copy
 - [ ] All ten sections are present and in the correct order (Hero → Footer)
-- [ ] Platform name "TicketFlow" is used consistently throughout — no generic placeholders
+- [ ] Platform name "Skroll" is used consistently throughout — no generic placeholders
 - [ ] Hero shows only one primary CTA: "Contact Us" (no "Book a Demo" or "Start Free Trial")
 - [ ] Problem section includes all four pain point bullets and the closing line
 - [ ] How It Works displays all four steps in sequence
@@ -104,7 +104,7 @@ The following checklist is for agents or reviewers to verify once the landing pa
 - [ ] "Who It's For" section (not Pricing) shows all four audience cards with correct copy
 - [ ] All five FAQ questions and answers are present
 - [ ] Contact section includes the form with all five fields and the correct dropdown options
-- [ ] Footer includes the TicketFlow tagline, updated navigation, and copyright line
+- [ ] Footer includes the Skroll tagline, updated navigation, and copyright line
 
 ### CTAs & Conversion
 - [ ] "Contact Us" is the sole Hero CTA — no secondary CTA button in the Hero

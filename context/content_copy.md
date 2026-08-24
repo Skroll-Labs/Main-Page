@@ -1,4 +1,4 @@
-# TicketFlow — Full Content Copy v3
+# Skroll — Full Content Copy v3
 ## Landing Page + Blog Strategy (SEO-Optimised)
 
 > **Document scope:** Updated landing page copy with embedded SEO targets, plus full briefs for 20 blog articles including headings, body summaries, targeted keywords, and layout specifications.
@@ -43,10 +43,10 @@ Sprinkle naturally throughout section headings, feature blurbs, FAQ answers, and
 - ticket sales dashboard
 
 ### Meta Title (≤60 chars)
-`TicketFlow — Event Ticketing Software for Sri Lanka`
+`Skroll — Event Ticketing Software for Sri Lanka`
 
 ### Meta Description (≤155 chars)
-`Sell tickets, send QR codes, and track attendance in real time. TicketFlow is Sri Lanka's B2B ticketing platform built for event organizers.`
+`Sell tickets, send QR codes, and track attendance in real time. Skroll is Sri Lanka's B2B ticketing platform built for event organizers.`
 
 ### Schema Markup (Required)
 - `Organization` schema on homepage
@@ -61,7 +61,7 @@ Sprinkle naturally throughout section headings, feature blurbs, FAQ answers, and
 Sri Lanka's Event Ticketing Platform — Built for Organizers.
 
 **Subheadline:**
-Sell tickets online, send QR codes instantly, and track every sale in real time. TicketFlow handles the entire ticketing operation so your team can focus on running a great event.
+Sell tickets online, send QR codes instantly, and track every sale in real time. Skroll handles the entire ticketing operation so your team can focus on running a great event.
 
 **Primary CTA:** Contact Us
 **Secondary CTA (WhatsApp):** Chat on WhatsApp
@@ -137,7 +137,7 @@ Reach every attendee exactly where they are — email and SMS delivery ensures n
 Fully customise your ticket designs, checkout pages, and confirmation emails to match your brand. Your event, your identity.
 
 **Feature 6: Built to Scale**
-From a 50-person corporate workshop to a 50,000-person music festival — TicketFlow handles the volume without breaking a sweat.
+From a 50-person corporate workshop to a 50,000-person music festival — Skroll handles the volume without breaking a sweat.
 
 > **SEO note:** Feature headings are written as descriptive H3s containing core keyword phrases. "Automated QR Code," "Payment Gateway Integration," "Real-Time Sales Analytics," and "White Labelling" each capture distinct search intents.
 
@@ -158,7 +158,7 @@ Launch branded ticket pages, control your campaign messaging, and see which chan
 Own the entire attendee journey from purchase to gate. Real-time data, automated delivery, and seamless check-in — all in one place.
 
 **Card 4: Enterprise & Large-Scale Clients**
-Running multiple events or high-volume programmes? TicketFlow scales to your operation with custom integrations and dedicated support.
+Running multiple events or high-volume programmes? Skroll scales to your operation with custom integrations and dedicated support.
 
 > **SEO note:** "Events in Sri Lanka" appears in the section heading. "Concerts," "festivals," "corporate workshop" and "community events" are all high-intent local search modifiers.
 
@@ -192,7 +192,7 @@ Event Organizers Across Sri Lanka Trust Us to Get It Right
 Works With the Tools You Already Use
 
 **Body:**
-Connect your preferred payment gateways, SMS providers, and email delivery tools. No custom engineering required — TicketFlow plugs into your existing stack in minutes.
+Connect your preferred payment gateways, SMS providers, and email delivery tools. No custom engineering required — Skroll plugs into your existing stack in minutes.
 
 *(Logo placeholders: Payment Gateway | SMS Provider | Email Provider | CRM)*
 
@@ -207,10 +207,10 @@ Got Questions? We've Got Answers.
 Most teams in Sri Lanka are up and running within a single day — no developer or technical expertise required.
 
 **Q: What payment gateways do you support?**
-TicketFlow integrates with leading Sri Lankan and international payment providers to keep checkout fast, secure, and familiar to your buyers.
+Skroll integrates with leading Sri Lankan and international payment providers to keep checkout fast, secure, and familiar to your buyers.
 
 **Q: Can we white-label our tickets and checkout pages?**
-Yes — fully customise ticket designs, confirmation emails, and checkout pages with your own branding. Your attendees never see TicketFlow's name unless you want them to.
+Yes — fully customise ticket designs, confirmation emails, and checkout pages with your own branding. Your attendees never see Skroll's name unless you want them to.
 
 **Q: Do you support both email and SMS delivery?**
 Absolutely. Every ticket is delivered via both email and SMS by default, so no attendee misses their QR code or PDF ticket.
@@ -218,7 +218,7 @@ Absolutely. Every ticket is delivered via both email and SMS by default, so no a
 **Q: What happens if an attendee doesn't receive their ticket?**
 Our automated delivery system retries failed sends and provides your team with full visibility into every delivery status in real time.
 
-**Q: Is TicketFlow suitable for large events?**
+**Q: Is Skroll suitable for large events?**
 Yes — the platform is built to scale from intimate corporate workshops to major concerts and festivals with thousands of attendees.
 
 > **SEO note:** FAQ answers are written in natural language to capture long-tail voice and featured-snippet queries. "Sri Lanka" appears twice to maintain local SEO relevance. FAQPage schema should be applied to this section.
@@ -283,14 +283,14 @@ BODY ZONE (Two-column on desktop, single on mobile)
     - Introduction paragraph (hook + problem statement, 80–120 words)
     - H2 section headings throughout body
     - H3 sub-sections where needed
-    - Inline callout boxes for key stats or TicketFlow feature tie-ins
+    - Inline callout boxes for key stats or Skroll feature tie-ins
     - Conclusion paragraph with natural CTA reference
-    - CTA Block: "Running an event in Sri Lanka? See how TicketFlow handles ticketing."
+    - CTA Block: "Running an event in Sri Lanka? See how Skroll handles ticketing."
       → [Contact Us] button
 
   RIGHT / SIDEBAR COLUMN (30% width, sticky on scroll):
     - "In This Article" anchor-link table of contents
-    - TicketFlow contact card:
+    - Skroll contact card:
         Headline: "Need a ticketing platform for your event?"
         CTA: Contact Us / WhatsApp button
     - Related Articles (3 links, auto-populated by tag)
@@ -328,7 +328,7 @@ TECHNICAL REQUIREMENTS (every article)
 The Best Event Ticketing Platforms in Sri Lanka (2025 Honest Comparison)
 
 **Meta Title:**
-Best Event Ticketing Platform Sri Lanka 2025 | TicketFlow
+Best Event Ticketing Platform Sri Lanka 2025 | Skroll
 
 **Meta Description:**
 Comparing the top event ticketing platforms available in Sri Lanka — features, pricing, and what actually matters for local event organizers.
@@ -343,9 +343,9 @@ Comparing the top event ticketing platforms available in Sri Lanka — features,
 **Body Summary:**
 Open with the challenge Sri Lankan event organizers face when looking for ticketing tools — most platforms are built for Western markets, charge in USD, and don't support local payment gateways. Briefly introduce the comparison framework: payment gateway compatibility, ticket delivery reliability, local support, and pricing structure.
 
-Walk through 4–5 platforms: global options (Eventbrite, Ticket Tailor) vs local alternatives including TicketFlow. For each: what it's good at, where it falls short for Sri Lanka use cases, and who it suits best. Use a comparison table mid-article.
+Walk through 4–5 platforms: global options (Eventbrite, Ticket Tailor) vs local alternatives including Skroll. For each: what it's good at, where it falls short for Sri Lanka use cases, and who it suits best. Use a comparison table mid-article.
 
-Conclusion makes the case that local event organizers need a platform built for Sri Lanka's payment ecosystem, SMS culture, and operational realities — positioning TicketFlow as the purpose-built option. End with the CTA block.
+Conclusion makes the case that local event organizers need a platform built for Sri Lanka's payment ecosystem, SMS culture, and operational realities — positioning Skroll as the purpose-built option. End with the CTA block.
 
 **Internal Links:** Homepage, Features section, Article 03 (Eventbrite deep-dive)
 
@@ -378,7 +378,7 @@ Walk through the exact steps: choosing a platform, setting up event details and 
 
 Address common concerns: "What if buyers don't get their tickets?" / "Which payment gateways work in Sri Lanka?" / "Do I need a developer?" Answer each directly.
 
-Conclude by showing how a full setup on TicketFlow takes under a day and positions the organizer for professional-grade operations immediately. CTA block.
+Conclude by showing how a full setup on Skroll takes under a day and positions the organizer for professional-grade operations immediately. CTA block.
 
 **Internal Links:** Homepage, How It Works section, Article 04 (QR codes explainer)
 
@@ -395,7 +395,7 @@ Why Sri Lankan Event Organizers Are Looking for an Eventbrite Alternative
 Eventbrite Alternative for Sri Lanka | Local Ticketing Options
 
 **Meta Description:**
-Eventbrite works globally but has key limitations for Sri Lanka organizers. Here's what to look for in a local alternative — and how TicketFlow compares.
+Eventbrite works globally but has key limitations for Sri Lanka organizers. Here's what to look for in a local alternative — and how Skroll compares.
 
 **Targeted SEO Keywords:**
 - Primary: `Eventbrite alternative Sri Lanka`
@@ -409,9 +409,9 @@ Acknowledge that Eventbrite is well-known and widely used. Then outline the spec
 
 Walk through what a Sri Lanka-specific alternative needs: LKR pricing support, integration with local payment gateways, SMS delivery (dominant communication channel locally), WhatsApp-friendly ticket sharing, and local customer support.
 
-Introduce TicketFlow as the purpose-built local solution. Be honest and informative — this is a comparison article, not a pure sales pitch. Include a feature table.
+Introduce Skroll as the purpose-built local solution. Be honest and informative — this is a comparison article, not a pure sales pitch. Include a feature table.
 
-Close with a clear recommendation framework: use Eventbrite if you're running international events for overseas audiences; use TicketFlow if you're running events in Sri Lanka for Sri Lankan attendees and need everything to just work locally.
+Close with a clear recommendation framework: use Eventbrite if you're running international events for overseas audiences; use Skroll if you're running events in Sri Lanka for Sri Lankan attendees and need everything to just work locally.
 
 **Internal Links:** Homepage, Article 01 (comparison), Article 02 (how to sell tickets)
 
@@ -425,7 +425,7 @@ Close with a clear recommendation framework: use Eventbrite if you're running in
 QR Code Tickets for Events: How They Work and Why Every Organizer Needs Them
 
 **Meta Title:**
-QR Code Tickets for Events Sri Lanka | How It Works | TicketFlow
+QR Code Tickets for Events Sri Lanka | How It Works | Skroll
 
 **Meta Description:**
 How QR code ticket delivery works, why it eliminates check-in queues, and how to set it up for your next Sri Lankan event.
@@ -446,7 +446,7 @@ Cover the benefits specifically relevant to Sri Lanka: SMS delivery works even w
 
 Address the "what if someone screenshots someone else's ticket" concern — explain how unique-per-purchase QR codes prevent duplicate entry.
 
-Close with how TicketFlow handles this end-to-end without any manual configuration. CTA block.
+Close with how Skroll handles this end-to-end without any manual configuration. CTA block.
 
 **Internal Links:** Features page, Article 02 (how to sell tickets), Article 07 (corporate events)
 
@@ -479,7 +479,7 @@ Offer practical troubleshooting steps: check spam folders, verify email at purch
 
 The real fix is automated delivery with retry logic: a system that sends immediately on purchase, monitors delivery status, automatically retries failed sends, and delivers via a second channel (SMS) if email fails.
 
-Describe TicketFlow's delivery pipeline in plain terms without sounding like a brochure. Close with the stat: "99.9% delivery uptime." CTA block.
+Describe Skroll's delivery pipeline in plain terms without sounding like a brochure. Close with the stat: "99.9% delivery uptime." CTA block.
 
 **Internal Links:** Features page (delivery), Article 04 (QR codes), Article 02 (how to sell tickets)
 
@@ -498,7 +498,7 @@ Describe TicketFlow's delivery pipeline in plain terms without sounding like a b
 How to Handle Ticketing for a Concert or Music Festival in Sri Lanka
 
 **Meta Title:**
-Concert Ticketing Sri Lanka — Complete Organizer's Guide | TicketFlow
+Concert Ticketing Sri Lanka — Complete Organizer's Guide | Skroll
 
 **Meta Description:**
 A practical guide to managing ticket sales, QR check-in, and real-time tracking for concerts and music festivals in Sri Lanka.
@@ -517,7 +517,7 @@ Cover the specific challenges of concert ticketing: multiple ticket tiers (VIP, 
 
 Walk through best practices for each: setting up tiered pricing, opening sales in waves, using SMS as a backup delivery channel, running gate staff through QR scan workflow, monitoring real-time sales.
 
-Show how TicketFlow handles each of these specific scenarios. CTA block.
+Show how Skroll handles each of these specific scenarios. CTA block.
 
 **Internal Links:** Homepage, Article 04 (QR codes), Article 01 (platform comparison)
 
@@ -531,7 +531,7 @@ Show how TicketFlow handles each of these specific scenarios. CTA block.
 Corporate Event Ticketing in Sri Lanka: A Complete Guide for Operations Teams
 
 **Meta Title:**
-Corporate Event Ticketing Sri Lanka | Guide for Ops Teams | TicketFlow
+Corporate Event Ticketing Sri Lanka | Guide for Ops Teams | Skroll
 
 **Meta Description:**
 How ops and marketing teams at Sri Lankan companies manage ticketing for conferences, AGMs, award nights, and corporate events — without the spreadsheet chaos.
@@ -552,7 +552,7 @@ Walk through how a professional ticketing system handles these: custom branded t
 
 Include a short section on why sending corporate invites via bank transfer + WhatsApp confirmation looks unprofessional to clients and stakeholders.
 
-Close with TicketFlow's features that directly solve corporate event needs. CTA block.
+Close with Skroll's features that directly solve corporate event needs. CTA block.
 
 **Internal Links:** Who It's For (enterprise card), Article 05 (delivery), Article 14 (analytics)
 
@@ -566,7 +566,7 @@ Close with TicketFlow's features that directly solve corporate event needs. CTA 
 How to Manage Ticketing for School and University Events in Sri Lanka
 
 **Meta Title:**
-School & University Event Ticketing Sri Lanka | TicketFlow Guide
+School & University Event Ticketing Sri Lanka | Skroll Guide
 
 **Meta Description:**
 Managing tickets for university festivals, graduation ceremonies, and school events in Sri Lanka — here's a practical guide for student organizers and faculty.
@@ -585,7 +585,7 @@ Cover common event types: university festivals, Battle of the Maroons-style spor
 
 Discuss the specific challenges: large number of attendees in a short registration window, need for free ticket categories alongside paid, SMS delivery important for parents who may not check email, and post-event attendance reports needed for administrative records.
 
-Show how TicketFlow's simple setup removes the need for technical expertise — a student society president can get up and running in a day. CTA block.
+Show how Skroll's simple setup removes the need for technical expertise — a student society president can get up and running in a day. CTA block.
 
 **Internal Links:** Article 02 (how to sell tickets), Article 04 (QR codes), Homepage
 
@@ -618,7 +618,7 @@ Address the unique considerations: many attendees are older and less digitally f
 
 Cover how a simple digital ticketing system can help without alienating the community: WhatsApp ticket sharing, simple SMS delivery, easy check-in for volunteer gate staff, and a dashboard that even a non-technical treasurer can read.
 
-Frame TicketFlow as accessible enough for community organizations. CTA block.
+Frame Skroll as accessible enough for community organizations. CTA block.
 
 **Internal Links:** Article 08 (schools), Article 02 (how to sell), Features page
 
@@ -632,7 +632,7 @@ Frame TicketFlow as accessible enough for community organizations. CTA block.
 How to Sell Tickets for a Charity Fundraiser or NGO Event in Sri Lanka
 
 **Meta Title:**
-Charity & NGO Event Ticketing Sri Lanka | TicketFlow Guide
+Charity & NGO Event Ticketing Sri Lanka | Skroll Guide
 
 **Meta Description:**
 Running a fundraiser in Sri Lanka? Here's how to set up ticket sales, donations at checkout, and attendee management without expensive software.
@@ -651,7 +651,7 @@ Cover the typical fundraiser event format in Sri Lanka: gala dinners, charity co
 
 Explain how to set up donation-friendly ticket tiers (e.g. a "Supporter" ticket that includes a higher price with the difference going to the cause), how to issue receipts or confirmation letters via automated email, and how to generate post-event attendance reports for donor accountability.
 
-Close with TicketFlow's suitability for resource-constrained teams — fast setup, low overhead. CTA block.
+Close with Skroll's suitability for resource-constrained teams — fast setup, low overhead. CTA block.
 
 **Internal Links:** Article 09 (cultural events), Article 07 (corporate), Homepage
 
@@ -687,7 +687,7 @@ This is the site's pillar article — the most comprehensive, longest-form piece
 
 Structure: Pre-event planning (concept, budget, venue selection in Sri Lanka), Ticketing setup (direct link to Article 02), Promotion channels (Facebook, LinkedIn, WhatsApp groups, local media), Event day operations (check-in, staff coordination, real-time monitoring), Post-event (attendee data, follow-up, analytics review).
 
-Include a downloadable event planning checklist (gated or free — drives email captures). Include a section specifically on ticketing as a critical early step, with internal link to TicketFlow features.
+Include a downloadable event planning checklist (gated or free — drives email captures). Include a section specifically on ticketing as a critical early step, with internal link to Skroll features.
 
 Close with the "tools you need" summary and CTA block.
 
@@ -703,7 +703,7 @@ Close with the "tools you need" summary and CTA block.
 How to Set Up a Payment Gateway for Your Event in Sri Lanka
 
 **Meta Title:**
-Payment Gateway for Events Sri Lanka | Setup Guide | TicketFlow
+Payment Gateway for Events Sri Lanka | Setup Guide | Skroll
 
 **Meta Description:**
 Which payment gateways work for Sri Lankan event ticketing? A guide to PayHere, Stripe, and other options — and how to connect them to your ticketing platform.
@@ -722,7 +722,7 @@ Walk through the main options available in Sri Lanka: PayHere (dominant local ga
 
 Cover common setup mistakes: not testing in sandbox mode before launch, missing webhook configuration that breaks ticket delivery, and not displaying accepted payment methods clearly at checkout.
 
-Show how TicketFlow's payment gateway integration abstracts most of this complexity. CTA block.
+Show how Skroll's payment gateway integration abstracts most of this complexity. CTA block.
 
 **Internal Links:** Features page (payment), Article 02 (how to sell tickets), Article 01 (platform comparison)
 
@@ -769,7 +769,7 @@ Close with the clear verdict — digital is objectively better for 95% of Sri La
 Real-Time Event Analytics: What to Track Before, During, and After Your Event
 
 **Meta Title:**
-Event Analytics Guide Sri Lanka | Real-Time Sales Dashboard | TicketFlow
+Event Analytics Guide Sri Lanka | Real-Time Sales Dashboard | Skroll
 
 **Meta Description:**
 What event data actually matters — a guide for Sri Lankan organizers on tracking ticket sales, revenue, and attendance in real time.
@@ -788,7 +788,7 @@ Structure the article in three phases: Before the event (sales velocity, channel
 
 For each phase, explain what to look for, what the numbers mean, and what decisions they should inform. Keep it practical and jargon-free.
 
-Show how TicketFlow's dashboard surfaces all of this without requiring an analyst. CTA block.
+Show how Skroll's dashboard surfaces all of this without requiring an analyst. CTA block.
 
 **Internal Links:** Features (analytics), Article 07 (corporate events), Article 11 (event planning guide)
 
@@ -802,7 +802,7 @@ Show how TicketFlow's dashboard surfaces all of this without requiring an analys
 How to Reduce No-Shows at Your Event in Sri Lanka (With Smarter Ticketing)
 
 **Meta Title:**
-Reduce Event No-Shows Sri Lanka | Ticketing Strategies | TicketFlow
+Reduce Event No-Shows Sri Lanka | Ticketing Strategies | Skroll
 
 **Meta Description:**
 Why no-shows happen at Sri Lankan events and how automated reminders, QR tickets, and smart ticketing strategies help fill your venue.
@@ -821,7 +821,7 @@ Cover the proven reasons: people forget, life happens, no reminder system in pla
 
 Walk through concrete strategies: require paid or deposit tickets (even a nominal LKR 100 drastically improves show-up rates), send automated reminders at T-7 days, T-1 day, and event morning via SMS and email, and make tickets easy to pull up on mobile (WhatsApp-shareable PDF with QR).
 
-Show how TicketFlow's delivery and reminder system handles all of this automatically. CTA block.
+Show how Skroll's delivery and reminder system handles all of this automatically. CTA block.
 
 **Internal Links:** Article 04 (QR codes), Article 05 (delivery problems), Features page
 
@@ -840,7 +840,7 @@ Show how TicketFlow's delivery and reminder system handles all of this automatic
 Best Venues for Corporate Events in Colombo — And How to Handle Ticketing for Each
 
 **Meta Title:**
-Corporate Event Venues Colombo | Ticketing Guide | TicketFlow
+Corporate Event Venues Colombo | Ticketing Guide | Skroll
 
 **Meta Description:**
 A guide to top corporate event venues in Colombo, Sri Lanka — plus how to manage ticketing, registration, and attendee check-in for each venue type.
@@ -857,7 +857,7 @@ This article doubles as a local SEO piece and a practical guide. Open with the c
 
 List 6–8 key Colombo venues with brief description, capacity, and typical event type. For each venue, note the specific ticketing consideration (e.g. BMICH events often have multiple halls running simultaneously — requires multi-event ticketing; hotel events often have invitation-only lists — requires controlled guest list management).
 
-Close with a general section on how to set up ticketing for a Colombo corporate event and TicketFlow's role. CTA block.
+Close with a general section on how to set up ticketing for a Colombo corporate event and Skroll's role. CTA block.
 
 **Internal Links:** Article 07 (corporate ticketing), Article 12 (payment gateway), Homepage
 
@@ -871,7 +871,7 @@ Close with a general section on how to set up ticketing for a Colombo corporate 
 Event Organizers in Sri Lanka: The Digital Tools You Need to Go Fully Professional in 2025
 
 **Meta Title:**
-Digital Tools for Event Organizers Sri Lanka 2025 | TicketFlow
+Digital Tools for Event Organizers Sri Lanka 2025 | Skroll
 
 **Meta Description:**
 The essential digital toolkit for Sri Lankan event organizers — from ticketing and payments to promotion and post-event analytics.
@@ -886,7 +886,7 @@ The essential digital toolkit for Sri Lankan event organizers — from ticketing
 **Body Summary:**
 Address the Sri Lankan event organizer who is currently running operations via a combination of WhatsApp groups, Google Sheets, bank transfers, and personal calls. Validate this — it works, until it doesn't.
 
-Walk through the complete modern event toolkit organized by function: Ticketing & Payments (TicketFlow), Promotion (Facebook Events, Instagram, LinkedIn for corporate), Communication (WhatsApp Business), Design (Canva for event graphics), Analytics (TicketFlow dashboard + GA4 for website tracking).
+Walk through the complete modern event toolkit organized by function: Ticketing & Payments (Skroll), Promotion (Facebook Events, Instagram, LinkedIn for corporate), Communication (WhatsApp Business), Design (Canva for event graphics), Analytics (Skroll dashboard + GA4 for website tracking).
 
 For each tool: why it matters, how it fits into the event workflow, and approximate cost. Keep it practical and specific to Sri Lanka — e.g. "Facebook Events is particularly effective for Colombo-based concerts because..."
 
@@ -904,7 +904,7 @@ Close with a "starter stack" recommendation for different event sizes. CTA block
 How Sri Lanka's Event Industry Is Going Digital — And What It Means for Organizers
 
 **Meta Title:**
-Sri Lanka Event Industry Digital Transformation 2025 | TicketFlow Blog
+Sri Lanka Event Industry Digital Transformation 2025 | Skroll Blog
 
 **Meta Description:**
 The Sri Lankan events sector is rapidly digitising. Here's what's changing, what's driving it, and how organizers need to adapt.
@@ -925,7 +925,7 @@ Cover the key shifts: consumer migration from physical tickets to QR/PDF, paymen
 
 Interview-style quotes or hypothetical organizer perspectives add texture. Address what this means practically for an organizer who is still doing things manually.
 
-Close with TicketFlow as part of this wider trend, not just a product pitch. CTA block.
+Close with Skroll as part of this wider trend, not just a product pitch. CTA block.
 
 **Internal Links:** Article 17 (digital tools), Article 13 (digital vs paper), Homepage
 
@@ -941,16 +941,16 @@ Close with TicketFlow as part of this wider trend, not just a product pitch. CTA
 **Slug:** `/blog/case-study-event-ticketing-transformation`
 
 **H1 Headline:**
-How [Client Name] Cut Ticket Delivery Time From Hours to Seconds With TicketFlow
+How [Client Name] Cut Ticket Delivery Time From Hours to Seconds With Skroll
 
 **Meta Title:**
-TicketFlow Case Study Sri Lanka | [Client] Event Ticketing Results
+Skroll Case Study Sri Lanka | [Client] Event Ticketing Results
 
 **Meta Description:**
-How a Sri Lankan event organizer replaced manual ticketing with TicketFlow — and what happened to delivery time, team workload, and attendee experience.
+How a Sri Lankan event organizer replaced manual ticketing with Skroll — and what happened to delivery time, team workload, and attendee experience.
 
 **Targeted SEO Keywords:**
-- Primary: `TicketFlow case study Sri Lanka`
+- Primary: `Skroll case study Sri Lanka`
 - Primary: `event ticketing software results Sri Lanka`
 - Secondary: `ticketing platform success story`
 - Secondary: `event management software ROI`
@@ -959,7 +959,7 @@ How a Sri Lankan event organizer replaced manual ticketing with TicketFlow — a
 **Body Summary:**
 *[Replace placeholders with real client data when available. This brief describes the article structure.]*
 
-Follow the classic case study format: Client background (who they are, what type of events they run, how many attendees), The challenge (what was broken about their previous process — manual emails, spreadsheet chaos, missed tickets), The solution (what they set up with TicketFlow and how long it took), The results (ticket delivery time, team hours saved, attendee complaints before vs after, revenue impact if applicable), and The quote (direct testimonial in the organizer's voice).
+Follow the classic case study format: Client background (who they are, what type of events they run, how many attendees), The challenge (what was broken about their previous process — manual emails, spreadsheet chaos, missed tickets), The solution (what they set up with Skroll and how long it took), The results (ticket delivery time, team hours saved, attendee complaints before vs after, revenue impact if applicable), and The quote (direct testimonial in the organizer's voice).
 
 Include a before/after comparison table. Include 2–3 specific numbers (even if directional). Keep the tone conversational and honest — acknowledge what took adjustment.
 
@@ -971,13 +971,13 @@ Close with "Could your events benefit from the same approach?" CTA block.
 
 ### ARTICLE 20
 
-**Slug:** `/blog/ticketflow-vs-spreadsheets-event-ticketing`
+**Slug:** `/blog/skroll-vs-spreadsheets-event-ticketing`
 
 **H1 Headline:**
-TicketFlow vs Spreadsheets: Why Manual Ticketing Is Costing Your Events More Than You Think
+Skroll vs Spreadsheets: Why Manual Ticketing Is Costing Your Events More Than You Think
 
 **Meta Title:**
-Manual Ticketing vs TicketFlow | The Real Cost for Sri Lankan Organizers
+Manual Ticketing vs Skroll | The Real Cost for Sri Lankan Organizers
 
 **Meta Description:**
 The hidden costs of running event ticketing manually in Sri Lanka — time, errors, missed revenue, and how a dedicated platform changes everything.
@@ -1063,5 +1063,5 @@ Article 19 (Case Study)  ←  Highest conversion piece
 
 ---
 
-*End of TicketFlow Content Copy v3 — Landing Page + Blog Strategy*
-*Prepared for TicketFlow | June 2026*
+*End of Skroll Content Copy v3 — Landing Page + Blog Strategy*
+*Prepared for Skroll | June 2026*

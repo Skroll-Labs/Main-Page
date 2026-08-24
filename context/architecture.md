@@ -1,4 +1,4 @@
-# Architecture — TicketFlow Landing Page
+# Architecture — Skroll Landing Page
 
 ---
 
@@ -34,7 +34,7 @@ These are not in your current stack but are strongly recommended given the proje
 ## 3. Project Structure
 
 ```
-ticketflow-landing/
+skroll-landing/
 ├── app/
 │   ├── layout.tsx               # Root layout — fonts, global providers, metadata
 │   ├── page.tsx                 # Home page — assembles all 10 sections in order
@@ -110,14 +110,14 @@ User fills form (React Hook Form)
 **Email 1 — Internal Lead Notification**
 ```
 To:      CONTACT_TO_EMAIL (env var)
-Subject: New TicketFlow Enquiry — {Audience Type}
+Subject: New Skroll Enquiry — {Audience Type}
 Body:    Name, Work Email, Company, Audience Type, Message
 ```
 
 **Email 2 — Visitor Auto-Reply**
 ```
 To:      visitor's work email
-Subject: We got your message — TicketFlow
+Subject: We got your message — Skroll
 Body:    Thank you copy, WhatsApp link, expected response time
 ```
 
@@ -155,7 +155,7 @@ All animations are scroll-triggered. GSAP and ScrollTrigger are registered once 
 # .env.local
 
 RESEND_API_KEY=re_xxxxxxxxxxxx          # From resend.com dashboard
-CONTACT_TO_EMAIL=hello@ticketflow.com   # Where contact form leads are sent
+CONTACT_TO_EMAIL=skroll.admin@gmail.com   # Where contact form leads are sent
 NEXT_PUBLIC_WHATSAPP_NUMBER=+94xxxxxxx  # Used to build the wa.me link in Contact section
 NEXT_PUBLIC_PHONE_NUMBER=+94xxxxxxx     # Used for the Call Us Directly link
 ```
@@ -198,20 +198,20 @@ Managed via the Next.js Metadata API in `app/layout.tsx` and `app/page.tsx`.
 ```ts
 // app/layout.tsx
 export const metadata: Metadata = {
-  title: "TicketFlow — Ticketing Made Simple, Faster, and Local",
+  title: "Skroll — Ticketing Made Simple, Faster, and Local",
   description:
     "The all-in-one ticketing platform for event organizers. Sell tickets, send QR codes, and check in attendees — without the spreadsheets.",
   openGraph: {
-    title: "TicketFlow",
+    title: "Skroll",
     description: "Sell Tickets. Send QR Codes. Skip the Headaches.",
-    url: "https://ticketflow.com",
-    siteName: "TicketFlow",
+    url: "https://skroll.lk",
+    siteName: "Skroll",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TicketFlow",
+    title: "Skroll",
     description: "Ticketing made simple, faster, and local.",
     images: ["/og-image.png"],
   },
@@ -256,7 +256,7 @@ Next.js 16 drops support for Node.js 18. Ensure your local environment and Verce
 
 ### Setup command
 ```bash
-npx create-next-app@latest ticketflow-landing
+npx create-next-app@latest skroll-landing
 # Select: TypeScript ✓ | Tailwind CSS ✓ | App Router ✓ | Turbopack ✓
 ```
 

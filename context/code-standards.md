@@ -1,4 +1,4 @@
-# Code Standards — TicketFlow Landing Page
+# Code Standards — Skroll Landing Page
 
 Implementation rules and conventions for the entire project. The AI agent must follow these in every session without exception. These rules prevent pattern drift across sessions.
 
@@ -152,9 +152,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendContactEmail(data: ContactFormData): Promise<void> {
   await resend.emails.send({
-    from: "TicketFlow <hello@ticketflow.com>",
+    from: "Skroll <skroll.admin@gmail.com>",
     to: process.env.CONTACT_TO_EMAIL!,
-    subject: `New TicketFlow Enquiry — ${data.audienceType}`,
+    subject: `New Skroll Enquiry — ${data.audienceType}`,
     html: `...`,
   });
 }
